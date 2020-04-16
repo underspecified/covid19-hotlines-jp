@@ -1,0 +1,36 @@
+都道府県,Prefecture,センター名,Center Name,"Phone number
+電話番号","Supported Languages
+対応言語","Open Hours
+対応時間","Postal code
+郵便番号","Address
+住所","Homepage
+ホームページ","Comments
+コメント"
+徳島県,Tokushima,徳島保健所,Tokushima Hokenjo,088-602-8907,Japanese,"Weekdays 8:30-17:00
+Emergencies only after hours",770-8570,徳島県徳島市万代町1丁目1番地,https://www.pref.tokushima.lg.jp/ippannokata/kenko/kansensho/5034012,
+徳島県,Tokushima,吉野川保健所,Yoshinogawa Hokenjo,0883-36-9018,Japanese,"Weekdays 8:30-17:00
+Emergencies only after hours",770-8571,徳島県徳島市万代町1丁目1番地,https://www.pref.tokushima.lg.jp/ippannokata/kenko/kansensho/5034013,
+徳島県,Tokushima,阿南保健所,Anan Hokenjo,0884-28-9874,Japanese,"Weekdays 8:30-17:00
+Emergencies only after hours",770-8572,徳島県徳島市万代町1丁目1番地,https://www.pref.tokushima.lg.jp/ippannokata/kenko/kansensho/5034014,
+徳島県,Tokushima,美波保健所,Minami Hokenjo,0884-74-7373,Japanese,"Weekdays 8:30-17:00
+Emergencies only after hours",770-8573,徳島県徳島市万代町1丁目1番地,https://www.pref.tokushima.lg.jp/ippannokata/kenko/kansensho/5034015,
+徳島県,Tokushima,美馬保健所,Mima Hokenjo,0883-52-1016,Japanese,"Weekdays 8:30-17:00
+Emergencies only after hours",770-8574,徳島県徳島市万代町1丁目1番地,https://www.pref.tokushima.lg.jp/ippannokata/kenko/kansensho/5034016,
+徳島県,Tokushima,三好保健所,Miyoshi Hokenjo,0883-72-1123,Japanese,"Weekdays 8:30-17:00
+Emergencies only after hours",770-8575,徳島県徳島市万代町1丁目1番地,https://www.pref.tokushima.lg.jp/ippannokata/kenko/kansensho/5034017,
+香川県,Kagawa,高松市保健所,Takamatsu Shi Hokenjo,087-839-2870,Japanese,"Weekdays 8:30-17:15
+Emergencies only after hours",760-8570,香川県高松市番町四丁目1番10号,https://www.pref.kagawa.lg.jp/content/etc/subsite/kansenshoujouhou/kansen/sr5cfn200127213457.shtml,
+香川県,Kagawa,小豆保健所,Shouzu Hokenjo,0879-62-1373,Japanese,"Weekdays 8:30-17:15
+Emergencies only after hours",760-8570,香川県高松市番町四丁目1番10号,https://www.pref.kagawa.lg.jp/content/etc/subsite/kansenshoujouhou/kansen/sr5cfn200127213457.shtml,
+香川県,Kagawa,東讃保健所,Tousan Hokenjo,0879-29-8261,Japanese,"Weekdays 8:30-17:15
+Emergencies only after hours",760-8570,香川県高松市番町四丁目1番10号,https://www.pref.kagawa.lg.jp/content/etc/subsite/kansenshoujouhou/kansen/sr5cfn200127213457.shtml,
+香川県,Kagawa,中讃保健所,Nakasan Hokenjo,0877-24-9962,Japanese,"Weekdays 8:30-17:15
+Emergencies only after hours",760-8570,香川県高松市番町四丁目1番10号,https://www.pref.kagawa.lg.jp/content/etc/subsite/kansenshoujouhou/kansen/sr5cfn200127213457.shtml,
+香川県,Kagawa,西讃保健所,Nishisan Hokenjo,0875-25-2052,Japanese,"Weekdays 8:30-17:15
+Emergencies only after hours",760-8570,香川県高松市番町四丁目1番10号,https://www.pref.kagawa.lg.jp/content/etc/subsite/kansenshoujouhou/kansen/sr5cfn200127213457.shtml,
+愛媛県,Ehime,愛媛県帰国者・接触者相談センター,Ehime Ken Kikoku Sha ・Sesshoku Sha Soudan Senta-,089-909-3483,Japanese,Every day 24 hours,790-8570,松山市一番町4-4-2,https://www.pref.ehime.jp/h25500/kansen/covid19.html#kikokusyasenta-,
+高知県,Kochi,新型コロナウイルス健康相談センター,Shingata Korona Uirusu Kenkou Soudan Senta-,088-823-9300,Japanese,Every day 9:00-21:00,780-8570,高知県高知市丸ノ内1丁目2番20号,https://www.pref.kochi.lg.jp/soshiki/130401/2020020300117.html,
+高知県,Kochi,新型コロナウイルス健康相談センター(夜間・高知市),Shingata Korona Uirusu Kenkou Soudan Senta (Kochi shi),099-822-0577,Japanese,"Weekdays 21:00-9:00
+Weekends, Holidays",780-8571,高知県高知市丸ノ内1丁目2番20号,https://www.pref.kochi.lg.jp/soshiki/130401/2020020300117.html,
+高知県,Kochi,新型コロナウイルス健康相談センター(夜間・高知市以外),Shingata Korona Uirusu Kenkou Soudan Senta (Without Kochi shi),088-823-1111,Japanese,"Weekdays 21:00-9:00
+Weekends, Holidays",780-8572,高知県高知市丸ノ内1丁目2番20号,https://www.pref.kochi.lg.jp/soshiki/130401/2020020300117.html,

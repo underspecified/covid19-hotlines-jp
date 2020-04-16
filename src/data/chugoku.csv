@@ -1,0 +1,70 @@
+都道府県,Prefecture,センター名,Center Name,"Phone number
+電話番号","Supported Languages
+対応言語","Open Hours
+対応時間","Postal code
+郵便番号","Address
+住所","Homepage
+ホームページ","Comments
+コメント"
+鳥取県,Tottori,鳥取市保健所,Tottori Shi Hokenjo,0857-22-5625,Japanese,Every day 8:30-17:15,680-8570,鳥取県鳥取市東町1丁目220,https://www.pref.tottori.lg.jp/289705.htm,
+鳥取県,Tottori,鳥取市保健所,Tottori Shi Hokenjo,0857-22-8111,Japanese,Every day 17:15-8:30,680-8571,鳥取県鳥取市東町1丁目221,https://www.pref.tottori.lg.jp/289705.htm,
+鳥取県,Tottori,倉吉保健所,Kurayoshi Hokenjo,0858-23-3135,Japanese,Every day 24 hours,680-8572,鳥取県鳥取市東町1丁目222,https://www.pref.tottori.lg.jp/289705.htm,
+鳥取県,Tottori,倉吉保健所,Kurayoshi Hokenjo,0858-23-3136,Japanese,Every day 24 hours,680-8573,鳥取県鳥取市東町1丁目223,https://www.pref.tottori.lg.jp/289705.htm,
+鳥取県,Tottori,米子保健所,Yonago Hokenjo,0859-31-0029,Japanese,Every day 24 hours,680-8573,鳥取県鳥取市東町1丁目223,https://www.pref.tottori.lg.jp/289705.htm,
+島根県,Shimane,松江市・島根県共同設置松江保健所,Matsue Shi ・ Shimane Ken Kyoudou Secchi Matsue Hokenjo,0852-33-7673,Japanese,Every day 8:30-21:00,690-8501,島根県松江市殿町1番地,https://www.pref.shimane.lg.jp/medical/yakuji/kansensyo/other/topics/bukan2020.html,
+島根県,Shimane,雲南保健所,Un'nan Hokenjo,0854-47-7778,Japanese,Every day 8:30-21:00,690-8501,島根県松江市殿町1番地,https://www.pref.shimane.lg.jp/medical/yakuji/kansensyo/other/topics/bukan2020.html,
+島根県,Shimane,出雲保健所,Izumo Hokenjo,0853-24-7028,Japanese,Every day 8:30-21:00,690-8501,島根県松江市殿町1番地,https://www.pref.shimane.lg.jp/medical/yakuji/kansensyo/other/topics/bukan2020.html,
+島根県,Shimane,県央保健所,Kenoh Hokenjo,0854-84-9812,Japanese,Every day 8:30-21:00,690-8501,島根県松江市殿町1番地,https://www.pref.shimane.lg.jp/medical/yakuji/kansensyo/other/topics/bukan2020.html,
+島根県,Shimane,浜田保健所,Hamada Hokenjo,0855-29-5970,Japanese,Every day 8:30-21:00,690-8501,島根県松江市殿町1番地,https://www.pref.shimane.lg.jp/medical/yakuji/kansensyo/other/topics/bukan2020.html,
+島根県,Shimane,益田保健所,Masuda Hokenjo,0856-31-9512,Japanese,Every day 8:30-21:00,690-8501,島根県松江市殿町1番地,https://www.pref.shimane.lg.jp/medical/yakuji/kansensyo/other/topics/bukan2020.html,
+島根県,Shimane,隠岐保健所,Oki Hokenjo,08512-2-9600,Japanese,Every day 8:30-21:00,690-8501,島根県松江市殿町1番地,https://www.pref.shimane.lg.jp/medical/yakuji/kansensyo/other/topics/bukan2020.html,
+岡山県,Okayama,岡山市保健所,Okayama Shi Hokenjo,086-803-1360,Japanese,"Weekdays 9:00-21:00
+Weekends 9:00-17:00",700-8570,岡山市北区内山下二丁目4番6号,https://www.pref.okayama.jp/page/648845.html,
+岡山県,Okayama,倉敷市保健所,Kurashiki Shi Hokenjo,086-434-9810,Japanese,"Weekdays 9:00-21:00
+Weekends 9:00-17:00",700-8570,岡山市北区内山下二丁目4番6号,https://www.pref.okayama.jp/page/648845.html,
+岡山県,Okayama,備前保健所,Bizen Hokenjo,086-272-3934,Japanese,Every day 9:00-17:00,700-8570,岡山市北区内山下二丁目4番6号,https://www.pref.okayama.jp/page/648845.html,
+岡山県,Okayama,備前保健所東備支所,Bizen Hokenjo,0869-92-5180,Japanese,Every day 9:00-17:00,700-8570,岡山市北区内山下二丁目4番6号,https://www.pref.okayama.jp/page/648845.html,
+岡山県,Okayama,備中保健所,Bicchuu Hokenjo,086-434-7072,Japanese,Weekdays 9:00-17:00,700-8570,岡山市北区内山下二丁目4番6号,https://www.pref.okayama.jp/page/648845.html,
+岡山県,Okayama,備中保健所,Bicchuu Hokenjo,086-434-7024,Japanese,"Weekdays 17:00-9:00
+Weekends, Holidays 24 hours",700-8570,岡山市北区内山下二丁目4番6号,https://www.pref.okayama.jp/page/648845.html,
+岡山県,Okayama,備中保健所井笠支所,Bicchuu Hokenjo I Kasa Shisho,0865-69-1675,Japanese,Every day 9:00-17:00,700-8570,岡山市北区内山下二丁目4番6号,https://www.pref.okayama.jp/page/648845.html,
+岡山県,Okayama,備北保健所,Bihoku Hokenjo,0866-21-2836,Japanese,Every day 9:00-17:00,700-8570,岡山市北区内山下二丁目4番6号,https://www.pref.okayama.jp/page/648845.html,
+岡山県,Okayama,備北保健所新見支所,Bihoku Hokenjo,0867-72-5691,Japanese,Every day 9:00-17:00,700-8570,岡山市北区内山下二丁目4番6号,https://www.pref.okayama.jp/page/648845.html,
+岡山県,Okayama,真庭保健所,Maniwa Hokenjo,0867-44-2990,Japanese,Every day 9:00-17:00,700-8570,岡山市北区内山下二丁目4番6号,https://www.pref.okayama.jp/page/648845.html,
+岡山県,Okayama,美作保健所,Misaku Hokenjo,0868-23-0163,Japanese,Every day 9:00-17:00,700-8570,岡山市北区内山下二丁目4番6号,https://www.pref.okayama.jp/page/648845.html,
+岡山県,Okayama,美作保健所勝英支所,Misaku Hokenjo,0868-73-4054,Japanese,Every day 9:00-17:00,700-8570,岡山市北区内山下二丁目4番6号,https://www.pref.okayama.jp/page/648845.html,
+広島県,Hiroshima,広島市健康推進課,Hiroshima Shi Kenkou Suishin Ka,082-504-2622,Japanese,Weekdays 8:30-17:00,730-8511,広島県広島市中区基町10-52,https://www.pref.hiroshima.lg.jp/soshiki/57/bukan-coronavirus.html,
+広島県,Hiroshima,広島県西部保健所,Hiroshima Ken Seibu Hokenjo,082-513-2567,Japanese,Weekdays 8:30-17:00,730-8512,広島県広島市中区基町10-53,https://www.pref.hiroshima.lg.jp/soshiki/57/bukan-coronavirus.html,
+広島県,Hiroshima,広島県西部保健所,Hiroshima Ken Seibu Hokenjo,082-513-2567,Japanese,"Weekdays 17:00-8:30
+Weekends, Holidays",730-8513,広島県広島市中区基町10-54,https://www.pref.hiroshima.lg.jp/soshiki/57/bukan-coronavirus.html,
+広島県,Hiroshima,広島市中保健センター,Hiroshima Shi Naka Hoken Senta-,082-504-2528,Japanese,Weekdays 8:30-17:00,730-8514,広島県広島市中区基町10-55,https://www.pref.hiroshima.lg.jp/soshiki/57/bukan-coronavirus.html,
+広島県,Hiroshima,広島市中保健センター,Hiroshima Shi Naka Hoken Senta-,082-241-4566,Japanese,"Weekdays 17:00-8:30
+Weekends, Holidays",730-8523,広島県広島市中区基町10-64,https://www.pref.hiroshima.lg.jp/soshiki/57/bukan-coronavirus.html,
+広島県,Hiroshima,広島市東保健センター,Hiroshima Shi Higashi Hoken Senta-,082-568-7729,Japanese,Weekdays 8:30-17:00,730-8515,広島県広島市中区基町10-56,https://www.pref.hiroshima.lg.jp/soshiki/57/bukan-coronavirus.html,
+広島県,Hiroshima,広島市南保健センター,Hiroshima Shi Minami Hoken Senta-,082-250-4108,Japanese,Weekdays 8:30-17:00,730-8516,広島県広島市中区基町10-57,https://www.pref.hiroshima.lg.jp/soshiki/57/bukan-coronavirus.html,
+広島県,Hiroshima,広島市西保健センター,Hiroshima Shi Nishi Hoken Senta-,082-294-6235,Japanese,Weekdays 8:30-17:00,730-8517,広島県広島市中区基町10-58,https://www.pref.hiroshima.lg.jp/soshiki/57/bukan-coronavirus.html,
+広島県,Hiroshima,広島市安佐南保健センター,Hiroshima Shi Asaminami Hoken Senta-,082-831-4942,Japanese,Weekdays 8:30-17:00,730-8518,広島県広島市中区基町10-59,https://www.pref.hiroshima.lg.jp/soshiki/57/bukan-coronavirus.html,
+広島県,Hiroshima,広島市安芸保健センター,Hiroshima Shi Aki Hoken Senta-,082-821-2809,Japanese,Weekdays 8:30-17:00,730-8519,広島県広島市中区基町10-60,https://www.pref.hiroshima.lg.jp/soshiki/57/bukan-coronavirus.html,
+広島県,Hiroshima,広島市佐伯保健センター,Hiroshima Shi Saiki Hoken Senta-,082-943-9731,Japanese,Weekdays 8:30-17:00,730-8520,広島県広島市中区基町10-61,https://www.pref.hiroshima.lg.jp/soshiki/57/bukan-coronavirus.html,
+広島県,Hiroshima,呉市保健所,Kure Shi Hokenjo,082-325-3525,Japanese,Weekdays 8:30-17:00,730-8521,広島県広島市中区基町10-62,https://www.pref.hiroshima.lg.jp/soshiki/57/bukan-coronavirus.html,
+広島県,Hiroshima,呉市保健所,Kure Shi Hokenjo,0823-22-5858,Japanese,"Weekdays 17:00-8:30
+Weekends, Holidays",730-8522,広島県広島市中区基町10-63,https://www.pref.hiroshima.lg.jp/soshiki/57/bukan-coronavirus.html,
+広島県,Hiroshima,福山市保健所,Fukuyama Shi Hokenjo,084-928-1350,Japanese,Every day 24 hours,730-8522,広島県広島市中区基町10-63,https://www.pref.hiroshima.lg.jp/soshiki/57/bukan-coronavirus.html,
+山口県,Yamaguchi,岩国健康福祉センター,Iwakuni Kenkou Fukushi Senta-,0827-29-1523,Japanese,"Weekdays 9:00-17:00
+Emergencies only after hours",740-0016,山口県岩国市三笠町1丁目1-1,https://www.pref.yamaguchi.lg.jp/cms/a15200/kansensyou/ncorona.html,
+山口県,Yamaguchi,柳井健康福祉センター,Yanai Kenkou Fukushi Senta-,0820-22-3631,Japanese,"Weekdays 9:00-17:00
+Emergencies only after hours",740-0017,山口県岩国市三笠町1丁目1-2,https://www.pref.yamaguchi.lg.jp/cms/a15200/kansensyou/ncorona.html,
+山口県,Yamaguchi,周南健康福祉センター,Shuunan Kenkou Fukushi Senta-,0834-33-6423,Japanese,"Weekdays 9:00-17:00
+Emergencies only after hours",740-0018,山口県岩国市三笠町1丁目1-3,https://www.pref.yamaguchi.lg.jp/cms/a15200/kansensyou/ncorona.html,
+山口県,Yamaguchi,山口健康福祉センター,Yamaguchi Kenkou Fukushi Senta-,083-934-2533,Japanese,"Weekdays 9:00-17:00
+Emergencies only after hours",740-0019,山口県岩国市三笠町1丁目1-4,https://www.pref.yamaguchi.lg.jp/cms/a15200/kansensyou/ncorona.html,
+山口県,Yamaguchi,山口健康福祉センター防府支所,Yamaguchi Kenkou Fukushi Senta-,0835-22-3740,Japanese,"Weekdays 9:00-17:00
+Emergencies only after hours",740-0020,山口県岩国市三笠町1丁目1-5,https://www.pref.yamaguchi.lg.jp/cms/a15200/kansensyou/ncorona.html,
+山口県,Yamaguchi,宇部健康福祉センター,Ube Kenkou Fukushi Senta-,0836-31-3203,Japanese,"Weekdays 9:00-17:00
+Emergencies only after hours",740-0021,山口県岩国市三笠町1丁目1-6,https://www.pref.yamaguchi.lg.jp/cms/a15200/kansensyou/ncorona.html,
+山口県,Yamaguchi,長門健康福祉センター,Nagato Kenkou Fukushi Senta-,0837-22-2811,Japanese,"Weekdays 9:00-17:00
+Emergencies only after hours",740-0022,山口県岩国市三笠町1丁目1-7,https://www.pref.yamaguchi.lg.jp/cms/a15200/kansensyou/ncorona.html,
+山口県,Yamaguchi,萩健康福祉センター,Hagi Kenkou Fukushi Senta-,0838-25-2667,Japanese,"Weekdays 9:00-17:00
+Emergencies only after hours",740-0023,山口県岩国市三笠町1丁目1-8,https://www.pref.yamaguchi.lg.jp/cms/a15200/kansensyou/ncorona.html,
+山口県,Yamaguchi,下関市立下関保健所,Shimonoseki Shiritsu Shimonoseki Hokenjo,083-250-7778,Japanese,"Weekdays 9:00-17:00
+Emergencies only after hours",740-0024,山口県岩国市三笠町1丁目1-9,https://www.pref.yamaguchi.lg.jp/cms/a15200/kansensyou/ncorona.html,

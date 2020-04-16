@@ -1,0 +1,43 @@
+都道府県,Prefecture,センター名,Center Name,"Phone number
+電話番号","Supported Languages
+対応言語","Open Hours
+対応時間","Postal code
+郵便番号","Address
+住所","Homepage
+ホームページ","Comments
+コメント"
+北海道,Hokkaido,札幌市保健所,Sapporo Shi Hokenjo,011-272-7119,Japanese,Every day 24 hours,060-0042,北海道札幌市中央区大通西19丁目,http://www.pref.hokkaido.lg.jp/hf/kth/kak/singatakoronahaien.htm#相談窓口,
+北海道,Hokkaido,旭川市保健所,Asahikawa Shi Hokenjo,0166-25-9848,Japanese,Every day 8:45-21:00,060-8589,札幌市中央区北3条西6丁目,http://www.pref.hokkaido.lg.jp/hf/kth/kak/singatakoronahaien.htm#相談窓口,
+北海道,Hokkaido,市立函館保健所,Shiritsu Hakodate Hokenjo,0138-32-1547,Japanese,"Weekdays 8:45-20:00
+Saturday 8:45-17:30",060-8590,札幌市中央区北3条西6丁目,http://www.pref.hokkaido.lg.jp/hf/kth/kak/singatakoronahaien.htm#相談窓口,
+北海道,Hokkaido,小樽市保健所,Otaru Shi Hokenjo,0134-22-3110,Japanese,Weekdays 8:50-17:20,060-8591,札幌市中央区北3条西6丁目,http://www.pref.hokkaido.lg.jp/hf/kth/kak/singatakoronahaien.htm#相談窓口,
+北海道,Hokkaido,渡島保健所,Oshima Hokenjo,0138-47-9548,Japanese,Weekdays 8:45-17:30,060-8592,札幌市中央区北3条西6丁目,http://www.pref.hokkaido.lg.jp/hf/kth/kak/singatakoronahaien.htm#相談窓口,
+北海道,Hokkaido,八雲保健所,Yakumo Hokenjo,0137-63-2168,Japanese,Weekdays 8:45-17:30,060-8593,札幌市中央区北3条西6丁目,http://www.pref.hokkaido.lg.jp/hf/kth/kak/singatakoronahaien.htm#相談窓口,
+北海道,Hokkaido,今金支所,Imagane Shisho,0137-82-0251,Japanese,Weekdays 8:45-17:30,060-8594,札幌市中央区北3条西6丁目,http://www.pref.hokkaido.lg.jp/hf/kth/kak/singatakoronahaien.htm#相談窓口,
+北海道,Hokkaido,江差保健所,Esashi Hokenjo,0139-52-1053,Japanese,Weekdays 8:45-17:30,060-8594,札幌市中央区北3条西6丁目,http://www.pref.hokkaido.lg.jp/hf/kth/kak/singatakoronahaien.htm#相談窓口,
+北海道,Hokkaido,江別保健所,Ebetsu Hokenjo,011-383-2111,Japanese,Weekdays 8:45-17:30,060-8595,札幌市中央区北3条西6丁目,http://www.pref.hokkaido.lg.jp/hf/kth/kak/singatakoronahaien.htm#相談窓口,
+北海道,Hokkaido,千歳保健所,Chitose Hokenjo,0123-23-3175,Japanese,Weekdays 8:45-17:30,060-8596,札幌市中央区北3条西6丁目,http://www.pref.hokkaido.lg.jp/hf/kth/kak/singatakoronahaien.htm#相談窓口,
+北海道,Hokkaido,倶知安保健所,Kucchan Hokenjo,0136-23-1957,Japanese,Weekdays 8:45-17:30,060-8597,札幌市中央区北3条西6丁目,http://www.pref.hokkaido.lg.jp/hf/kth/kak/singatakoronahaien.htm#相談窓口,
+北海道,Hokkaido,岩内保健所,Iwanai Hokenjo,0135-62-1537,Japanese,Weekdays 8:45-17:30,060-8598,札幌市中央区北3条西6丁目,http://www.pref.hokkaido.lg.jp/hf/kth/kak/singatakoronahaien.htm#相談窓口,
+北海道,Hokkaido,岩見沢保健所,Iwamizawa Hokenjo,0126-20-0122,Japanese,Weekdays 8:45-17:30,060-8599,札幌市中央区北3条西6丁目,http://www.pref.hokkaido.lg.jp/hf/kth/kak/singatakoronahaien.htm#相談窓口,
+北海道,Hokkaido,滝川保健所,Takigawa Hokenjo,0125-24-6201,Japanese,Weekdays 8:45-17:30,060-8600,札幌市中央区北3条西6丁目,http://www.pref.hokkaido.lg.jp/hf/kth/kak/singatakoronahaien.htm#相談窓口,
+北海道,Hokkaido,深川保健所,Fukagawa Hokenjo,0164-22-1421,Japanese,Weekdays 8:45-17:30,060-8601,札幌市中央区北3条西6丁目,http://www.pref.hokkaido.lg.jp/hf/kth/kak/singatakoronahaien.htm#相談窓口,
+北海道,Hokkaido,上川保健所,Kamikawa Hokenjo,0166-46-5992,Japanese,Weekdays 8:45-17:30,060-8602,札幌市中央区北3条西6丁目,http://www.pref.hokkaido.lg.jp/hf/kth/kak/singatakoronahaien.htm#相談窓口,
+北海道,Hokkaido,名寄保健所,Nayoro Hokenjo,01654-3-3121,Japanese,Weekdays 8:45-17:30,060-8603,札幌市中央区北3条西6丁目,http://www.pref.hokkaido.lg.jp/hf/kth/kak/singatakoronahaien.htm#相談窓口,
+北海道,Hokkaido,富良野保健所,Furano Hokenjo,0167-23-3161,Japanese,Weekdays 8:45-17:30,060-8604,札幌市中央区北3条西6丁目,http://www.pref.hokkaido.lg.jp/hf/kth/kak/singatakoronahaien.htm#相談窓口,
+北海道,Hokkaido,留萌保健所,Rumoi Hokenjo,0164-42-8327,Japanese,Weekdays 8:45-17:30,060-8605,札幌市中央区北3条西6丁目,http://www.pref.hokkaido.lg.jp/hf/kth/kak/singatakoronahaien.htm#相談窓口,
+北海道,Hokkaido,稚内保健所,Wakkanai Hokenjo,0162-33-3703,Japanese,Weekdays 8:45-17:30,060-8606,札幌市中央区北3条西6丁目,http://www.pref.hokkaido.lg.jp/hf/kth/kak/singatakoronahaien.htm#相談窓口,
+北海道,Hokkaido,浜頓別支所,Hamatonbetsu Shisho,01634-2-0190,Japanese,Weekdays 8:45-17:30,060-8607,札幌市中央区北3条西6丁目,http://www.pref.hokkaido.lg.jp/hf/kth/kak/singatakoronahaien.htm#相談窓口,
+北海道,Hokkaido,利尻支所,Rishiri Shisho,0163-84-2247,Japanese,Weekdays 8:45-17:30,060-8608,札幌市中央区北3条西6丁目,http://www.pref.hokkaido.lg.jp/hf/kth/kak/singatakoronahaien.htm#相談窓口,
+北海道,Hokkaido,網走保健所,Abashiri Hokenjo,0152-41-0683,Japanese,Weekdays 8:45-17:30,060-8607,札幌市中央区北3条西6丁目,http://www.pref.hokkaido.lg.jp/hf/kth/kak/singatakoronahaien.htm#相談窓口,
+北海道,Hokkaido,北見保健所,Kitami Hokenjo,0157-24-4171,Japanese,Weekdays 8:45-17:30,060-8608,札幌市中央区北3条西6丁目,http://www.pref.hokkaido.lg.jp/hf/kth/kak/singatakoronahaien.htm#相談窓口,
+北海道,Hokkaido,紋別保健所,Monbetsu Hokenjo,0158-23-3108,Japanese,Weekdays 8:45-17:30,060-8609,札幌市中央区北3条西6丁目,http://www.pref.hokkaido.lg.jp/hf/kth/kak/singatakoronahaien.htm#相談窓口,
+北海道,Hokkaido,室蘭保健所,Muroran Hokenjo,0143-24-9833,Japanese,Weekdays 8:45-17:30,060-8610,札幌市中央区北3条西6丁目,http://www.pref.hokkaido.lg.jp/hf/kth/kak/singatakoronahaien.htm#相談窓口,
+北海道,Hokkaido,苫小牧保健所,Tomakomai Hokenjo,0144-34-4168,Japanese,Weekdays 8:45-17:30,060-8611,札幌市中央区北3条西6丁目,http://www.pref.hokkaido.lg.jp/hf/kth/kak/singatakoronahaien.htm#相談窓口,
+北海道,Hokkaido,浦川保健所,Urakawa Hokenjo,0146-22-3071,Japanese,Weekdays 8:45-17:30,060-8612,札幌市中央区北3条西6丁目,http://www.pref.hokkaido.lg.jp/hf/kth/kak/singatakoronahaien.htm#相談窓口,
+北海道,Hokkaido,静内保健所,Shizunai Hokenjo,0146-42-0251,Japanese,Weekdays 8:45-17:30,060-8613,札幌市中央区北3条西6丁目,http://www.pref.hokkaido.lg.jp/hf/kth/kak/singatakoronahaien.htm#相談窓口,
+北海道,Hokkaido,帯広保健所,Obihiro Hokenjo,0155-26-9084,Japanese,Weekdays 8:45-17:30,060-8614,札幌市中央区北3条西6丁目,http://www.pref.hokkaido.lg.jp/hf/kth/kak/singatakoronahaien.htm#相談窓口,
+北海道,Hokkaido,釧路保健所,Kushiro Hokenjo,0154-65-5811,Japanese,Weekdays 8:45-17:30,060-8615,札幌市中央区北3条西6丁目,http://www.pref.hokkaido.lg.jp/hf/kth/kak/singatakoronahaien.htm#相談窓口,
+北海道,Hokkaido,根室保健所,Nemuro Hokenjo,0153-23-5161,Japanese,Weekdays 8:45-17:30,060-8616,札幌市中央区北3条西6丁目,http://www.pref.hokkaido.lg.jp/hf/kth/kak/singatakoronahaien.htm#相談窓口,
+北海道,Hokkaido,中標津保健所,Nakashibetsu Hokenjo,0153-72-2168,Japanese,Weekdays 8:45-17:30,060-8617,札幌市中央区北3条西6丁目,http://www.pref.hokkaido.lg.jp/hf/kth/kak/singatakoronahaien.htm#相談窓口,
+北海道,Hokkaido,北海道保健福祉部,Hokkaidou Hoken Fukushi Bu,011-204-5020,Japanese,Every day 24 hours,060-8618,札幌市中央区北3条西6丁目,http://www.pref.hokkaido.lg.jp/hf/kth/kak/singatakoronahaien.htm#相談窓口,

@@ -1,0 +1,50 @@
+都道府県,Prefecture,センター名,Center Name,"Phone number
+電話番号","Supported Languages
+対応言語","Open Hours
+対応時間","Postal code
+郵便番号","Address
+住所","Homepage
+ホームページ","Comments
+コメント"
+青森県,Aomori,青森市保健所,Aomori Shi Hokenjo,017-765-5280,Japanese,Weekdays 8:30-17:00,030-0962,青森市佃二丁目19-13,https://www.pref.aomori.lg.jp/welfare/health/wuhan-novel-coronavirus2020.html,
+青森県,Aomori,東地方保健所,Higashi Chihou Hokenjo,017-739-5421,Japanese,Weekdays 8:30-17:00,030-0963,青森市佃二丁目19-14,https://www.pref.aomori.lg.jp/welfare/health/wuhan-novel-coronavirus2020.html,
+青森県,Aomori,弘前保健所,Hirosaki Hokenjo,0172-33-8521,Japanese,Weekdays 8:30-17:00,030-0964,青森市佃二丁目19-15,https://www.pref.aomori.lg.jp/welfare/health/wuhan-novel-coronavirus2020.html,
+青森県,Aomori,三戸地方保健所,Sannohe Chihou Hokenjo,0178-27-5111,Japanese,Weekdays 8:30-17:00,030-0965,青森市佃二丁目19-16,https://www.pref.aomori.lg.jp/welfare/health/wuhan-novel-coronavirus2020.html,
+青森県,Aomori,五所川原保健所,Goshogawara Hokenjo,0173-34-2108,Japanese,Weekdays 8:30-17:00,030-0966,青森市佃二丁目19-17,https://www.pref.aomori.lg.jp/welfare/health/wuhan-novel-coronavirus2020.html,
+青森県,Aomori,上十三保健所,Kamitousann Hokenjo,0176-22-3510,Japanese,Weekdays 8:30-17:00,030-0967,青森市佃二丁目19-18,https://www.pref.aomori.lg.jp/welfare/health/wuhan-novel-coronavirus2020.html,
+青森県,Aomori,むつ保健所,Mutsu Hokenjo,0175-31-1891,Japanese,Weekdays 8:30-17:00,030-0968,青森市佃二丁目19-19,https://www.pref.aomori.lg.jp/welfare/health/wuhan-novel-coronavirus2020.html,
+青森県,Aomori,八戸市保健所,Hachinohe Shi Hokenjo,0178-43-2291,Japanese,Weekdays 8:30-17:00,030-0969,青森市佃二丁目19-20,https://www.pref.aomori.lg.jp/welfare/health/wuhan-novel-coronavirus2020.html,
+岩手県,Iwate,岩手県庁医療政策室,Iwate Kenchou Iryou Seisaku Shitsu,019-651-3175,Japanese,Every day 24 hours,020-0023,岩手県盛岡市内丸10-1,https://www.pref.iwate.jp/kurashikankyou/iryou/kenkou/jouhou/1028020.html,
+岩手県,Iwate,盛岡市保健所,Morioka Shi Hokenjo,019-603-8308,Japanese,Weekdays 9:00-17:00,020-0024,岩手県盛岡市内丸10-2,https://www.pref.iwate.jp/kurashikankyou/iryou/kenkou/jouhou/1028020.html,
+岩手県,Iwate,岩手県県央保健所,Iwate Ken Kenoh Hokenjo,019-629-6562,Japanese,Weekdays 9:00-17:00,020-0025,岩手県盛岡市内丸10-3,https://www.pref.iwate.jp/kurashikankyou/iryou/kenkou/jouhou/1028020.html,
+岩手県,Iwate,岩手県中部保健所,Iwate Ken Chuubu Hokenjo,0198-22-4952,Japanese,Weekdays 9:00-17:00,020-0026,岩手県盛岡市内丸10-4,https://www.pref.iwate.jp/kurashikankyou/iryou/kenkou/jouhou/1028020.html,
+岩手県,Iwate,岩手県奥州保健所,Iwate Ken Oushuu Hokenjo,0197-22-2831,Japanese,Weekdays 9:00-17:00,020-0027,岩手県盛岡市内丸10-5,https://www.pref.iwate.jp/kurashikankyou/iryou/kenkou/jouhou/1028020.html,
+岩手県,Iwate,岩手県一関保健所,Iwate Ken Ichinozeki Hokenjo,0191-26-1415,Japanese,Weekdays 9:00-17:00,020-0028,岩手県盛岡市内丸10-6,https://www.pref.iwate.jp/kurashikankyou/iryou/kenkou/jouhou/1028020.html,
+岩手県,Iwate,岩手県大船渡保健所,Iwate Ken Oofunato Hokenjo,0192-27-9922,Japanese,Weekdays 9:00-17:00,020-0029,岩手県盛岡市内丸10-7,https://www.pref.iwate.jp/kurashikankyou/iryou/kenkou/jouhou/1028020.html,
+岩手県,Iwate,岩手県釜石保健所,Iwate Ken Kamaishi Hokenjo,0193-25-2710,Japanese,Weekdays 9:00-17:00,020-0030,岩手県盛岡市内丸10-8,https://www.pref.iwate.jp/kurashikankyou/iryou/kenkou/jouhou/1028020.html,
+岩手県,Iwate,岩手県宮古保健所,Iwate Ken Miyako Hokenjo,0193-64-2218,Japanese,Weekdays 9:00-17:00,020-0031,岩手県盛岡市内丸10-9,https://www.pref.iwate.jp/kurashikankyou/iryou/kenkou/jouhou/1028020.html,
+岩手県,Iwate,岩手県久慈保健所,Iwate Ken Kuji Hokenjo,0194-53-4987,Japanese,Weekdays 9:00-17:00,020-0032,岩手県盛岡市内丸10-10,https://www.pref.iwate.jp/kurashikankyou/iryou/kenkou/jouhou/1028020.html,
+岩手県,Iwate,岩手県二戸保健所,Iwate Ken Ninohe Hokenjo,0195-23-9206,Japanese,Weekdays 9:00-17:00,020-0033,岩手県盛岡市内丸10-11,https://www.pref.iwate.jp/kurashikankyou/iryou/kenkou/jouhou/1028020.html,
+宮城県,Miyagi,健康電話相談窓口,Kenkou Denwa Soudan Madoguchi,022-211-3883,Japanese,Every day 24 hours,980-8570,宮城県仙台市青葉区本町3丁目8番1号,https://www.pref.miyagi.jp/site/covid-19/03.html,
+宮城県,Miyagi,健康電話相談窓口,Kenkou Denwa Soudan Madoguchi,022-211-2882,Japanese,Every day 24 hours,980-8571,宮城県仙台市青葉区本町3丁目8番1号,https://www.pref.miyagi.jp/site/covid-19/03.html,
+秋田県,Akita,あきた帰国者・接触者相談センター,Aki Ta Kikoku Sha ・Sesshoku Sha Soudan Senta-,018-866-7050,Japanese,Every day 24 hours,010-8570,秋田県秋田市山王四丁目1番1号,https://www.pref.akita.lg.jp/pages/archive/16317,
+秋田県,Akita,あきた帰国者・接触者相談センター,Aki Ta Kikoku Sha ・Sesshoku Sha Soudan Senta-,018-895-9176,Japanese,Weekdays 9:00-17:00,010-8570,秋田県秋田市山王四丁目1番1号,https://www.pref.akita.lg.jp/pages/archive/16317,
+山形県,Yamagata,新型コロナ受診相談センター,Shingata Korona Jushin Soudan Senta-,0120-88-0006,Japanese,Every day 24 hours,990-8570,山形市松波二丁目8-1,http://www.pref.yamagata.jp/ou/kenkofukushi/090001/20130425/shingata_corona.html,
+福島県,Fukushima,福島市保健所,Fukushima Shi Hokenjo,024-535-8662,Japanese,"Weekdays 9:00-17:00
+Emergencies only after hours",960-8670,福島県福島市杉妻町2-16,https://www.pref.fukushima.lg.jp/sec/21045c/coronavirus-taiou.html#center,
+福島県,Fukushima,県北保健所(県北保健福祉事務所),Ken Hoku Hokenjo (Ken Kita Hoken Fukushi Jimusho ),024-534-4108,Japanese,"Weekdays 9:00-17:00
+Emergencies only after hours",960-8670,福島県福島市杉妻町2-17,https://www.pref.fukushima.lg.jp/sec/21045c/coronavirus-taiou.html#center,
+福島県,Fukushima,県中保健所(県中保健福祉事務所),Ken Chuu Hokenjo (Ken Chuu Hoken Fukushi Jimusho ),0248-75-7827,Japanese,"Weekdays 9:00-17:00
+Emergencies only after hours",960-8670,福島県福島市杉妻町2-18,https://www.pref.fukushima.lg.jp/sec/21045c/coronavirus-taiou.html#center,
+福島県,Fukushima,県南保健所(県南保健福祉事務所),Ken'nan Hokenjo (Ken Nanbo Ken Fukushi Jimusho ),0248-21-8188,Japanese,"Weekdays 9:00-17:00
+Emergencies only after hours",960-8670,福島県福島市杉妻町2-19,https://www.pref.fukushima.lg.jp/sec/21045c/coronavirus-taiou.html#center,
+福島県,Fukushima,会津保健所(会津保健福祉事務所),Aidu Hokenjo ( Aidu Hoken Fukushi Jimusho ),0242-29-5203,Japanese,"Weekdays 9:00-17:00
+Emergencies only after hours",960-8670,福島県福島市杉妻町2-20,https://www.pref.fukushima.lg.jp/sec/21045c/coronavirus-taiou.html#center,
+福島県,Fukushima,南会津保健所(南会津保健福祉事務所),Minamiaidu Hokenjo (Minamiaidu Hoken Fukushi Jimusho ),0241-63-0306,Japanese,"Weekdays 9:00-17:00
+Emergencies only after hours",960-8670,福島県福島市杉妻町2-21,https://www.pref.fukushima.lg.jp/sec/21045c/coronavirus-taiou.html#center,
+福島県,Fukushima,相双保健所(相双保健福祉事務所),Sou Sou Hokenjo ( Ai Sou Hoken Fukushi Jimusho ),080-2807-0489,Japanese,"Weekdays 9:00-17:00
+Emergencies only after hours",960-8670,福島県福島市杉妻町2-22,https://www.pref.fukushima.lg.jp/sec/21045c/coronavirus-taiou.html#center,
+福島県,Fukushima,郡山市保健所,Kooriyama Shi Hokenjo,024-924-2163,Japanese,"Weekdays 9:00-17:00
+Emergencies only after hours",960-8670,福島県福島市杉妻町2-23,https://www.pref.fukushima.lg.jp/sec/21045c/coronavirus-taiou.html#center,
+福島県,Fukushima,いわき市保健所,Iwaki Shi Hokenjo,0246-27-8596,Japanese,"Weekdays 9:00-17:00
+Emergencies only after hours",960-8670,福島県福島市杉妻町2-24,https://www.pref.fukushima.lg.jp/sec/21045c/coronavirus-taiou.html#center,

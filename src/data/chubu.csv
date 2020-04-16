@@ -1,0 +1,192 @@
+都道府県,Prefecture,センター名,Center Name,"Phone number
+電話番号","Supported Languages
+対応言語","Open Hours
+対応時間","Postal code
+郵便番号","Address
+住所","Homepage
+ホームページ","Comments
+コメント"
+新潟県,Niigata,新潟市保健所,Niigata Shi Hokenjo,025-212-8194,Japanese,"Weekdays 8:30-17:15
+Weekends, Holidays 9:00-17:00",950-0914,新潟市中央区紫竹山3丁目3番11号,https://www.pref.niigata.lg.jp/sec/kenko/corona-center.html,
+新潟県,Niigata,新潟市保健所,Niigata Shi Hokenjo,025-285-5511,Japanese,Emergencies only after hours,950-0915,新潟市中央区紫竹山3丁目3番11号,https://www.pref.niigata.lg.jp/sec/kenko/corona-center.html,
+新潟県,Niigata,村上保健所,Murakami Hokenjo,0254-53-8368,Japanese,"Weekdays 8:30-17:15
+Weekends, Holidays 9:00-17:00",950-0916,新潟市中央区紫竹山3丁目3番11号,https://www.pref.niigata.lg.jp/sec/kenko/corona-center.html,
+新潟県,Niigata,村上保健所,Murakami Hokenjo,0254-52-7923,Japanese,Emergencies only after hours,950-0917,新潟市中央区紫竹山3丁目3番11号,https://www.pref.niigata.lg.jp/sec/kenko/corona-center.html,
+新潟県,Niigata,新発田保健所,Shibata Hokenjo,0254-26-9651,Japanese,"Weekdays 8:30-17:15
+Weekends, Holidays 9:00-17:00",950-0918,新潟市中央区紫竹山3丁目3番11号,https://www.pref.niigata.lg.jp/sec/kenko/corona-center.html,
+新潟県,Niigata,新発田保健所,Shibata Hokenjo,0254-26-9651,Japanese,Emergencies only after hours,950-0919,新潟市中央区紫竹山3丁目3番11号,https://www.pref.niigata.lg.jp/sec/kenko/corona-center.html,
+新潟県,Niigata,新津保健所,Niitsu Hokenjo,0250-22-5174,Japanese,"Weekdays 8:30-17:15
+Weekends, Holidays 9:00-17:00",950-0920,新潟市中央区紫竹山3丁目3番11号,https://www.pref.niigata.lg.jp/sec/kenko/corona-center.html,
+新潟県,Niigata,新津保健所,Niitsu Hokenjo,0250-24-7112,Japanese,Emergencies only after hours,950-0921,新潟市中央区紫竹山3丁目3番11号,https://www.pref.niigata.lg.jp/sec/kenko/corona-center.html,
+新潟県,Niigata,三条保健所,Sanjou Hokenjo,0256-36-2362,Japanese,"Weekdays 8:30-17:15
+Weekends, Holidays 9:00-17:00",950-0922,新潟市中央区紫竹山3丁目3番11号,https://www.pref.niigata.lg.jp/sec/kenko/corona-center.html,
+新潟県,Niigata,三条保健所,Sanjou Hokenjo,0256-36-2330,,Emergencies only after hours,950-0923,新潟市中央区紫竹山3丁目3番11号,https://www.pref.niigata.lg.jp/sec/kenko/corona-center.html,
+新潟県,Niigata,長岡保健所,Nagaoka Hokenjo,0258-33-4932,Japanese,"Weekdays 8:30-17:15
+Weekends, Holidays 9:00-17:00",950-0924,新潟市中央区紫竹山3丁目3番11号,https://www.pref.niigata.lg.jp/sec/kenko/corona-center.html,
+新潟県,Niigata,長岡保健所,Nagaoka Hokenjo,0258-38-2501,,Emergencies only after hours,950-0925,新潟市中央区紫竹山3丁目3番11号,https://www.pref.niigata.lg.jp/sec/kenko/corona-center.html,
+新潟県,Niigata,魚沼保健所,Uonuma Hokenjo,025-792-8612,Japanese,"Weekdays 8:30-17:15
+Weekends, Holidays 9:00-17:00",950-0926,新潟市中央区紫竹山3丁目3番11号,https://www.pref.niigata.lg.jp/sec/kenko/corona-center.html,
+新潟県,Niigata,魚沼保健所,Uonuma Hokenjo,025-792-1311,,Emergencies only after hours,950-0927,新潟市中央区紫竹山3丁目3番11号,https://www.pref.niigata.lg.jp/sec/kenko/corona-center.html,
+新潟県,Niigata,南魚沼保健所,Minamiuonuma Hokenjo,025-772-8142,Japanese,"Weekdays 8:30-17:15
+Weekends, Holidays 9:00-17:00",950-0928,新潟市中央区紫竹山3丁目3番11号,https://www.pref.niigata.lg.jp/sec/kenko/corona-center.html,
+新潟県,Niigata,南魚沼保健所,Minamiuonuma Hokenjo,025-772-2600,,Emergencies only after hours,950-0929,新潟市中央区紫竹山3丁目3番11号,https://www.pref.niigata.lg.jp/sec/kenko/corona-center.html,
+新潟県,Niigata,十日町保健所,Tookamachi Hokenjo,025-757-2401,Japanese,"Weekdays 8:30-17:15
+Weekends 9:00-17:00",950-0930,新潟市中央区紫竹山3丁目3番11号,https://www.pref.niigata.lg.jp/sec/kenko/corona-center.html,
+新潟県,Niigata,十日町保健所,Tookamachi Hokenjo,025-757-6346,,Emergencies only after hours,950-0931,新潟市中央区紫竹山3丁目3番11号,https://www.pref.niigata.lg.jp/sec/kenko/corona-center.html,
+新潟県,Niigata,柏崎保健所,Kashiwazaki Hokenjo,0257-22-4112,Japanese,"Weekdays 8:30-17:15
+Weekends 9:00-17:00",950-0932,新潟市中央区紫竹山3丁目3番11号,https://www.pref.niigata.lg.jp/sec/kenko/corona-center.html,
+新潟県,Niigata,柏崎保健所,Kashiwazaki Hokenjo,0257-21-6226,,Emergencies only after hours,950-0933,新潟市中央区紫竹山3丁目3番11号,https://www.pref.niigata.lg.jp/sec/kenko/corona-center.html,
+新潟県,Niigata,上越保健所,Jouetsu Hokenjo,025-524-6134,Japanese,"Weekdays 8:30-17:15
+Weekends 9:00-17:00",950-0934,新潟市中央区紫竹山3丁目3番11号,https://www.pref.niigata.lg.jp/sec/kenko/corona-center.html,
+新潟県,Niigata,上越保健所,Jouetsu Hokenjo,025-526-9317,,Emergencies only after hours,950-0935,新潟市中央区紫竹山3丁目3番11号,https://www.pref.niigata.lg.jp/sec/kenko/corona-center.html,
+新潟県,Niigata,糸魚川保健所,Itoigawa Hokenjo,025-553-1933,Japanese,"Weekdays 8:30-17:15
+Weekends 9:00-17:00",950-0936,新潟市中央区紫竹山3丁目3番11号,https://www.pref.niigata.lg.jp/sec/kenko/corona-center.html,
+新潟県,Niigata,糸魚川保健所,Itoigawa Hokenjo,025-552-0611,,Emergencies only after hours,950-0937,新潟市中央区紫竹山3丁目3番11号,https://www.pref.niigata.lg.jp/sec/kenko/corona-center.html,
+新潟県,Niigata,佐渡保健所,Sado Hokenjo,0259-74-3403,Japanese,"Weekdays 8:30-17:15
+Weekends 9:00-17:00",950-0938,新潟市中央区紫竹山3丁目3番11号,https://www.pref.niigata.lg.jp/sec/kenko/corona-center.html,
+新潟県,Niigata,佐渡保健所,Sado Hokenjo,0259-74-3312,,Emergencies only after hours,950-0939,新潟市中央区紫竹山3丁目3番11号,https://www.pref.niigata.lg.jp/sec/kenko/corona-center.html,
+新潟県,Niigata,"新潟県福祉保健部
+健康対策課",Niigata Ken Fukushi Hoken Bu Kenkou Taisaku Ka,025-280-5200,Japanese,"Weekdays 8:30-17:15
+Weekends 9:00-17:00",950-0940,新潟市中央区紫竹山3丁目3番11号,https://www.pref.niigata.lg.jp/sec/kenko/corona-center.html,
+新潟県,Niigata,"新潟県福祉保健部
+健康対策課",Niigata Ken Fukushi Hoken Bu Kenkou Taisaku Ka,025-285-5511,Japanese,Emergencies only after hours,950-0941,新潟市中央区紫竹山3丁目3番11号,https://www.pref.niigata.lg.jp/sec/kenko/corona-center.html,
+富山県,Toyama,富山市保健所,Toyama Shi Hokenjo,076-428-1152,Japanese,"Weekdays 9:00-17:00
+Emergencies only after hours",939-8588,富山県富山市蜷川459-1,http://www.pref.toyama.jp/cms_sec/1205/kj00021473.html,
+富山県,Toyama,新川厚生センター,Niikawa Kousei Senta-,0765-52-2647,Japanese,"Weekdays 9:00-17:00
+Emergencies only after hours",939-8589,富山県富山市蜷川459-2,http://www.pref.toyama.jp/cms_sec/1205/kj00021473.html,
+富山県,Toyama,新川厚生センター魚津支所,Niikawa Kousei Senta-,0765-24-0359,Japanese,"Weekdays 9:00-17:00
+Emergencies only after hours",939-8590,富山県富山市蜷川459-3,http://www.pref.toyama.jp/cms_sec/1205/kj00021473.html,
+富山県,Toyama,中部厚生センター,Chuubu Kousei Senta-,076-472-0637,Japanese,"Weekdays 9:00-17:00
+Emergencies only after hours",939-8591,富山県富山市蜷川459-4,http://www.pref.toyama.jp/cms_sec/1205/kj00021473.html,
+富山県,Toyama,高岡厚生センター,Takaoka Kousei Senta-,0766-26-8414,Japanese,"Weekdays 9:00-17:00
+Emergencies only after hours",939-8592,富山県富山市蜷川459-5,http://www.pref.toyama.jp/cms_sec/1205/kj00021473.html,
+富山県,Toyama,高岡厚生センター射水支所,Takaoka Kousei Senta,0766-56-2666,Japanese,"Weekdays 9:00-17:00
+Emergencies only after hours",939-8593,富山県富山市蜷川459-6,http://www.pref.toyama.jp/cms_sec/1205/kj00021473.html,
+富山県,Toyama,高岡厚生センター氷見支所,Takaoka Kousei Senta,0766-74-1780,Japanese,"Weekdays 9:00-17:00
+Emergencies only after hours",939-8594,富山県富山市蜷川459-7,http://www.pref.toyama.jp/cms_sec/1205/kj00021473.html,
+富山県,Toyama,砺波厚生センター,Tonami Kousei Senta,0763-22-3512,Japanese,"Weekdays 9:00-17:00
+Emergencies only after hours",939-8595,富山県富山市蜷川459-8,http://www.pref.toyama.jp/cms_sec/1205/kj00021473.html,
+富山県,Toyama,砺波厚生センター小矢部支所,Tonami Kousei Senta,0766-67-1070,Japanese,"Weekdays 9:00-17:00
+Emergencies only after hours",939-8596,富山県富山市蜷川459-9,http://www.pref.toyama.jp/cms_sec/1205/kj00021473.html,
+富山県,Toyama,富山市保健所,Toyama Shi Hokenjo,076-428-1152,Japanese,"Weekdays 9:00-17:00
+Emergencies only after hours",939-8597,富山県富山市蜷川459-10,http://www.pref.toyama.jp/cms_sec/1205/kj00021473.html,
+石川県,Ishikawa,石川県健康福祉部健康推進課,Ishikawa Ken Kenkou Fukushi Bu Kenkou Suishin Ka,076-225-1670,Japanese,Every day 24 hours,920-8580,石川県金沢市鞍月1丁目1番地,https://www.pref.ishikawa.lg.jp/kansen/corona.html,
+石川県,Ishikawa,南加賀保健福祉センター,Minami Kaga Hoken Fukushi Senta-,0761-22-0796,Japanese,Every day 24 hours,920-8581,石川県金沢市鞍月1丁目1番地,https://www.pref.ishikawa.lg.jp/kansen/corona.html,
+石川県,Ishikawa,石川中央保健福祉センター,Ishikawa Chuuou Hoken Fukushi Senta-,076-275-2250,Japanese,Every day 24 hours,920-8582,石川県金沢市鞍月1丁目1番地,https://www.pref.ishikawa.lg.jp/kansen/corona.html,
+石川県,Ishikawa,能登中部保健福祉センター,Noto Chuubu Hoken Fukushi Senta-,0767-53-2482,Japanese,Every day 24 hours,920-8583,石川県金沢市鞍月1丁目1番地,https://www.pref.ishikawa.lg.jp/kansen/corona.html,
+石川県,Ishikawa,能登北部保健福祉センター,Noto Hokubu Hoken Fukushi Senta-,0768-22-2011,Japanese,Every day 24 hours,920-8584,石川県金沢市鞍月1丁目1番地,https://www.pref.ishikawa.lg.jp/kansen/corona.html,
+石川県,Ishikawa,金沢市保健所,Kanazawa Shi Hokenjo,076-234-5106,Japanese,Every day 24 hours,920-8585,石川県金沢市鞍月1丁目1番地,https://www.pref.ishikawa.lg.jp/kansen/corona.html,
+福井県,Fukui,福井市保健所保健予防室,Fukui Shi Hokenjo Hoken Yobou Shitsu,0776-33-5184,Japanese,Weekdays 8:30-17:15,918-8004,福井市西木田2丁目8番8号,https://www.pref.fukui.lg.jp/doc/kenkou/kansensyo-yobousessyu/corona-denwa.html,
+福井県,Fukui,福井健康福祉センター,Fukui Kenkou Fukushi Senta-,0776-60-1125,Japanese,Weekdays 8:30-17:15,918-8005,福井市西木田2丁目8番8号,https://www.pref.fukui.lg.jp/doc/kenkou/kansensyo-yobousessyu/corona-denwa.html,
+福井県,Fukui,福井健康福祉センター,Fukui Kenkou Fukushi Senta-,0776-36-3429,Japanese,Weekdays 8:30-17:15,918-8006,福井市西木田2丁目8番8号,https://www.pref.fukui.lg.jp/doc/kenkou/kansensyo-yobousessyu/corona-denwa.html,
+福井県,Fukui,坂井健康福祉センター,Sakai Kenkou Fukushi Senta-,0776-73-0600,Japanese,Weekdays 8:30-17:15,918-8007,福井市西木田2丁目8番8号,https://www.pref.fukui.lg.jp/doc/kenkou/kansensyo-yobousessyu/corona-denwa.html,
+福井県,Fukui,坂井健康福祉センター,Sakai Kenkou Fukushi Senta-,0776-73-0626,Japanese,Weekdays 8:30-17:15,918-8008,福井市西木田2丁目8番8号,https://www.pref.fukui.lg.jp/doc/kenkou/kansensyo-yobousessyu/corona-denwa.html,
+福井県,Fukui,奥越健康福祉センター,Okuetsu Kenkou Fukushi Senta-,0779-66-2076,Japanese,Weekdays 8:30-17:15,918-8009,福井市西木田2丁目8番8号,https://www.pref.fukui.lg.jp/doc/kenkou/kansensyo-yobousessyu/corona-denwa.html,
+福井県,Fukui,奥越健康福祉センター,Okuetsu Kenkou Fukushi Senta-,0779-64-5774,Japanese,Weekdays 8:30-17:15,918-8010,福井市西木田2丁目8番8号,https://www.pref.fukui.lg.jp/doc/kenkou/kansensyo-yobousessyu/corona-denwa.html,
+福井県,Fukui,丹南健康福祉センター,Tan'nan Kenkou Fukushi Senta-,0778-51-0034,Japanese,Weekdays 8:30-17:15,918-8011,福井市西木田2丁目8番8号,https://www.pref.fukui.lg.jp/doc/kenkou/kansensyo-yobousessyu/corona-denwa.html,
+福井県,Fukui,二州健康福祉センター,Ni Shuu Kenkou Fukushi Senta-,0770-22-3747,Japanese,Weekdays 8:30-17:15,918-8012,福井市西木田2丁目8番8号,https://www.pref.fukui.lg.jp/doc/kenkou/kansensyo-yobousessyu/corona-denwa.html,
+福井県,Fukui,二州健康福祉センター,Ni Shuu Kenkou Fukushi Senta-,0770-22-3735,Japanese,Weekdays 8:30-17:15,918-8013,福井市西木田2丁目8番8号,https://www.pref.fukui.lg.jp/doc/kenkou/kansensyo-yobousessyu/corona-denwa.html,
+福井県,Fukui,若狭健康福祉センター,Wakasa Kenkou Fukushi Senta-,0770-52-1300,Japanese,Weekdays 8:30-17:15,918-8014,福井市西木田2丁目8番8号,https://www.pref.fukui.lg.jp/doc/kenkou/kansensyo-yobousessyu/corona-denwa.html,
+福井県,Fukui,若狭健康福祉センター,Wakasa Kenkou Fukushi Senta-,0770-52-1483,Japanese,Weekdays 8:30-17:15,918-8015,福井市西木田2丁目8番8号,https://www.pref.fukui.lg.jp/doc/kenkou/kansensyo-yobousessyu/corona-denwa.html,
+山梨県,Yamanashi,甲府市保健所,Koufu Shi Hokenjo,055-237-8952,Japanese,"Weekdays 9:00-17:00
+Emergencies only after hours",400-8501,山梨県甲府市丸の内1-6-1,https://www.pref.yamanashi.jp/koucho/coronavirus/info_coronavirus.html,
+山梨県,Yamanashi,中北保健所,Nakakita Hokenjo,0551-23-3074,Japanese,"Weekdays 9:00-17:00
+Emergencies only after hours",400-8501,山梨県甲府市丸の内1-6-2,https://www.pref.yamanashi.jp/koucho/coronavirus/info_coronavirus.html,
+山梨県,Yamanashi,峡東保健所,Kyoutou Hokenjo,0553-20-2752,Japanese,"Weekdays 9:00-17:00
+Emergencies only after hours",400-8501,山梨県甲府市丸の内1-6-3,https://www.pref.yamanashi.jp/koucho/coronavirus/info_coronavirus.html,
+山梨県,Yamanashi,峡南保健所,Kyounan Hokenjo,0556-22-8158,Japanese,"Weekdays 9:00-17:00
+Emergencies only after hours",400-8501,山梨県甲府市丸の内1-6-4,https://www.pref.yamanashi.jp/koucho/coronavirus/info_coronavirus.html,
+山梨県,Yamanashi,富士・東部保健所,Fuji ・ Toubu Hokenjo,0555-24-9035,Japanese,"Weekdays 9:00-17:00
+Emergencies only after hours",400-8501,山梨県甲府市丸の内1-6-5,https://www.pref.yamanashi.jp/koucho/coronavirus/info_coronavirus.html,
+長野県,Nagano,長野市保健所,Nagano Shi Hokenjo,026-226-9964,Japanese,Weekdays 8:30-17:15,380-8570,長野県長野市大字南長野字幅下692-2,https://www.pref.nagano.lg.jp/hoken-shippei/kenko/kenko/kansensho/joho/corona-soudan.html#soudan,
+長野県,Nagano,長野市保健所,Nagano Shi Hokenjo,026-226-4911,Japanese,"Weekends, Holidays 17:15-8:30",380-8571,長野県長野市大字南長野字幅下692-3,https://www.pref.nagano.lg.jp/hoken-shippei/kenko/kenko/kansensho/joho/corona-soudan.html#soudan,
+長野県,Nagano,佐久保健福祉事務所,Sakubo Hoken Fukushi Jimusho,0267-63-3164,Japanese,Every day 24 hours,380-8572,長野県長野市大字南長野字幅下692-4,https://www.pref.nagano.lg.jp/hoken-shippei/kenko/kenko/kansensho/joho/corona-soudan.html#soudan,
+長野県,Nagano,上田保健福祉事務所,Ueda Hoken Fukushi Jimusho,0268-25-7135,Japanese,Every day 24 hours,380-8574,長野県長野市大字南長野字幅下692-6,https://www.pref.nagano.lg.jp/hoken-shippei/kenko/kenko/kansensho/joho/corona-soudan.html#soudan,
+長野県,Nagano,諏訪保健福祉事務所,Suwa Hoken Fukushi Jimusho,0266-57-2927,Japanese,Every day 24 hours,380-8576,長野県長野市大字南長野字幅下692-8,https://www.pref.nagano.lg.jp/hoken-shippei/kenko/kenko/kansensho/joho/corona-soudan.html#soudan,
+長野県,Nagano,伊那保健福祉事務所,Ina Hoken Fukushi Jimusho,0265-76-6837,Japanese,Every day 24 hours,380-8578,長野県長野市大字南長野字幅下692-10,https://www.pref.nagano.lg.jp/hoken-shippei/kenko/kenko/kansensho/joho/corona-soudan.html#soudan,
+長野県,Nagano,飯田保健福祉事務所,Iida Hoken Fukushi Jimusho,0265-53-0435,Japanese,Every day 24 hours,380-8580,長野県長野市大字南長野字幅下692-12,https://www.pref.nagano.lg.jp/hoken-shippei/kenko/kenko/kansensho/joho/corona-soudan.html#soudan,
+長野県,Nagano,木曽保健福祉事務所,Kiso Hoken Fukushi Jimusho,0264-25-2233,Japanese,Every day 24 hours,380-8582,長野県長野市大字南長野字幅下692-14,https://www.pref.nagano.lg.jp/hoken-shippei/kenko/kenko/kansensho/joho/corona-soudan.html#soudan,
+長野県,Nagano,松本保健福祉事務所,Matsumoto Hoken Fukushi Jimusho,0263-40-1939,Japanese,Every day 24 hours,380-8584,長野県長野市大字南長野字幅下692-16,https://www.pref.nagano.lg.jp/hoken-shippei/kenko/kenko/kansensho/joho/corona-soudan.html#soudan,
+長野県,Nagano,大町保健福祉事務所,Oomachi Hoken Fukushi Jimusho,0261-23-6560,Japanese,Every day 24 hours,380-8586,長野県長野市大字南長野字幅下692-18,https://www.pref.nagano.lg.jp/hoken-shippei/kenko/kenko/kansensho/joho/corona-soudan.html#soudan,
+長野県,Nagano,長野保健福祉事務所,Nagano Hoken Fukushi Jimusho,026-225-9039,Japanese,Every day 24 hours,380-8588,長野県長野市大字南長野字幅下692-20,https://www.pref.nagano.lg.jp/hoken-shippei/kenko/kenko/kansensho/joho/corona-soudan.html#soudan,
+長野県,Nagano,北信保健福祉事務所,Hokushin Hoken Fukushi Jimusho,0269-62-6104,Japanese,Every day 24 hours,380-8590,長野県長野市大字南長野字幅下692-22,https://www.pref.nagano.lg.jp/hoken-shippei/kenko/kenko/kansensho/joho/corona-soudan.html#soudan,
+岐阜県,Gifu,岐阜保健所,Gifu Hokenjo,058-380-3004,Japanese,Weekdays 8:30-17:15,504-0838,各務原市那加不動丘1-1,https://www.pref.gifu.lg.jp/kinkyu-juyo-joho/shingata_corona.data/kikokusya_sessyokusyasoudan_2_6.pdf,
+岐阜県,Gifu,西濃保健所,Seinou Hokenjo,0584-73-1111,Japanese,Weekdays 8:30-17:15,504-0839,各務原市那加不動丘1-1,https://www.pref.gifu.lg.jp/kinkyu-juyo-joho/shingata_corona.data/kikokusya_sessyokusyasoudan_2_6.pdf,
+岐阜県,Gifu,関保健所,Seki Hokenjo,0575-33-4011,Japanese,Weekdays 8:30-17:15,504-0840,各務原市那加不動丘1-1,https://www.pref.gifu.lg.jp/kinkyu-juyo-joho/shingata_corona.data/kikokusya_sessyokusyasoudan_2_6.pdf,
+岐阜県,Gifu,可茂保健所,Kamo Hokenjo,0574-25-3111,Japanese,Weekdays 8:30-17:15,504-0841,各務原市那加不動丘1-1,https://www.pref.gifu.lg.jp/kinkyu-juyo-joho/shingata_corona.data/kikokusya_sessyokusyasoudan_2_6.pdf,
+岐阜県,Gifu,東濃保健所,Tounou Hokenjo,0572-23-1111,Japanese,Weekdays 8:30-17:15,504-0842,各務原市那加不動丘1-1,https://www.pref.gifu.lg.jp/kinkyu-juyo-joho/shingata_corona.data/kikokusya_sessyokusyasoudan_2_6.pdf,
+岐阜県,Gifu,恵那保健所,Ena Hokenjo,0573-26-1111,Japanese,Weekdays 8:30-17:15,504-0843,各務原市那加不動丘1-1,https://www.pref.gifu.lg.jp/kinkyu-juyo-joho/shingata_corona.data/kikokusya_sessyokusyasoudan_2_6.pdf,
+岐阜県,Gifu,飛騨保健所,Hida Hokenjo,0577-33-1111,Japanese,Weekdays 8:30-17:15,504-0844,各務原市那加不動丘1-1,https://www.pref.gifu.lg.jp/kinkyu-juyo-joho/shingata_corona.data/kikokusya_sessyokusyasoudan_2_6.pdf,
+岐阜県,Gifu,岐阜市保健所地域保健課,Gifu Shi Hokenjo Chiiki Hoken Ka,058-252-7191,Japanese,Weekdays 8:30-17:15,504-0845,各務原市那加不動丘1-1,https://www.pref.gifu.lg.jp/kinkyu-juyo-joho/shingata_corona.data/kikokusya_sessyokusyasoudan_2_6.pdf,
+静岡県,Shizuoka,静岡市保健所,Shizuoka Shi Hokenjo,054-249-2221,Japanese,Every day 24 hours,420-8601,静岡県静岡市葵区追手町9番6号,http://www.pref.shizuoka.jp/kousei/ko-420a/kansen/new-cov.html,
+静岡県,Shizuoka,賀茂保健所,Kamo Hokenjo,0558-24-2052,Japanese,Weekdays 8:30-17:15,420-8602,静岡県静岡市葵区追手町9番6号,http://www.pref.shizuoka.jp/kousei/ko-420a/kansen/new-cov.html,
+静岡県,Shizuoka,賀茂保健所,Kamo Hokenjo,090-3309-6707,Japanese,"Weekdays 17:15-8:30
+Weekends, Holidays 17:15-8:30",420-8603,静岡県静岡市葵区追手町9番6号,http://www.pref.shizuoka.jp/kousei/ko-420a/kansen/new-cov.html,
+静岡県,Shizuoka,熱海保健所,Atami Hokenjo,0557-82-9125,Japanese,Weekdays 8:30-17:15,420-8604,静岡県静岡市葵区追手町9番6号,http://www.pref.shizuoka.jp/kousei/ko-420a/kansen/new-cov.html,
+静岡県,Shizuoka,熱海保健所,Atami Hokenjo,090-3309-6707,Japanese,"Weekdays 17:15-8:30
+Weekends, Holidays 17:15-8:30",420-8605,静岡県静岡市葵区追手町9番6号,http://www.pref.shizuoka.jp/kousei/ko-420a/kansen/new-cov.html,
+静岡県,Shizuoka,東部保健所,Toubu Hokenjo,090-7038-4727,Japanese,Weekdays 8:30-17:15,420-8606,静岡県静岡市葵区追手町9番6号,http://www.pref.shizuoka.jp/kousei/ko-420a/kansen/new-cov.html,
+静岡県,Shizuoka,東部保健所,Toubu Hokenjo,090-3309-6707,Japanese,"Weekdays 17:15-8:30
+Weekends, Holidays 17:15-8:30",420-8607,静岡県静岡市葵区追手町9番6号,http://www.pref.shizuoka.jp/kousei/ko-420a/kansen/new-cov.html,
+静岡県,Shizuoka,御殿場保健所,Gotenba Hokenjo,0550-82-1224,Japanese,Weekdays 8:30-17:15,420-8608,静岡県静岡市葵区追手町9番6号,http://www.pref.shizuoka.jp/kousei/ko-420a/kansen/new-cov.html,
+静岡県,Shizuoka,御殿場保健所,Gotenba Hokenjo,090-3309-6707,Japanese,"Weekdays 17:15-8:30
+Weekends, Holidays 17:15-8:30",420-8609,静岡県静岡市葵区追手町9番6号,http://www.pref.shizuoka.jp/kousei/ko-420a/kansen/new-cov.html,
+静岡県,Shizuoka,富士保健所,Fuji Hokenjo,0545-65-2156,Japanese,Weekdays 8:30-17:15,420-8610,静岡県静岡市葵区追手町9番6号,http://www.pref.shizuoka.jp/kousei/ko-420a/kansen/new-cov.html,
+静岡県,Shizuoka,富士保健所,Fuji Hokenjo,090-3309-6707,Japanese,"Weekdays 17:15-8:30
+Weekends, Holidays 17:15-8:30",420-8611,静岡県静岡市葵区追手町9番6号,http://www.pref.shizuoka.jp/kousei/ko-420a/kansen/new-cov.html,
+静岡県,Shizuoka,中部保健所,Chuubu Hokenjo,054-625-7084,Japanese,Weekdays 8:30-17:15,420-8612,静岡県静岡市葵区追手町9番6号,http://www.pref.shizuoka.jp/kousei/ko-420a/kansen/new-cov.html,
+静岡県,Shizuoka,中部保健所,Chuubu Hokenjo,090-3309-6707,Japanese,"Weekdays 17:15-8:30
+Weekends, Holidays 17:15-8:30",420-8613,静岡県静岡市葵区追手町9番6号,http://www.pref.shizuoka.jp/kousei/ko-420a/kansen/new-cov.html,
+静岡県,Shizuoka,西部保健所,Seibu Hokenjo,0538-37-2255,Japanese,Weekdays 8:30-17:15,420-8614,静岡県静岡市葵区追手町9番6号,http://www.pref.shizuoka.jp/kousei/ko-420a/kansen/new-cov.html,
+静岡県,Shizuoka,西部保健所,Seibu Hokenjo,090-3309-6707,Japanese,"Weekdays 17:15-8:30
+Weekends, Holidays 17:15-8:30",420-8615,静岡県静岡市葵区追手町9番6号,http://www.pref.shizuoka.jp/kousei/ko-420a/kansen/new-cov.html,
+静岡県,Shizuoka,浜松市保健所,Hamamatsu Shi Hokenjo,053-453-6118,Japanese,Every day 24 hours,420-8616,静岡県静岡市葵区追手町9番6号,http://www.pref.shizuoka.jp/kousei/ko-420a/kansen/new-cov.html,
+愛知県,Aichi,一宮保健所,Ichinomiya Hokenjo,0586-72-1699,Japanese,"Weekdays 9:00-17:00
+Emergencies only after hours",460-8502,名古屋市中区三の丸三丁目1番2号,https://www.pref.aichi.jp/site/covid19-aichi/soudan.html#kikokusya,
+愛知県,Aichi,瀬戸保健所,Seto Hokenjo,0561-21-1699,Japanese,"Weekdays 9:00-17:00
+Emergencies only after hours",460-8503,名古屋市中区三の丸三丁目1番2号,https://www.pref.aichi.jp/site/covid19-aichi/soudan.html#kikokusya,
+愛知県,Aichi,春日井保健所,Kasugai Hokenjo,0568-31-2189,Japanese,"Weekdays 9:00-17:00
+Emergencies only after hours",460-8504,名古屋市中区三の丸三丁目1番2号,https://www.pref.aichi.jp/site/covid19-aichi/soudan.html#kikokusya,
+愛知県,Aichi,江南保健所,Kounan Hokenjo,0587-55-1699,Japanese,"Weekdays 9:00-17:00
+Emergencies only after hours",460-8505,名古屋市中区三の丸三丁目1番2号,https://www.pref.aichi.jp/site/covid19-aichi/soudan.html#kikokusya,
+愛知県,Aichi,清須保健所,Kiyosu Hokenjo,052-400-2499,Japanese,"Weekdays 9:00-17:00
+Emergencies only after hours",460-8506,名古屋市中区三の丸三丁目1番2号,https://www.pref.aichi.jp/site/covid19-aichi/soudan.html#kikokusya,
+愛知県,Aichi,津島保健所,Tsushima Hokenjo,0567-24-6999,Japanese,"Weekdays 9:00-17:00
+Emergencies only after hours",460-8507,名古屋市中区三の丸三丁目1番2号,https://www.pref.aichi.jp/site/covid19-aichi/soudan.html#kikokusya,
+愛知県,Aichi,半田保健所,Handa Hokenjo,0569-21-3342,Japanese,"Weekdays 9:00-17:00
+Emergencies only after hours",460-8508,名古屋市中区三の丸三丁目1番2号,https://www.pref.aichi.jp/site/covid19-aichi/soudan.html#kikokusya,
+愛知県,Aichi,知多保健所,Chita Hokenjo,0562-32-1699,Japanese,"Weekdays 9:00-17:00
+Emergencies only after hours",460-8509,名古屋市中区三の丸三丁目1番2号,https://www.pref.aichi.jp/site/covid19-aichi/soudan.html#kikokusya,
+愛知県,Aichi,衣浦東部保健所,Kinuura Toubu Hokenjo,0566-22-1699,Japanese,"Weekdays 9:00-17:00
+Emergencies only after hours",460-8510,名古屋市中区三の丸三丁目1番2号,https://www.pref.aichi.jp/site/covid19-aichi/soudan.html#kikokusya,
+愛知県,Aichi,西尾保健所,Nishio Hokenjo,0563-54-1299,Japanese,"Weekdays 9:00-17:00
+Emergencies only after hours",460-8511,名古屋市中区三の丸三丁目1番2号,https://www.pref.aichi.jp/site/covid19-aichi/soudan.html#kikokusya,
+愛知県,Aichi,新城保健所,Shinjou Hokenjo,0536-23-5999,Japanese,"Weekdays 9:00-17:00
+Emergencies only after hours",460-8512,名古屋市中区三の丸三丁目1番2号,https://www.pref.aichi.jp/site/covid19-aichi/soudan.html#kikokusya,
+愛知県,Aichi,豊川保健所,Toyokawa Hokenjo,0533-86-3177,Japanese,"Weekdays 9:00-17:00
+Emergencies only after hours",460-8513,名古屋市中区三の丸三丁目1番2号,https://www.pref.aichi.jp/site/covid19-aichi/soudan.html#kikokusya,
+愛知県,Aichi,千種保健センター,Chikusa Hoken Senta-,052-753-1982,Japanese,Weekdays 9:00-17:30,460-8501,名古屋市中区三の丸三丁目1番2号,https://www.pref.aichi.jp/site/covid19-aichi/soudan.html#kikokusya,
+愛知県,Aichi,東保健センター,Higashi Hoken Senta-,052-934-1218,Japanese,Weekdays 9:00-17:30,460-8514,名古屋市中区三の丸三丁目1番2号,https://www.pref.aichi.jp/site/covid19-aichi/soudan.html#kikokusya,
+愛知県,Aichi,北保健センター,Kita Hoken Senta-,052-917-6552,Japanese,Weekdays 9:00-17:30,460-8515,名古屋市中区三の丸三丁目1番2号,https://www.pref.aichi.jp/site/covid19-aichi/soudan.html#kikokusya,
+愛知県,Aichi,西保健センター,Nishi Hoken Senta-,052-523-4618,Japanese,Weekdays 9:00-17:30,460-8516,名古屋市中区三の丸三丁目1番2号,https://www.pref.aichi.jp/site/covid19-aichi/soudan.html#kikokusya,
+愛知県,Aichi,中村保健センター,Nakamura Hoken Senta-,052-481-2295,Japanese,Weekdays 9:00-17:30,460-8517,名古屋市中区三の丸三丁目1番2号,https://www.pref.aichi.jp/site/covid19-aichi/soudan.html#kikokusya,
+愛知県,Aichi,中保健センター,Naka Hoken Senta-,052-265-2262,Japanese,Weekdays 9:00-17:30,460-8518,名古屋市中区三の丸三丁目1番2号,https://www.pref.aichi.jp/site/covid19-aichi/soudan.html#kikokusya,
+愛知県,Aichi,中保健センター,Naka Hoken Senta-,052-241-3612,Japanese,"Weekends, Holidays 17:15-8:30",460-8519,名古屋市中区三の丸三丁目1番2号,https://www.pref.aichi.jp/site/covid19-aichi/soudan.html#kikokusya,
+愛知県,Aichi,昭和保健センター,Shouwa Hoken Senta-,052-735-3964,Japanese,Weekdays 9:00-17:30,460-8519,名古屋市中区三の丸三丁目1番2号,https://www.pref.aichi.jp/site/covid19-aichi/soudan.html#kikokusya,
+愛知県,Aichi,瑞穂保健センター,Mizuho Hoken Senta-,052-837-3264,Japanese,Weekdays 9:00-17:30,460-8520,名古屋市中区三の丸三丁目1番2号,https://www.pref.aichi.jp/site/covid19-aichi/soudan.html#kikokusya,
+愛知県,Aichi,熱田保健センター,Atsuta Hoken Senta-,052-683-9683,Japanese,Weekdays 9:00-17:30,460-8521,名古屋市中区三の丸三丁目1番2号,https://www.pref.aichi.jp/site/covid19-aichi/soudan.html#kikokusya,
+愛知県,Aichi,中川保健センター,Nakagawa Hoken Senta-,052-363-4463,Japanese,Weekdays 9:00-17:30,460-8522,名古屋市中区三の丸三丁目1番2号,https://www.pref.aichi.jp/site/covid19-aichi/soudan.html#kikokusya,
+愛知県,Aichi,港保健センター,Minato Hoken Senta-,052-651-6537,Japanese,Weekdays 9:00-17:30,460-8523,名古屋市中区三の丸三丁目1番2号,https://www.pref.aichi.jp/site/covid19-aichi/soudan.html#kikokusya,
+愛知県,Aichi,南保健センター,Minami Hoken Senta-,052-614-2814,Japanese,Weekdays 9:00-17:30,460-8524,名古屋市中区三の丸三丁目1番2号,https://www.pref.aichi.jp/site/covid19-aichi/soudan.html#kikokusya,
+愛知県,Aichi,守山保健センター,Moriyama Hoken Senta-,052-796-4623,Japanese,Weekdays 9:00-17:30,460-8525,名古屋市中区三の丸三丁目1番2号,https://www.pref.aichi.jp/site/covid19-aichi/soudan.html#kikokusya,
+愛知県,Aichi,緑保健センター,Midori Hoken Senta-,052-891-3623,Japanese,Weekdays 9:00-17:30,460-8526,名古屋市中区三の丸三丁目1番2号,https://www.pref.aichi.jp/site/covid19-aichi/soudan.html#kikokusya,
+愛知県,Aichi,名東保健センター,Meitou Hoken Senta-,052-778-3114,Japanese,Weekdays 9:00-17:30,460-8527,名古屋市中区三の丸三丁目1番2号,https://www.pref.aichi.jp/site/covid19-aichi/soudan.html#kikokusya,
+愛知県,Aichi,天白保健センター,Tenpaku Hoken Senta-,052-807-3912,Japanese,Weekdays 9:00-17:30,460-8528,名古屋市中区三の丸三丁目1番2号,https://www.pref.aichi.jp/site/covid19-aichi/soudan.html#kikokusya,
+愛知県,Aichi,中保健センター,Naka Hoken Senta-,052-241-3612,Japanese,Weekdays 9:00-17:30,460-8529,名古屋市中区三の丸三丁目1番2号,https://www.pref.aichi.jp/site/covid19-aichi/soudan.html#kikokusya,
+愛知県,Aichi,豊橋市保健所,Toyohashi Shi Hokenjo,0532-39-9104,Japanese,"Weekdays 9:00-17:00
+Emergencies only after hours",460-8530,名古屋市中区三の丸三丁目1番2号,https://www.pref.aichi.jp/site/covid19-aichi/soudan.html#kikokusya,
+愛知県,Aichi,岡崎市保健所,Okazaki Shi Hokenjo,0564-23-5074,Japanese,"Weekdays 9:00-17:00
+Emergencies only after hours",460-8531,名古屋市中区三の丸三丁目1番2号,https://www.pref.aichi.jp/site/covid19-aichi/soudan.html#kikokusya,
+愛知県,Aichi,豊田市保健所,Toyoda Shi Hokenjo,0565-34-6586,Japanese,Weekdays 9:00-17:00,460-8532,名古屋市中区三の丸三丁目1番2号,https://www.pref.aichi.jp/site/covid19-aichi/soudan.html#kikokusya,
+愛知県,Aichi,豊田市保健所,Toyoda Shi Hokenjo,0565-31-1212,Japanese,"Weekdays 17:00-9:00
+Weekends, Holidays 24 hours",460-8533,名古屋市中区三の丸三丁目1番2号,https://www.pref.aichi.jp/site/covid19-aichi/soudan.html#kikokusya,
