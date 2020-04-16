@@ -35,5 +35,14 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@testing-library/dom": "^7.2.1",
+    "bootstrap": "^4.4.1",
+    "jquery": "1.9.1",
+    "popper.js": "^1.16.0",
+    "rambda": "^5.1.0",
+    "react-bootstrap": "^1.0.0",
+    "turbocommons-ts": "^3.1.0"
   }
 }
