@@ -1,6 +1,6 @@
 {
   "name": "covid19-hotlines-jp",
-  "homepage": "http://underspecified.github.io/covid19-hotlines-jp",
+  "homepage": "https://underspecified.github.io/covid19-hotlines-jp",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
