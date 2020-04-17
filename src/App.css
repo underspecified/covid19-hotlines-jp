@@ -11,6 +11,8 @@
   color: white;
   padding: 0 1.5rem 0.01rem;
   margin-bottom: 1.5rem;
+  justify-content: center;
+  text-align: center;
 }
 
 .jumbotron h1, p {
@@ -23,7 +25,7 @@
 
 .area, .hotline, .hours li {
   padding-left: 1.5rem;
-  padding-right: 0.5rem;
+  padding-right: 1.0rem;
 }
 
 .area ul {
