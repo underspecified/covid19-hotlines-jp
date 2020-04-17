@@ -94,8 +94,8 @@ function App() {
     <div className="App">
       {/*<header className="App-header">*/}
         <Jumbotron fluid>
-          <h1>{tx('COVID-19 Hotlines in Japan')}</h1>
-          {/*<p>#COVID19HotlinesJp</p>*/}
+          <h1>COVID-19 Hotlines in Japan</h1>
+          <p>{tx('新型コロナウィルス対策に役立つ情報')}</p>
         </Jumbotron>
       {/*</header>*/}
       {hotlineElems}
