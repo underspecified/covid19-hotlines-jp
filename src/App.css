@@ -1,62 +1,36 @@
-/**/:root{}
+/*.App {*/
+/*  !*text-align: center;*!*/
+/*}*/
 
-.App {
-  /*margin: 0;*/
-  /*padding: 0;*/
-  /*text-align: center;*/
-}
-
-.App-header {
-  display: flex;
-  flex-direction: column;
-  /*justify-content: center;*/
-}
+/*.App-header {*/
+/*  !*justify-content: center;*!*/
+/*}*/
 
 .jumbotron {
   background-color: var(--main-color);
   color: white;
-  /*margin: 0;*/
   padding: 0 1.5rem 0.01rem;
+  margin-bottom: 1.5rem;
 }
 
 .jumbotron h1, p {
     font-style: italic;
   }
 
-/* small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) { }
-
-/* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) { }
-
-/* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) { }
-
-/* Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {  }
-
-.area {
-  /*margin-top: 10px;*/
-  margin: 0;
-  padding: 0;
-}
-
 .hotline {
-  margin-bottom: 15px;
+  margin-bottom: 0.75rem;
 }
 
+.area, .hotline, .hours li {
+  padding-left: 1.5rem;
+  padding-right: 0.5rem;
+}
 
-/*ul {*/
-/*  margin: 0;*/
-/*  padding: 0;*/
-/*}*/
+.area ul {
+  margin-left: 0;
+  padding-left: 0;
+}
 
-li {
+.area li {
   list-style-type: none;
-  //margin: 0;
-}
-
-li a {
-  color: var(--main-color);
-  text-decoration: underline !important;
 }

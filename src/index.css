@@ -15,3 +15,8 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+li a {
+  color: var(--main-color);
+  text-decoration: underline !important;
+}
