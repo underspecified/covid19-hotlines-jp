@@ -18,7 +18,7 @@ const makeId = (s: string): string =>
   )
 
 function App() {
-  const lang: string = 'ja'
+  const lang = 'en'
   const tx = R.partial(_tx, lang)
 
   const makeLi = (
