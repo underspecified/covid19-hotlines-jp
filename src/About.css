@@ -1,5 +1,5 @@
-.hotline {
-  margin-bottom: 0.75rem;
+.about {
+    margin: 0 1.5rem !important;
 }
 
 .area, .hotline, .hours li {
@@ -12,6 +12,6 @@
   padding-left: 0;
 }
 
-.area li {
-  list-style-type: none;
-}
+/*.area li {*/
+/*  list-style-type: none;*/
+/*}*/

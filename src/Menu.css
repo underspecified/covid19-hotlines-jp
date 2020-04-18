@@ -1,16 +1,16 @@
-.navbar {
+.menu .navbar {
   background-color: var(--main-color) !important;
 }
 
-.nav-link {
-    text-decoration: none !important;
+.menu .nav-link {
+  text-decoration: none !important;
 }
 
-a {
+.menu a {
     text-decoration: none;
 }
 
-.nav-item li {
+.menu .nav-item li {
     color: white;
 }
 
@@ -32,3 +32,16 @@ a {
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {  }
+
+.menu .jumbotron {
+  background-color: var(--main-color) !important;
+  color: white;
+  padding: 0 1.5rem 0.01rem;
+  margin-bottom: 1.5rem;
+  justify-content: center;
+  text-align: center;
+}
+
+.menu .jumbotron h1, .menu .jumbotron p {
+  font-style: italic;
+}

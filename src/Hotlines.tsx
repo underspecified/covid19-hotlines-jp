@@ -1,5 +1,4 @@
 import React from "react"
-import { Jumbotron } from "react-bootstrap"
 import * as R from "rambda"
 import { StringUtils } from "turbocommons-ts"
 
@@ -23,9 +22,9 @@ const urls: Record<string, string> =
     webpages.map(d => [d['pref_ja'], d['url']])
   )
 
-function App(): JSX.Element {
-  const lang: string = 'en'
-  const tx = R.partial(_tx, lang)
+function Hotlines(props: { lang: string }): JSX.Element {
+  // const lang: string = 'en'
+  const tx = R.partial(_tx, props.lang)
 
   const makeLi = (
     label: string,
@@ -34,7 +33,7 @@ function App(): JSX.Element {
     <li>{tx(label)}: {content}</li>
 
   const makeProviderLi = (h: Hotline): JSX.Element => {
-    const center = (lang === 'en') ? h.center_en : h.center_ja
+    const center = (props.lang === 'en') ? h.center_en : h.center_ja
     const provider = h.url ?
       <a href={h.url} target="_blank" rel="noopener noreferrer">{center}</a> :
       center
@@ -77,9 +76,6 @@ function App(): JSX.Element {
   }
 
   const hotline2Element = (h: Hotline): JSX.Element => {
-    // const fs = (lang === 'en') && h.lang ?
-    //   [makeProviderLi, makeContactLi, makeHoursLi, makeLangLi] :
-    //   [makeProviderLi, makeContactLi, makeHoursLi]
     const fs = [makeProviderLi, makeContactLi, makeHoursLi, makeLangLi]
     const lis = fs.map(f => f(h))
 
@@ -110,16 +106,10 @@ function App(): JSX.Element {
     Object.values(R.map(area2Element, hotlines.area))
   
   return (
-    <div className="App">
-      {/*<header className="App-header">*/}
-        <Jumbotron fluid>
-          <h1>COVID-19 Hotlines in Japan</h1>
-          <p>{tx('新型コロナウィルス対策に役立つ情報')}</p>
-        </Jumbotron>
-      {/*</header>*/}
+    <div className="Hotlines">
       {hotlineElems}
     </div>
   )
 }
 
-export default App
+export default Hotlines
