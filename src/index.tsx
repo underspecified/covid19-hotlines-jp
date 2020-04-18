@@ -1,14 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import Hotlines from './Hotlines';
 import Menu from "./Menu";
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
   <React.StrictMode>
     <Menu />
-    <App />
+    <Hotlines />
   </React.StrictMode>,
   document.getElementById('root')
 );

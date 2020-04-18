@@ -3,12 +3,12 @@ import { Jumbotron } from "react-bootstrap"
 import * as R from "rambda"
 import { StringUtils } from "turbocommons-ts"
 
-import "bootstrap/dist/css/bootstrap.min.css"
-
 import hotlines from "./data/all.json"
 import { Hotline } from "./hotline"
 import { tx as _tx } from "./translate"
-import "./App.css"
+
+import "bootstrap/dist/css/bootstrap.min.css"
+import "./Hotlines.css"
 
 const makeId = (s: string): string =>
   StringUtils.formatCase(
@@ -17,7 +17,7 @@ const makeId = (s: string): string =>
   )
 
 function App() {
-  const lang: string = 'ja'
+  const lang: string = 'en'
   const tx = R.partial(_tx, lang)
 
   const makeLi = (
@@ -101,7 +101,7 @@ function App() {
       {/*</header>*/}
       {hotlineElems}
     </div>
-  );
+  )
 }
 
 export default App
