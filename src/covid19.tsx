@@ -67,8 +67,7 @@ const makeSymptomsJa = () => {
       </ul>
 
       <p>
-        <a href="#hotlines">このリンクをクリックすると、各都道府県のセンターの情報が
-          見られます。</a>
+        <a href="#hotlines">このリンクをクリックすると、各都道府県のセンターの情報が見られます。</a>
       </p>
     </div>
   )
@@ -198,7 +197,7 @@ class Covid19 extends React.Component<{ lang: string }, IState> {
 
   render() {
     return (
-      makeCovid19("en")
+      makeCovid19("ja")
     )
   }
 }
