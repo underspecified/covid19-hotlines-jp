@@ -1,9 +1,7 @@
 import React from "react"
-import * as R from "rambda"
 
-import About from "./About";
-import Hotlines from "./Hotlines"
-import Menu from "./Menu";
+import Covid19 from "./Covid19"
+import Menu from "./Menu"
 
 import "bootstrap/dist/css/bootstrap.min.css"
 import "./Hotlines.css"
@@ -15,7 +13,7 @@ function App(props: { lang: string }): JSX.Element {
   return (
     <div className="App">
       <Menu lang="en" />
-      <About lang="en" />
+      <Covid19 lang="en" />
     </div>
   )
 }
