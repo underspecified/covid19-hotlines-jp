@@ -1,0 +1,7 @@
+MeCab
+bs4
+genmonads
+html_table_extractor
+jaconv
+requests
+romkan
