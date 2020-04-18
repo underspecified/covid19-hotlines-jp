@@ -1,3 +1,4 @@
+/* eslint-disable */
 const fs = require('fs')
 const fetch = require('node-fetch')
 const iconv = require('iconv-lite')
@@ -27,52 +28,52 @@ exports.decodeCSV = function (s) {
   const len = s.length
   for (let i = 0; i < len; i++) {
     let c = s.charAt(i)
-    if (c == '\r')
+    if (c === '\r')
       continue
-    if (st == 0) {
-      if (c == '\n') {
+    if (st === 0) {
+      if (c === '\n') {
         if (line.length > 0)
           line.push("")
         res.push(line)
         line = []
-      } else if (c == ',') {
+      } else if (c === ',') {
         line.push("")
-      } else if (c == '"') {
+      } else if (c === '"') {
         sb = ""
         st = 2
       } else {
         sb = c
         st = 1
       }
-    } else if (st == 1) {
-      if (c == '\n') {
+    } else if (st === 1) {
+      if (c === '\n') {
         line.push(sb)
         res.push(line)
         line = []
         st = 0
         sb = null
-      } else if (c == ',') {
+      } else if (c === ',') {
         line.push(sb)
         sb = null
         st = 0
       } else {
         sb += c
       }
-    } else if (st == 2) {
-      if (c == '"') {
+    } else if (st === 2) {
+      if (c === '"') {
         st = 3
       } else {
         sb += c
       }
-    } else if (st == 3) {
-      if (c == '"') {
+    } else if (st === 3) {
+      if (c === '"') {
         sb += c
         st = 2
-      } else if (c == ',') {
+      } else if (c === ',') {
         line.push(sb)
         sb = null
         st = 0
-      } else if (c == '\n') {
+      } else if (c === '\n') {
         line.push(sb)
         res.push(line)
         line = []
@@ -96,12 +97,12 @@ exports.encodeCSV = function (csvar) {
     const line = csvar[i]
     for (let j = 0; j < line.length; j++) {
       const v = line[j]
-      if (v == undefined || v.length == 0) {
+      if (v === undefined || v.length === 0) {
         s2.push("")
-      } else if (parseInt(v) == v) {
+      } else if (parseInt(v) === v) {
         s2.push(v)
       } else if (v.indexOf('"') >= 0) {
-        s2.push('"' + v.replace(/\"/g, '""') + '"')
+        s2.push('"' + v.replace(/"/g, '""') + '"')
       } else {
         s2.push('"' + v + '"')
       }
@@ -129,7 +130,9 @@ exports.json2csv = function (json) {
   const head = []
   for (const d of json) {
     for (const name in d) {
-      if (head.indexOf(name) == -1) {
+      // noinspection JSUnfilteredForInLoop
+      if (head.indexOf(name) === -1) {
+        // noinspection JSUnfilteredForInLoop
         head.push(name)
       }
     }
@@ -154,13 +157,14 @@ exports.writeCSV = function (fnbase, csvar) {
   const s = this.encodeCSV(csvar)
   fs.writeFileSync(fnbase + '.csv', s, 'utf-8')
   fs.writeFileSync(fnbase + '.sjis.csv', iconv.encode(s, 'ShiftJIS'))
-  fs.writeFileSync(fnbase + '.json', JSON.stringify(this.csv2json(csvar)))
+  fs.writeFileSync(
+    fnbase + '.json', JSON.stringify(this.csv2json(csvar))
+  )
 }
 exports.readCSV = function (fnbase) {
   try {
     const data = fs.readFileSync(fnbase + '.csv', 'utf-8')
-    const csv = this.decodeCSV(data)
-    return csv
+    return this.decodeCSV(data)
   } catch (e) {
     const data = fs.readFileSync(fnbase + '.json', 'utf-8')
     const json = JSON.parse(data)
@@ -269,18 +273,19 @@ exports.fetchText = async function (url, enc) {
     return await (await fetch(url)).text()
   }
   const abuf = await (await fetch(url)).arrayBuffer()
-  var buf = new Buffer.from(abuf, 'binary')
+  //const buf = new Buffer.from(abuf, 'binary')
+  const buf = new Buffer.from(abuf)
   return iconv.decode(buf, enc)
 }
 exports.getWebWithCache = async function (url, path, cachetime, enc) {
   const ext = exports.getExtFromURL(url)
-  const fnlatest = path + "_latest" + ext
+  const fnlatest = `${path}_latest${ext}`
   const fn = path + exports.getYMDHMS() + ext
   let cache = null
   //console.log(fn, cachetime)
   try {
     const modtime = fs.statSync(fnlatest).mtime
-    const dt = new Date().getTime() - new Date(modtime).getTime()
+    const dt = new Date().getTime() - modtime.getTime()
     //console.log(dt, new Date(modtime).getTime(), new Date().getTime())
     cache = fs.readFileSync(fnlatest, 'utf-8')
     if (!cachetime || dt < cachetime) {
@@ -295,7 +300,7 @@ exports.getWebWithCache = async function (url, path, cachetime, enc) {
   } catch (e) {
     console.log(e)
   }
-  if (data == cache) {
+  if (data === cache) {
     //console.log("same as cache")
     //fs.writeFileSync(fnlatest, data)
     return cache
@@ -313,13 +318,13 @@ exports.getWebWithCache = async function (url, path, cachetime, enc) {
   return data
 }
 exports.getCache = async function (asyncfetch, path, ext, cachetime) {
-  const fnlatest = path + "_latest" + ext
+  const fnlatest = `${path}_latest${ext}`
   const fn = path + exports.getYMDHMS() + ext
   let cache = null
   //console.log(fn, cachetime)
   try {
     const modtime = fs.statSync(fnlatest).mtime
-    const dt = new Date().getTime() - new Date(modtime).getTime()
+    const dt = new Date().getTime() - modtime.getTime()
     //console.log(dt, new Date(modtime).getTime(), new Date().getTime())
     cache = fs.readFileSync(fnlatest, 'utf-8')
     if (!cachetime || dt < cachetime) {
@@ -338,7 +343,7 @@ exports.getCache = async function (asyncfetch, path, ext, cachetime) {
     //console.log("can't fetch or convert")
     return cache
   }
-  if (data == cache) {
+  if (data === cache) {
     //console.log("same as cache")
     //fs.writeFileSync(fnlatest, data)
     return cache
@@ -358,8 +363,7 @@ exports.getCache = async function (asyncfetch, path, ext, cachetime) {
 exports.getLastUpdateOfCache = function (url, path) {
   const fnlatest = path + "_latest" + exports.getExtFromURL(url)
   try {
-    const modtime = fs.statSync(fnlatest).mtime
-    const d = new Date(modtime)
+    const d = fs.statSync(fnlatest).mtime
     return exports.formatYMDHMS(d)
   } catch (e) {
   }
@@ -401,24 +405,32 @@ exports.makeURL = function (url, relurl) {
   return url.substring(0, n + 8 + 1) + relurl
 }
 exports.test = function (t1, t2) {
-  if (t1 == t2)
+  if (t1 === t2)
     return
   console.log(t1, t2)
   throw 'err on util.test'
 }
 const test = async function () {
   console.log(exports.formatYMDHMS(new Date()))
-  exports.test(exports.makeURL('http://sabae.cc/', 'test.html'), 'http://sabae.cc/test.html')
-  exports.test(exports.makeURL('https://sabae.cc/', 'test.html'), 'https://sabae.cc/test.html')
-  exports.test(exports.makeURL('https://sabae.cc', 'test.html'), 'https://sabae.cc/test.html')
-  exports.test(exports.makeURL('https://sabae.cc/', 'https://jig.jp/'), 'https://jig.jp/')
-  exports.test(exports.makeURL('https://sabae.cc/abc/test.html', '/img/'), 'https://sabae.cc/img/')
+  exports.test(exports.makeURL('http://sabae.cc/', 'test.html'),
+    'http://sabae.cc/test.html')
+  exports.test(exports.makeURL('https://sabae.cc/', 'test.html'),
+    'https://sabae.cc/test.html')
+  exports.test(exports.makeURL('https://sabae.cc', 'test.html'),
+    'https://sabae.cc/test.html')
+  exports.test(
+    exports.makeURL('https://sabae.cc/', 'https://jig.jp/'),
+    'https://jig.jp/')
+  exports.test(
+    exports.makeURL('https://sabae.cc/abc/test.html', '/img/'),
+    'https://sabae.cc/img/')
 }
 
 if (require.main === module) {
 //  test()
   for (let i = 0; i < this.JAPAN_PREF.length; i++) {
-    console.log((i + 1) + '\t' + this.JAPAN_PREF[i] + "\t" + this.JAPAN_PREF_EN[i])
+    console.log((i + 1) + '\t' + this.JAPAN_PREF[i] +
+      "\t" + this.JAPAN_PREF_EN[i])
   }
 } else {
 }

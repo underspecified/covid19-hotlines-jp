@@ -1,8 +1,5 @@
 import TX from "./data/translations.json"
 
-// const TX: Array<Record<string, string>> =
-//   _TX
-
 const makeObj = <K extends string | number | symbol, V>(
   arr: Array<[K, V]>
 ): Record<K, V> =>

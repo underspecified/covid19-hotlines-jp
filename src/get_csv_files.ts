@@ -45,6 +45,7 @@ const makeCsvFile_ = (
 ): TaskEither<Error, string> =>
   makeCsvFile(fn, key, gid)
 
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 const cleanSheetName = (sheet: string): string =>
   sheet
     .trim()
@@ -104,6 +105,7 @@ const fnKeyGids: Array<[string, string, string]> =
 const logError = (e: Error): void =>
   console.error(e)
 
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 const logFile = (file: string): void =>
   console.log(`wrote file "${file}"`)
 
