@@ -27,9 +27,20 @@ const header: Record<string, string> = {
   'Comments\nコメント': 'comments'
 }
 
+const normalizeHeader = (csv: CSV) => {
+  if (R.isEmpty(csv)) {
+    return csv
+  } else {
+    const head = R.head(csv)!.map(x => header[x] || x)
+    const tail = R.tail(csv)
+    return R.concat([head,], tail)
+  }
+}
+
 const formatCsv = (csv: CSV) => {
-  const head = csv[0].map(x => header[x])
-  const tail = R.tail(csv)
+  const normalized = normalizeHeader(csv)
+  const head = R.head(normalized) || []
+  const tail = R.tail(normalized)
   const grouped: Record<string, Array<Row>> =
     R.groupBy(row => row[0], tail)
   const mapped: Record<string, Array<Record<string, string>>> =
@@ -54,6 +65,7 @@ const csvToFormattedJson: (_: string) => string =
 const csvToJson: (_: string) => string =
   R.pipe(
     util.convertCSVtoArray,
+    normalizeHeader,
     util.csv2json,
     JSON.stringify
   )
