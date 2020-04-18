@@ -22,9 +22,10 @@ for x in "${DATA_DIR}"/*.csv; do
 done
 
 # aggregate area hotlines
-HOTLINES="${DATA_DIR}/hokkaido.csv ${DATA_DIR}/tohoku.csv \
-${DATA_DIR}/kanto.csv ${DATA_DIR}/chubu.csv ${DATA_DIR}/kansai.csv \
-${DATA_DIR}/chugoku.csv ${DATA_DIR}/shikoku.csv ${DATA_DIR}/kyushu_okinawa.csv"
+HOTLINES="${DATA_DIR}/hotlines.csv ${DATA_DIR}/hokkaido.csv \
+${DATA_DIR}/tohoku.csv ${DATA_DIR}/kanto.csv ${DATA_DIR}/chubu.csv \
+${DATA_DIR}/kansai.csv ${DATA_DIR}/chugoku.csv ${DATA_DIR}/shikoku.csv \
+${DATA_DIR}/kyushu_okinawa.csv"
 echo_and_eval "python3 ${ROOT_DIR}/py/concat_csv_files.py ${HOTLINES} \
 > ${DATA_DIR}/all.csv"
 

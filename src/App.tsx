@@ -5,8 +5,7 @@ import { StringUtils } from "turbocommons-ts"
 
 import "bootstrap/dist/css/bootstrap.min.css"
 
-import hotlinesEn from "./data/hotlines.json"
-import hotlinesJa from "./data/all.json"
+import hotlines from "./data/all.json"
 import { Hotline } from "./hotline"
 import { tx as _tx } from "./translate"
 import "./App.css"
@@ -18,7 +17,7 @@ const makeId = (s: string): string =>
   )
 
 function App() {
-  const lang = 'en'
+  const lang: string = 'ja'
   const tx = R.partial(_tx, lang)
 
   const makeLi = (
@@ -52,17 +51,22 @@ function App() {
     )
   }
 
-  const makeLangLi = (h: Hotline): JSX.Element =>
-    <li>
-      <div className='lang'>
-        {tx('Supported languages')}: {h.lang}
-      </div>
-    </li>
+  const makeLangLi = (h: Hotline): JSX.Element => {
+    const supportedLangs = h.lang || 'Japanese'
+    return (
+      <li>
+        <div className='lang'>
+          {tx('Supported languages')}: {tx(supportedLangs)}
+        </div>
+      </li>
+    )
+  }
 
   const hotline2Element = (h: Hotline): JSX.Element => {
-    const fs = (lang === 'en') && h.lang ?
-      [makeProviderLi, makeContactLi, makeHoursLi, makeLangLi] :
-      [makeProviderLi, makeContactLi, makeHoursLi]
+    // const fs = (lang === 'en') && h.lang ?
+    //   [makeProviderLi, makeContactLi, makeHoursLi, makeLangLi] :
+    //   [makeProviderLi, makeContactLi, makeHoursLi]
+    const fs = [makeProviderLi, makeContactLi, makeHoursLi, makeLangLi]
     const lis = fs.map(f => f(h))
 
     return (
@@ -83,9 +87,6 @@ function App() {
       </div>
     )
   }
-
-  const hotlines: Record<string, Record<string, Array<Hotline>>> =
-    (lang === 'en') ? hotlinesEn : hotlinesJa
 
   const hotlineElems: Array<JSX.Element> =
     Object.values(R.map(area2Element, hotlines.area))
