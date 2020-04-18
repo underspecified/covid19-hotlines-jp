@@ -9,10 +9,10 @@ function Menu() {
 
       <Nav className="navbar-expand">
         <Nav.Item>
-          <Nav.Link href="#en" active className="EN">EN</Nav.Link>
+          <Nav.Link href="#en" disabled className="EN">EN</Nav.Link>
         </Nav.Item>
         <Nav.Item>
-          <Nav.Link href="#jp" active className="JP">JP</Nav.Link>
+          <Nav.Link href="#jp" disabled className="JP">JP</Nav.Link>
         </Nav.Item>
       </Nav>
 
@@ -20,17 +20,17 @@ function Menu() {
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="ml-auto menu">
           <Nav.Item>
-            <Nav.Link href="#about" active>ABOUT</Nav.Link>
+            <Nav.Link href="#about" disabled>ABOUT</Nav.Link>
           </Nav.Item>
           <Nav.Item>
-            <Nav.Link href="#hotlines" active>HOTLINES</Nav.Link>
+            <Nav.Link href="#hotlines" disabled>HOTLINES</Nav.Link>
           </Nav.Item>
-          <Nav.Item>
-            <Nav.Link href="#news" active>NEWS</Nav.Link>
-          </Nav.Item>
-          <Nav.Item>
-            <Nav.Link href="#news" active>LINKS</Nav.Link>
-          </Nav.Item>
+          {/*<Nav.Item>*/}
+          {/*  <Nav.Link href="#news" active>NEWS</Nav.Link>*/}
+          {/*</Nav.Item>*/}
+          {/*<Nav.Item>*/}
+          {/*  <Nav.Link href="#news" active>LINKS</Nav.Link>*/}
+          {/*</Nav.Item>*/}
         </Nav>
       </Navbar.Collapse>
     </Navbar>
