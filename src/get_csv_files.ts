@@ -45,8 +45,6 @@ const makeCsvFile_ = (
 ): TaskEither<Error, string> =>
   makeCsvFile(fn, key, gid)
 
-// eslint-disable-next-line
-// noinspection JSUnusedLocalSymbols
 const cleanSheetName = (sheet: string): string =>
   sheet
     .trim()
@@ -90,7 +88,7 @@ export const makeFn = (sheet: string): string =>
 
 // noinspection JSUnusedGlobalSymbols
 export const getSheet = (fn: string): string =>
-  fn.split('/')[3]
+  fn.split('/').slice(-1)[0]
 
 // noinspection JSUnusedGlobalSymbols
 export const fns: Array<string> =
@@ -106,8 +104,6 @@ const fnKeyGids: Array<[string, string, string]> =
 const logError = (e: Error): void =>
   console.error(e)
 
-// noinspection JSUnusedLocalSymbols
-// eslint-disable-next-line
 const logFile = (file: string): void =>
   console.log(`wrote file "${file}"`)
 
