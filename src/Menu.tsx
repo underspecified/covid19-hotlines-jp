@@ -54,6 +54,9 @@ class Menu extends React.Component<{lang: string }, IState> {
                 <Nav.Link href="#about" disabled>ABOUT</Nav.Link>
               </Nav.Item>
               <Nav.Item>
+                <Nav.Link href="#covid19" disabled>COVID-19</Nav.Link>
+              </Nav.Item>
+              <Nav.Item>
                 <Nav.Link href="#hotlines" disabled>HOTLINES</Nav.Link>
               </Nav.Item>
               {/*<Nav.Item>*/}

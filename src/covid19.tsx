@@ -15,11 +15,9 @@ const makeSymptomsEn = () => {
       <h4>What Should We Do If We Get Sick?</h4>
 
       <p>
-        【Hotline Center】 To those who suspect infection or exhibit the
-        following symptoms, do not go directly to a medical facility and
-        instead please contact the dedicated consultation service in each
-        prefecture first. When you click the map, you can see the information
-        about the center in your prefecture.
+        If you suspect infection or exhibit the symptoms listed below, do not
+        go directly to a medical facility. Instead please call the dedicated
+        COVID-19 hotline in your prefecture first.
       </p>
 
       <ul>
@@ -37,6 +35,10 @@ const makeSymptomsEn = () => {
           days.
         </li>
       </ul>
+
+      <p><
+        a href="#hotlines">Find a hotline near you by clicking here.</a>
+      </p>
     </div>
   )
 }
@@ -47,10 +49,9 @@ const makeSymptomsJa = () => {
       <h4>体調が悪くなったらどうする？</h4>
 
       <p>
-        【帰国者・接触者相談センター】
+        【帰国者・接触者相談センター】<br />
         新型コロナウイルス感染症の感染が疑われる方、または次の症状がある方は、
         直接医療機関へ受診せず、事前に帰国者・接触者相談センターまでご相談ください。
-        マップをクリックすると、各都道府県のセンターの情報が見られます。
       </p>
 
       <ul>
@@ -64,6 +65,11 @@ const makeSymptomsJa = () => {
           ※高齢者や基礎疾患等のある場合は、上の状態が2日程度続く場合。
         </li>
       </ul>
+
+      <p>
+        <a href="#hotlines">このリンクをクリックすると、各都道府県のセンターの情報が
+          見られます。</a>
+      </p>
     </div>
   )
 }
@@ -108,8 +114,7 @@ const makeDisclaimerEn = () => {
           without permission.
         </li>
         <li>
-           This site is link-free, but if you link, please contact us
-          with the URL of the link source.
+            Please contact us with the URL if you link to this site.
         </li>
       </ul>
     </div>
