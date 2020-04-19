@@ -92,8 +92,7 @@ const makeAboutUsEn = () => {
       <div className="eric-nichols">
         <h5>Eric Nichols</h5>
         <ul>
-          <li>Affiliation: Dr.Eng. of Graduate School of Information
-            Science, Nara Institute of Science and Technology</li>
+          <li>Affiliation: Dr.Eng. in Information Science</li>
           <li>Specialty: Artificial intelligence, natural language
             processing, machine learning</li>
           <li>Homepage: <a
