@@ -16,8 +16,7 @@ code {
     monospace;
 }
 
-li a {
+a {
   color: var(--main-color);
-  text-decoration: underline !important;
+  text-decoration: underline;
 }
-

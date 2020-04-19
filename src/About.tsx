@@ -1,3 +1,4 @@
+/* eslint-disable no-script-url, jsx-a11y/anchor-is-valid */
 import React from "react";
 
 import "./About.css"
@@ -80,6 +81,7 @@ const makeOurGoalsJa = () => {
 }
 
 const makeAboutUsEn = () => {
+  // noinspection JSValidateTypes
   return (
     <div className="about-us">
       <h4>About Us</h4>
@@ -88,7 +90,7 @@ const makeAboutUsEn = () => {
         <ul>
           <li>Affiliation: PhD Candidate of Graduate School of Asian
             African Area Studies, Kyoto University</li>
-          <li>Qualification: Registerd Nurse, Pablic Health Nurse, and
+          <li>Qualification: Registered Nurse, Public Health Nurse, and
             Master of Health Science</li>
           <li>Specialty: Global Health, Area Study in Oceania</li>
           <li>HP: <a href="https://researchmap.jp/peacechyhi?lang=en"
@@ -120,6 +122,7 @@ const makeAboutUsEn = () => {
 }
 
 const makeAboutUsJa = () => {
+  // noinspection JSValidateTypes
   return (
     <div className="about-us">
       <h4>About Us</h4>

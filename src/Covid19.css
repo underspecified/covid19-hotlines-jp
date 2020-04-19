@@ -12,6 +12,11 @@
   padding-left: 0;
 }
 
+Link {
+  color: var(--main-color);
+  text-decoration: underline !important;
+}
+
 /*.area li {*/
 /*  list-style-type: none;*/
 /*}*/

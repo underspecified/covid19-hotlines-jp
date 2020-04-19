@@ -1,6 +1,7 @@
 import React from "react";
 
 import "./Covid19.css"
+import {Link} from "react-router-dom";
 
 const makeSymptomsEn = () => {
   return (
@@ -29,8 +30,10 @@ const makeSymptomsEn = () => {
         </li>
       </ul>
 
-      <p><
-        a href="/hotlines">Find a hotline near you by clicking here.</a>
+      <p>
+        <Link to="/hotlines">
+          <h5>Find a hotline near you by clicking here.</h5>
+        </Link>
       </p>
     </div>
   )
@@ -60,7 +63,9 @@ const makeSymptomsJa = () => {
       </ul>
 
       <p>
-        <a href="/hotlines">このリンクをクリックすると、各都道府県のセンターの情報が見られます。</a>
+        <Link to="/hotlines">
+          <h5>このリンクをクリックすると、各都道府県のセンターの情報が 見られます。</h5>
+        </Link>
       </p>
     </div>
   )

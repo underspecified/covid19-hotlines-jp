@@ -18,6 +18,7 @@ class Menu extends React.Component<{}, {}> {
   tx = R.partial(_tx, 'en')
 
   render() {
+    // noinspection HtmlUnknownTarget
     return (
       <div className="menu">
         <Navbar variant="dark"
@@ -49,7 +50,7 @@ class Menu extends React.Component<{}, {}> {
                 </LinkContainer>
               </Nav.Item>
               <Nav.Item>
-                <LinkContainer to="/">
+                <LinkContainer to="/covid19">
                   <Nav.Link active>COVID-19</Nav.Link>
                 </LinkContainer>
               </Nav.Item>
@@ -58,17 +59,16 @@ class Menu extends React.Component<{}, {}> {
                   <Nav.Link active>HOTLINES</Nav.Link>
                 </LinkContainer>
               </Nav.Item>
-              {/*<Nav.Item>*/}
-              {/*  <Nav.Link href="#news" active>NEWS</Nav.Link>*/}
-              {/*</Nav.Item>*/}
-              {/*<Nav.Item>*/}
-              {/*  <Nav.Link href="#news" active>LINKS</Nav.Link>*/}
-              {/*</Nav.Item>*/}
+              <Nav.Item>
+                <LinkContainer to="/info">
+                  <Nav.Link disabled>INFO</Nav.Link>
+                </LinkContainer>
+              </Nav.Item>
             </Nav>
           </Navbar.Collapse>
         </Navbar>
 
-        <a href="/">
+        <a href="/covid19-hotlines-jp">
           <Jumbotron fluid>
             <h1>COVID-19 Hotlines in Japan</h1>
             <p>{this.tx('新型コロナウィルス対策に役立つ情報')}</p>

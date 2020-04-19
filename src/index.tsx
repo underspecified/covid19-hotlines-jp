@@ -9,11 +9,9 @@ import './index.css';
 //import './App.css'
 
 ReactDOM.render(
-  // <React.StrictMode>
-    <BrowserRouter>
-      <App />
-    </BrowserRouter>,
-  // </React.StrictMode>,
+  <BrowserRouter basename="/covid19-hotlines-jp/">
+    <App />
+  </BrowserRouter>,
   document.getElementById('root')
 );
 
