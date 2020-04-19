@@ -68,17 +68,17 @@ const makeSickEn = () => {
       <ul>
         <li>
           Cold-like symptoms, a fever of 37.5℃ or above that has continued
-          for 4 or more days.
+          for 4 or more days
         </li>
         <li>
           Extreme fatigue (physical weariness) and  difficulty breathing
-          (labored breath).
+          (labored breath)
         </li>
       </ul>
 
       <p>
         <Link to="/en/hotlines">
-          <h5>Find a hotline near you by clicking here.</h5>
+          <h5>Find a hotline near you</h5>
         </Link>
       </p>
     </div>
@@ -134,26 +134,26 @@ const makeSickJa = () => {
       <h3>体調が悪くなったらどうする？</h3>
 
       <p>
-        <a href="https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/kenkou_iryou/dengue_fever_qa_00001.html#Q5-1"
-           target="_blank" rel="noopener noreferrer">厚生労働省</a>によると、
-        新型コロナウイルス感染症の感染が疑われる方、または次の症状がある方は、 直接医療
-        機関へ受診せず、事前に帰国者・接触者相談センターまでご相談ください。<br/>
+        新型コロナウイルス感染症の感染が疑われる方、または次の症状がある方は、直接医療
+        機関へ受診せず、事前に帰国者・接触者相談センターまでご相談ください。(<a href="https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/kenkou_iryou/dengue_fever_qa_00001.html#Q5-1"
+           target="_blank" rel="noopener noreferrer">厚生労働省HP</a>より)<br/>
         ※高齢者や基礎疾患等のある方、妊娠している方は、上の状態が2日程度続く場合。
+
       </p>
 
       <ul>
         <li>
-          風邪の症状や37.5℃以上の発熱が4日以上続いている。
+          風邪の症状や37.5℃以上の発熱が4日以上続いている
         </li>
         <li>
-          強いだるさ（倦怠感）や息苦しさ（呼吸困難）がある。
+          強いだるさ（倦怠感）や息苦しさ（呼吸困難）がある
         </li>
       </ul>
 
       <p>
         <Link to="/jp/hotlines">
           <h5>
-            このリンクをクリックすると、各都道府県のセンターの情報が 見られます。
+            各都道府県のセンターを探す
           </h5>
         </Link>
       </p>
