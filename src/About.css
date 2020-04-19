@@ -1,5 +1,14 @@
 .about {
-    margin: 0 1.5rem !important;
+    margin-left: 1.5rem !important;
+    margin-right: 1.5rem !important;
+}
+
+.about h3 {
+    margin-top: 2rem;
+}
+
+.about .our-goal h3 {
+    margin-top: 1.5rem !important;
 }
 
 .area, .hotline, .hours li {
