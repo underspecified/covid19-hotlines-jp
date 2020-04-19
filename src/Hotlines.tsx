@@ -95,7 +95,7 @@ function Hotlines(props: {}): JSX.Element {
     return (
       <div id={makeId(pref)} className="area">
         <ul>
-          <h5>{prefElem}</h5>
+          <h4>{prefElem}</h4>
           {lis}
         </ul>
       </div>
@@ -107,7 +107,7 @@ function Hotlines(props: {}): JSX.Element {
   
   return (
     <div className="hotlines">
-      <h4>{tx("Hotlines")}</h4>
+      <h3>{tx("Hotlines")}</h3>
       {hotlineElems}
     </div>
   )

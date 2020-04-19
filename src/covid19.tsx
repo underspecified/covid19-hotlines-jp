@@ -3,15 +3,33 @@ import React from "react";
 import "./Covid19.css"
 import {Link} from "react-router-dom";
 
+
+const makeWhatEn = () => {
+  return (
+    <div className="what">
+      <h3>What is COVID-19?</h3>
+
+      <p>
+        According to the <a
+           href="https://www.who.int/news-room/q-a-detail/q-a-coronaviruses"
+           target="_blank" rel="noopener noreferrer">WHO</a>, COVID-19 is an
+        infectious disease caused by a recently-discovered coronavirus
+        (SARS-CoV-2) that has caused an outbreak beginning in Wuhan, China,
+        in December 2019. It causes a highly-infectious respiratory
+        illness that can become life-threatening.
+     </p>
+
+    </div>
+  )
+}
+
 const makeSymptomsEn = () => {
   return (
     <div className="symptoms">
-      <h4>What Should We Do If We Get Sick?</h4>
+      <h3>What Are Its Symptoms?</h3>
 
       <p>
-        If you suspect infection or exhibit the symptoms listed below, do not
-        go directly to a medical facility. Instead please call the dedicated
-        COVID-19 hotline in your prefecture first.
+        COVID-19 exhibits the following symptoms:
       </p>
 
       <ul>
@@ -23,12 +41,25 @@ const makeSymptomsEn = () => {
           Extreme fatigue (physical weariness) and  difficulty breathing
           (labored breath).
         </li>
-        <li>
-          ※Elderly people or those with previously underlying conditions
-          should consult when they have had the above symptoms for 2 or more
-          days.
-        </li>
       </ul>
+    </div>
+  )
+}
+const makeSickEn = () => {
+  return (
+    <div className="sick">
+      <h3>What Should We Do If We Get Sick?</h3>
+
+      <p>
+        If you suspect infection or exhibit these symptoms, do not
+        go directly to a medical facility. Instead please call the dedicated
+        COVID-19 hotline in your prefecture first.
+      </p>
+
+      <p>
+        ※Elderly people or those with previously underlying conditions should
+        consult when they have had these symptoms for 2 or more days.
+      </p>
 
       <p>
         <Link to="/hotlines">
@@ -39,10 +70,21 @@ const makeSymptomsEn = () => {
   )
 }
 
+const makeWhatJp = () => {
+  return (
+    <div className="what">
+      <h3>What is COVID-19?</h3>
+
+      <p>Coming soon...</p>
+    </div>
+
+  )
+}
+
 const makeSymptomsJa = () => {
   return (
     <div className="symptoms">
-      <h4>体調が悪くなったらどうする？</h4>
+      <h3>体調が悪くなったらどうする？</h3>
 
       <p>
         【帰国者・接触者相談センター】<br />
@@ -74,7 +116,9 @@ const makeSymptomsJa = () => {
 const makeCovid19En = () => {
   return (
     <div className="covid19">
+      {makeWhatEn()}
       {makeSymptomsEn()}
+      {makeSickEn()}
     </div>
   )
 }

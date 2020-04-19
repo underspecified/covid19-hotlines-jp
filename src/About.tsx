@@ -6,7 +6,7 @@ import "./About.css"
 const makeOurGoalsEn = () => {
   return (
     <div className="our-goal">
-      <h4>Our Goal</h4>
+      <h3>Our Goal</h3>
 
       <p>
         Because of the pandemic of Coronavirus disease 2019 (COVID-19),
@@ -41,7 +41,7 @@ const makeOurGoalsEn = () => {
 const makeOurGoalsJa = () => {
   return (
     <div className="our-goal">
-      <h4>Our Goal</h4>
+      <h3>Our Goal</h3>
 
       <p>
         新型コロナウイルス感染症 (COVID-19) の拡大に伴い、世界各地の人々が、
@@ -84,9 +84,9 @@ const makeAboutUsEn = () => {
   // noinspection JSValidateTypes
   return (
     <div className="about-us">
-      <h4>About Us</h4>
+      <h3>About Us</h3>
       <div className="chihiro-tsuchiya">
-        <h5>Chihiro Tsuchiya</h5>
+        <h4>Chihiro Tsuchiya</h4>
         <ul>
           <li>Affiliation: PhD Candidate of Graduate School of Asian
             African Area Studies, Kyoto University</li>
@@ -103,7 +103,7 @@ const makeAboutUsEn = () => {
       </div>
 
       <div className="eric-nichols">
-        <h5>Eric Nichols</h5>
+        <h4>Eric Nichols</h4>
         <ul>
           <li>Affiliation: Dr.Eng. of Graduate School of Information
             Science, Nara Institute of Science and Technology</li>
@@ -125,9 +125,9 @@ const makeAboutUsJa = () => {
   // noinspection JSValidateTypes
   return (
     <div className="about-us">
-      <h4>About Us</h4>
+      <h3>About Us</h3>
       <div className="chihiro-tsuchiya">
-        <h5>土谷 ちひろ</h5>
+        <h4>土谷 ちひろ</h4>
         <ul>
           <li>在籍: 京都大学 アジアアフリカ研究研究科 博士課程</li>
           <li>資格: 看護師, 保健師, 保健学修士</li>
@@ -142,7 +142,7 @@ const makeAboutUsJa = () => {
       </div>
 
       <div className="eric-nichols">
-        <h5>エリック・ニコルズ</h5>
+        <h4>エリック・ニコルズ</h4>
         <ul>
           <li>学歴: 奈良先端科学大学院大学 情報科学研究科 博士(工)</li>
           <li>専門分野: 人工知能, 自然言語処理, 機械学習</li>
@@ -161,8 +161,8 @@ const makeAboutUsJa = () => {
 const makeDisclaimerEn = () => {
   return (
     <div className="disclaimer">
-      <h4>Disclaimer</h4>
-        <h5>Accuracy of information on this site</h5>
+      <h3>Disclaimer</h3>
+        <h4>Accuracy of information on this site</h4>
         <ul>
           <li>
             We try to post information that is as accurate as possible
@@ -174,7 +174,7 @@ const makeDisclaimerEn = () => {
           </li>
         </ul>
 
-        <h5>Liability</h5>
+        <h4>Liability</h4>
         <ul>
           <li>
             We are not responsible for any damages caused by the contents
@@ -190,7 +190,7 @@ const makeDisclaimerEn = () => {
           </li>
         </ul>
 
-      <h5>Reproduction prohibited</h5>
+      <h4>Reproduction prohibited</h4>
         <ul>
         <li>
           It is prohibited to reprint the information of copyrighted works
@@ -208,8 +208,8 @@ const makeDisclaimerEn = () => {
 const makeDisclaimerJa = () => {
   return (
     <div className="disclaimer">
-      <h4>免責事項</h4>
-        <h5>当サイトの情報の正確性について</h5>
+      <h3>免責事項</h3>
+        <h4>当サイトの情報の正確性について</h4>
         <ul>
           <li>
             当サイトのコンテンツや情報において, 可能な限り正確な情報を掲載するよう努めて
@@ -221,7 +221,7 @@ const makeDisclaimerJa = () => {
           </li>
         </ul>
 
-        <h5>損害等の責任について</h5>
+        <h4>損害等の責任について</h4>
         <ul>
           <li>
             当サイトに掲載された内容によって生じた損害等の一切の責任を負いかねますので,
@@ -236,7 +236,7 @@ const makeDisclaimerJa = () => {
           </li>
         </ul>
 
-      <h5>無断転載の禁止について</h5>
+      <h4>無断転載の禁止について</h4>
         <ul>
         <li>
           当サイトに存在する, 文章や画像, 動画等の著作物の情報を商用目的で無断転載する
