@@ -22,9 +22,9 @@ const urls: Record<string, string> =
     webpages.map(d => [d['pref_ja'], d['url']])
   )
 
-function Hotlines(props: { lang: string }): JSX.Element {
-  // const lang: string = 'en'
-  const tx = R.partial(_tx, props.lang)
+function Hotlines(props: {}): JSX.Element {
+  const lang: string = 'en'
+  const tx = R.partial(_tx, lang)
 
   const makeLi = (
     label: string,
@@ -33,7 +33,7 @@ function Hotlines(props: { lang: string }): JSX.Element {
     <li>{tx(label)}: {content}</li>
 
   const makeProviderLi = (h: Hotline): JSX.Element => {
-    const center = (props.lang === 'en') ? h.center_en : h.center_ja
+    const center = (lang === 'en') ? h.center_en : h.center_ja
     const provider = h.url ?
       <a href={h.url} target="_blank" rel="noopener noreferrer">{center}</a> :
       center
@@ -95,7 +95,7 @@ function Hotlines(props: { lang: string }): JSX.Element {
     return (
       <div id={makeId(pref)} className="area">
         <ul>
-          <h4>{prefElem}</h4>
+          <h5>{prefElem}</h5>
           {lis}
         </ul>
       </div>
@@ -106,7 +106,8 @@ function Hotlines(props: { lang: string }): JSX.Element {
     Object.values(R.map(area2Element, hotlines.area))
   
   return (
-    <div className="Hotlines">
+    <div className="hotlines">
+      <h4>{tx("Hotlines")}</h4>
       {hotlineElems}
     </div>
   )

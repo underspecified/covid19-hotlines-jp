@@ -1,10 +1,13 @@
 .hotline {
   margin-bottom: 0.75rem;
 }
-
 .area, .hotline, .hours li {
   padding-left: 1.5rem;
   padding-right: 1.0rem;
+}
+
+.hotlines h4 {
+  margin-left: 1.5rem;
 }
 
 .area ul {

@@ -2,13 +2,6 @@ import React from "react";
 
 import "./Covid19.css"
 
-interface IProps {
-}
-
-interface IState {
-  lang: string;
-}
-
 const makeSymptomsEn = () => {
   return (
     <div className="symptoms">
@@ -37,7 +30,7 @@ const makeSymptomsEn = () => {
       </ul>
 
       <p><
-        a href="#hotlines">Find a hotline near you by clicking here.</a>
+        a href="/hotlines">Find a hotline near you by clicking here.</a>
       </p>
     </div>
   )
@@ -67,7 +60,7 @@ const makeSymptomsJa = () => {
       </ul>
 
       <p>
-        <a href="#hotlines">このリンクをクリックすると、各都道府県のセンターの情報が見られます。</a>
+        <a href="/hotlines">このリンクをクリックすると、各都道府県のセンターの情報が見られます。</a>
       </p>
     </div>
   )
@@ -187,8 +180,8 @@ const makeCovid19Ja = () => {
 const makeCovid19 = (lang: string) =>
   lang === 'en' ? makeCovid19En() : makeCovid19Ja()
 
-class Covid19 extends React.Component<{ lang: string }, IState> {
-  constructor(props: { lang: string }) {
+class Covid19 extends React.Component<{}, {}> {
+  constructor(props: {}) {
     super(props)
     this.state = {
       lang: 'en',
@@ -197,7 +190,7 @@ class Covid19 extends React.Component<{ lang: string }, IState> {
 
   render() {
     return (
-      makeCovid19("ja")
+      makeCovid19("en")
     )
   }
 }

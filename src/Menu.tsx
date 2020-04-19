@@ -1,28 +1,21 @@
 import * as R from "rambda";
 import React from "react"
 import { Jumbotron, Nav, Navbar } from "react-bootstrap"
+import { LinkContainer } from "react-router-bootstrap"
 
 import { tx as _tx } from "./translate";
 
 import "./Menu.css"
 
-interface IProps {
-}
-
-interface IState {
-  lang: string;
-}
-
-
-class Menu extends React.Component<{lang: string }, IState> {
-  constructor(props: { lang: string }) {
+class Menu extends React.Component<{}, {}> {
+  constructor(props: {}) {
     super(props)
     this.state = {
       lang: 'en',
     }
   }
 
-  tx = R.partial(_tx, this.props.lang)
+  tx = R.partial(_tx, 'en')
 
   render() {
     return (
@@ -36,12 +29,12 @@ class Menu extends React.Component<{lang: string }, IState> {
 
           <Nav className="navbar-expand">
             <Nav.Item>
-              <Nav.Link href="#en" active className="EN" eventKey="en">
+              <Nav.Link href="#en" disabled className="EN" eventKey="en">
                 EN
               </Nav.Link>
             </Nav.Item>
             <Nav.Item>
-              <Nav.Link href="#jp" active className="JP" eventKey="ja">
+              <Nav.Link href="#jp" disabled className="JP" eventKey="ja">
                 JP
               </Nav.Link>
             </Nav.Item>
@@ -51,13 +44,19 @@ class Menu extends React.Component<{lang: string }, IState> {
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ml-auto menu">
               <Nav.Item>
-                <Nav.Link href="#about" disabled>ABOUT</Nav.Link>
+                <LinkContainer to="/about">
+                  <Nav.Link active>ABOUT</Nav.Link>
+                </LinkContainer>
               </Nav.Item>
               <Nav.Item>
-                <Nav.Link href="#covid19" disabled>COVID-19</Nav.Link>
+                <LinkContainer to="/">
+                  <Nav.Link active>COVID-19</Nav.Link>
+                </LinkContainer>
               </Nav.Item>
               <Nav.Item>
-                <Nav.Link href="#hotlines" disabled>HOTLINES</Nav.Link>
+                <LinkContainer to="/hotlines">
+                  <Nav.Link active>HOTLINES</Nav.Link>
+                </LinkContainer>
               </Nav.Item>
               {/*<Nav.Item>*/}
               {/*  <Nav.Link href="#news" active>NEWS</Nav.Link>*/}
@@ -69,10 +68,12 @@ class Menu extends React.Component<{lang: string }, IState> {
           </Navbar.Collapse>
         </Navbar>
 
-        <Jumbotron fluid>
-          <h1>COVID-19 Hotlines in Japan</h1>
-          <p>{this.tx('新型コロナウィルス対策に役立つ情報')}</p>
-        </Jumbotron>
+        <a href="/">
+          <Jumbotron fluid>
+            <h1>COVID-19 Hotlines in Japan</h1>
+            <p>{this.tx('新型コロナウィルス対策に役立つ情報')}</p>
+          </Jumbotron>
+        </a>
       </div>
     )
   }

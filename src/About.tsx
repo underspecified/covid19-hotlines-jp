@@ -2,13 +2,6 @@ import React from "react";
 
 import "./About.css"
 
-interface IProps {
-}
-
-interface IState {
-  lang: string;
-}
-
 const makeOurGoalsEn = () => {
   return (
     <div className="our-goal">
@@ -183,7 +176,7 @@ const makeAboutJa = () => {
 const makeAbout = (lang: string) =>
   lang === 'en' ? makeAboutEn() : makeAboutJa()
 
-class About extends React.Component<{ lang: string }, IState> {
+class About extends React.Component<{}, {}> {
   constructor(props: { lang: string }) {
     super(props)
     this.state = {
@@ -193,7 +186,7 @@ class About extends React.Component<{ lang: string }, IState> {
 
   render() {
     return (
-      makeAbout("ja")
+      makeAbout("en")
     )
   }
 }
