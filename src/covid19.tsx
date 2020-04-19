@@ -91,7 +91,7 @@ const makeWhatJp = () => {
       <p>
         <a href="https://www.who.int/news-room/q-a-detail/q-a-coronaviruses"
            target="_blank" rel="noopener noreferrer">世界保健機関(WHO)</a>に
-        よると、新型コロナウイルス(COVID-19)はコロナウイルスのひとつです。 2019年12月、
+        よると、新型コロナウイルス(COVID-19)はコロナウイルスのひとつです。2019年12月、
         中華人民共和国湖北省武漢市で「原因不明のウイルス性肺炎」として最初の症例が確認
         されました。 主に肺炎のような呼吸器系の症状を引き起こしますが、全身に重篤な症状が
         表れることもあり、中国以外の国家と地域に感染が拡大しています。
@@ -108,8 +108,7 @@ const makeSymptomsJa = () => {
       <a href="https://www.who.int/news-room/q-a-detail/q-a-coronaviruses"
            target="_blank" rel="noopener noreferrer">世界保健機関(WHO)</a>と<a
            href="http://www.jibika.or.jp/citizens/covid19/mikaku.html"
-           target="_blank" rel="noopener noreferrer">日本耳鼻咽喉科学会</a>による
-      と、新型コロナウイルス(COVID-19)の症状は以下の通りです。
+           target="_blank" rel="noopener noreferrer">日本耳鼻咽喉科学会</a>によると、新型コロナウイルス(COVID-19)の症状は以下の通りです。
 
       <ul>
         <li>発熱</li>
@@ -141,7 +140,7 @@ const makeSickJa = () => {
           強いだるさ（倦怠感）や息苦しさ（呼吸困難）がある。
         </li>
         <li>
-          ※高齢者や基礎疾患等のある場合は、上の状態が2日程度続く場合。
+          ※高齢者や基礎疾患等のある方、妊娠している方は、上の状態が2日程度続く場合。
         </li>
       </ul>
 
