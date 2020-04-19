@@ -60,9 +60,6 @@ const makeSickEn = () => {
         infection or exhibit the following symptoms, do not go directly to a
         medical facility. Instead please first call the dedicated COVID-19
         hotline in your prefecture.<br />
-        ※The elderly, the pregnant, and people with previously underlying
-        conditions should consult when they have had these symptoms for 2 or
-        more days.
       </p>
 
       <ul>
@@ -75,6 +72,12 @@ const makeSickEn = () => {
           (labored breath)
         </li>
       </ul>
+
+      <p>
+        ※The elderly, the pregnant, and people with previously underlying
+        conditions should consult when they have had these symptoms for 2 or
+        more days.
+      </p>
 
       <p>
         <Link to="/en/hotlines">
