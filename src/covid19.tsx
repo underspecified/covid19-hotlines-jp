@@ -11,8 +11,8 @@ const makeWhatEn = () => {
       <p>
         According to the <a
            href="https://www.who.int/news-room/q-a-detail/q-a-coronaviruses"
-           target="_blank" rel="noopener noreferrer">WHO</a>, COVID-19 is an
-        infectious disease caused by a recently-discovered coronavirus
+           target="_blank" rel="noopener noreferrer">WHO</a>, COVID-19 is
+        an infectious disease caused by a recently-discovered coronavirus
         (SARS-CoV-2) that has caused an outbreak beginning in Wuhan, China,
         in December 2019. It causes a highly-infectious respiratory
         illness that can become life-threatening.
@@ -30,8 +30,10 @@ const makeSymptomsEn = () => {
       <p>
         According to the <a
            href="https://www.who.int/news-room/q-a-detail/q-a-coronaviruses"
-           target="_blank" rel="noopener noreferrer">WHO</a>, COVID-19 exhibits
-        the following symptoms:
+           target="_blank" rel="noopener noreferrer">WHO</a> and <a
+        href="https://www.thelancet.com/journals/laninf/article/PIIS1473-3099(20)30293-0/fulltext"
+        target="_blank" rel="noopener noreferrer">the Lancet</a>, COVID-19
+        exhibits the following symptoms:
       </p>
 
       <ul>
@@ -103,10 +105,11 @@ const makeSymptomsJa = () => {
     <div className="symptoms">
       <h3>新型コロナウィルスの症状は？</h3>
 
-      <a
+      <a href="https://www.who.int/news-room/q-a-detail/q-a-coronaviruses"
+           target="_blank" rel="noopener noreferrer">世界保健機関(WHO)</a>と<a
            href="http://www.jibika.or.jp/citizens/covid19/mikaku.html"
            target="_blank" rel="noopener noreferrer">日本耳鼻咽喉科学会</a>による
-      と、新型コロナウイルス(COVID-19)の症状はこの通りです。
+      と、新型コロナウイルス(COVID-19)の症状は以下の通りです。
 
       <ul>
         <li>発熱</li>
