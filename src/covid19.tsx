@@ -28,7 +28,36 @@ const makeSymptomsEn = () => {
       <h3>What Are Its Symptoms?</h3>
 
       <p>
-        COVID-19 exhibits the following symptoms:
+        According to the <a
+           href="https://www.who.int/news-room/q-a-detail/q-a-coronaviruses"
+           target="_blank" rel="noopener noreferrer">WHO</a>, COVID-19 exhibits
+        the following symptoms:
+      </p>
+
+      <ul>
+        <li>Fever</li>
+        <li>Coughing</li>
+        <li>Sore throat</li>
+        <li>Fatigue</li>
+        <li>Loss of smell or taste</li>
+        <li>Shortness of breath</li>
+      </ul>
+
+    </div>
+  )
+}
+const makeSickEn = () => {
+  return (
+    <div className="sick">
+      <h3>What Should We Do If We Get Sick?</h3>
+
+      <p>
+        If you suspect infection or exhibit the following symptoms, do not
+        go directly to a medical facility. Instead please call the dedicated
+        COVID-19 hotline in your prefecture first.<br />
+        ※The elderly, the pregnant, and people with previously underlying
+        conditions should consult when they have had these symptoms for 2 or
+        more days.
       </p>
 
       <ul>
@@ -41,24 +70,6 @@ const makeSymptomsEn = () => {
           (labored breath).
         </li>
       </ul>
-    </div>
-  )
-}
-const makeSickEn = () => {
-  return (
-    <div className="sick">
-      <h3>What Should We Do If We Get Sick?</h3>
-
-      <p>
-        If you suspect infection or exhibit these symptoms, do not
-        go directly to a medical facility. Instead please call the dedicated
-        COVID-19 hotline in your prefecture first.
-      </p>
-
-      <p>
-        ※Elderly people or those with previously underlying conditions should
-        consult when they have had these symptoms for 2 or more days.
-      </p>
 
       <p>
         <Link to="/en/hotlines">
@@ -73,21 +84,48 @@ const makeSickEn = () => {
 const makeWhatJp = () => {
   return (
     <div className="what">
-      <h3>What is COVID-19?</h3>
+      <h3>新型コロナウィルスとは？</h3>
 
-      <p>Coming soon...</p>
+      <p>
+        <a href="https://www.who.int/news-room/q-a-detail/q-a-coronaviruses"
+           target="_blank" rel="noopener noreferrer">世界保健機関(WHO)</a>に
+        よると、新型コロナウイルス(COVID-19)はコロナウイルスのひとつです。 2019年12月、
+        中華人民共和国湖北省武漢市で「原因不明のウイルス性肺炎」として最初の症例が確認
+        されました。 主に肺炎のような呼吸器系の症状を引き起こしますが、全身に重篤な症状が
+        表れることもあり、中国以外の国家と地域に感染が拡大しています。
+      </p>
     </div>
-
   )
 }
 
 const makeSymptomsJa = () => {
   return (
     <div className="symptoms">
+      <h3>新型コロナウィルスの症状は？</h3>
+
+      <a
+           href="http://www.jibika.or.jp/citizens/covid19/mikaku.html"
+           target="_blank" rel="noopener noreferrer">日本耳鼻咽喉科学会</a>による
+      と、新型コロナウイルス(COVID-19)の症状はこの通りです。
+
+      <ul>
+        <li>発熱</li>
+        <li>咳</li>
+        <li>喉の痛み</li>
+        <li>強いだるさ</li>
+        <li>嗅覚・味覚障害</li>
+        <li>息苦しさ</li>
+      </ul>
+    </div>
+  )
+}
+
+const makeSickJa = () => {
+  return (
+    <div className="sick">
       <h3>体調が悪くなったらどうする？</h3>
 
       <p>
-        【帰国者・接触者相談センター】<br />
         新型コロナウイルス感染症の感染が疑われる方、または次の症状がある方は、
         直接医療機関へ受診せず、事前に帰国者・接触者相談センターまでご相談ください。
       </p>
@@ -128,7 +166,9 @@ const makeCovid19En = () => {
 const makeCovid19Ja = () => {
   return (
     <div className="covid19">
+      {makeWhatJp()}
       {makeSymptomsJa()}
+      {makeSickJa()}
     </div>
   )
 }
