@@ -131,7 +131,7 @@ const makeAboutUsJa = () => {
       <div className="eric-nichols">
         <h5>エリック・ニコルズ</h5>
         <ul>
-          <li>学歴: 奈良先端科学大学院大学 情報科学研究科 博士(工)</li>
+          <li>資格: 情報科学博士(工)</li>
           <li>専門分野: 人工知能, 自然言語処理, 機械学習</li>
           <li>ホームページ: <a href="https://scholar.google.co.jp/citations?user=I3_MfAMAAAAJ&hl=en"
                            target="_blank" rel="noopener noreferrer">
@@ -157,7 +157,8 @@ const makeDisclaimerEn = () => {
             information may become outdated.
           </li>
           <li>
-            We don’t guarantee accuracy, nor legality or safety.
+            We cannot guarantee the accuracy, legality, or safety of
+            the information on this site.
           </li>
         </ul>
 
