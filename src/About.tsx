@@ -86,7 +86,7 @@ const makeAboutUsEn = () => {
     <div className="about-us">
       <h3>About Us</h3>
       <div className="chihiro-tsuchiya">
-        <h4>Chihiro Tsuchiya</h4>
+        <h5>Chihiro Tsuchiya</h5>
         <ul>
           <li>Affiliation: PhD Candidate of Graduate School of Asian
             African Area Studies, Kyoto University</li>
@@ -103,7 +103,7 @@ const makeAboutUsEn = () => {
       </div>
 
       <div className="eric-nichols">
-        <h4>Eric Nichols</h4>
+        <h5>Eric Nichols</h5>
         <ul>
           <li>Affiliation: Dr.Eng. of Graduate School of Information
             Science, Nara Institute of Science and Technology</li>
@@ -127,7 +127,7 @@ const makeAboutUsJa = () => {
     <div className="about-us">
       <h3>About Us</h3>
       <div className="chihiro-tsuchiya">
-        <h4>土谷 ちひろ</h4>
+        <h5>土谷 ちひろ</h5>
         <ul>
           <li>在籍: 京都大学 アジアアフリカ研究研究科 博士課程</li>
           <li>資格: 看護師, 保健師, 保健学修士</li>
@@ -142,7 +142,7 @@ const makeAboutUsJa = () => {
       </div>
 
       <div className="eric-nichols">
-        <h4>エリック・ニコルズ</h4>
+        <h5>エリック・ニコルズ</h5>
         <ul>
           <li>学歴: 奈良先端科学大学院大学 情報科学研究科 博士(工)</li>
           <li>専門分野: 人工知能, 自然言語処理, 機械学習</li>

@@ -105,10 +105,13 @@ const makeSymptomsJa = () => {
     <div className="symptoms">
       <h3>新型コロナウィルスの症状は？</h3>
 
-      <a href="https://www.who.int/news-room/q-a-detail/q-a-coronaviruses"
-           target="_blank" rel="noopener noreferrer">世界保健機関(WHO)</a>と<a
-           href="http://www.jibika.or.jp/citizens/covid19/mikaku.html"
-           target="_blank" rel="noopener noreferrer">日本耳鼻咽喉科学会</a>によると、新型コロナウイルス(COVID-19)の症状は以下の通りです。
+      <p>
+        <a href="https://www.who.int/news-room/q-a-detail/q-a-coronaviruses"
+             target="_blank" rel="noopener noreferrer">世界保健機関(WHO)
+        </a>と<a href="http://www.jibika.or.jp/citizens/covid19/mikaku.html"
+                target="_blank" rel="noopener noreferrer">日本耳鼻咽喉科学会
+        </a>によると、新型コロナウイルス(COVID-19)の症状は以下の通りです。
+      </p>
 
       <ul>
         <li>発熱</li>
