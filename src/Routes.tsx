@@ -36,6 +36,10 @@ function Routes() {
       <Route exact path="/jp/hotlines">
         <Hotlines lang="jp"/>
       </Route>
+
+      <Route path="*" exact>
+        <Covid19 lang="en"/>
+      </Route>
     </Switch>
   )
 }
