@@ -9,30 +9,32 @@ const makeOurGoalsEn = () => {
       <h3>Our Goal</h3>
 
       <p>
-        Because of the pandemic of Coronavirus disease 2019 (COVID-19),
-        people all over the world have had tough days. In this situation,
-        a lot of information is spread and complicated. We heard from
-        public people that it is difficult to grasp really important
-        information, and also heard from foreign residents in Japan that
-        they are having anxiety because they lack multilingual
-        information.
+        The pandemic of Coronavirus disease 2019 (COVID-19) is causing
+        hardship for people all over the world. Given the rapidly-changing
+        situation, the spread of information is chaotic. We heard
+        from many people that it is difficult to obtain reliable information
+        on important matters related to COVID-19, and from foreign residents
+        in Japan who are made anxious by the lack of multi-lingual information.
       </p>
 
       <p>
-        Given this situation, we decided to launch this project in order
-        to:
+        Given this situation, we launched this project in order to:
       </p>
 
       <ul>
-        <li>Gather and share all the available information about
-          COVID-19 hotlines in Japan in both Japanese and English
+        <li>
+          Share reliable information related to COVID-19 with the general
+          public in both Japanese and English
         </li>
-        <li>Share reliable information related to COVID-19 with the
-          general public</li>
+        <li>
+          Provide a single resource for finding hotlines dedicated to COVID-19
+          consultations throughout Japan in both Japanese and English
+        </li>
       </ul>
 
       <p>
-        We sincerely hope that we can contribute to everybody in Japan.
+        It is our sincere hope that we can help make reliable information
+        available to everybody in Japan.
       </p>
     </div>
   )
@@ -80,10 +82,10 @@ const makeAboutUsEn = () => {
           <li>Qualification: Registered Nurse, Public Health Nurse, and
             Master of Health Science</li>
           <li>Specialty: Global Health, Area Study in Oceania</li>
-          <li>HP: <a href="https://researchmap.jp/peacechyhi?lang=en"
-                     target="_blank" rel="noopener noreferrer">
-                    researchmap
-                  </a>
+          <li>Homepage: <a
+            href="https://researchmap.jp/peacechyhi?lang=en"
+            target="_blank" rel="noopener noreferrer">
+            researchmap</a>
           </li>
           <li>Contact: <a href="javascript:location='mailto:\u0063\u0068\u0069\u0068\u0069\u0072\u006f\u002e\u0074\u0073\u0075\u0063\u0068\u0069\u0079\u0061\u0032\u0032\u0037\u0040\u0067\u006d\u0061\u0069\u006c\u002e\u0063\u006f\u006d';void 0">Send email</a></li>
         </ul>
@@ -151,9 +153,8 @@ const makeDisclaimerEn = () => {
         <h4>Accuracy of information on this site</h4>
         <ul>
           <li>
-            We try to post information that is as accurate as possible
-            in the content and information on this site. However,
-            information may become outdated.
+            We try to post information that is as accurate as possible on
+            this site. However, the information may become outdated.
           </li>
           <li>
             We cannot guarantee the accuracy, legality, or safety of
@@ -168,8 +169,8 @@ const makeDisclaimerEn = () => {
             posted on this site.
           </li>
           <li>
-            In addition, if you move from this site to another site by links
-            we posted, we will not take any responsibility for the
+            In addition, if you move from this site to another site by the
+            links  we posted, we will not take any responsibility for the
             information and services on those sites.
           </li>
           <li>
@@ -180,9 +181,8 @@ const makeDisclaimerEn = () => {
       <h4>Reproduction prohibited</h4>
         <ul>
         <li>
-          It is prohibited to reprint the information of copyrighted works
-          such as texts existing on this site for commercial purposes
-          without permission.
+          Reproduction of copyrighted works such as texts existing on this
+          site for commercial purposes is prohibited without permission.
         </li>
         <li>
             Please contact us with the URL if you link to this site.
