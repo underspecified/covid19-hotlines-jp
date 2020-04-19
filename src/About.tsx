@@ -11,10 +11,10 @@ const makeOurGoalsEn = () => {
       <p>
         The pandemic of Coronavirus disease 2019 (COVID-19) is causing
         hardship for people all over the world. Given the rapidly-changing
-        situation, the spread of information is chaotic. We heard
-        from many people that it is difficult to obtain reliable information
-        on important matters related to COVID-19, and from foreign residents
-        in Japan who are made anxious by the lack of multi-lingual information.
+        situation, the spread of information is chaotic. We heard from many
+        people that it is difficult to obtain reliable information on important
+        matters related to COVID-19, and from foreign residents in Japan who
+        are made anxious by the lack of multi-lingual information.
       </p>
 
       <p>
@@ -59,7 +59,7 @@ const makeOurGoalsJa = () => {
       </ul>
 
       <p>
-        もしも近くに、いざとなった時の行動がわからなくて困っている方、情報が得られず困っている外国人の方がいたら、ぜひこちらのウェブサイトを教えて頂けたら嬉しいです。
+        もしも近くに、緊急時の行動がわからなくて困っている方、情報が得られず困っている外国人の方がいたら、ぜひこちらのウェブサイトを教えて頂けたら嬉しいです。
       </p>
 
       <p>
