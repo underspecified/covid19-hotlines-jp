@@ -59,24 +59,47 @@ Reproduction prohibited
 ,,Speciality,専門分野: 国際保健、オセアニア地域研究,"Specialty: Global Health, Area Study in Oceania"
 ,,Resarch Map URL,HP: https://researchmap.jp/peacechyhi,HP: https://researchmap.jp/peacechyhi
 ,,Email,コンタクト: chihiro.tsuchiya227@gmail.com,Contact: chihiro.tsuchiya227@gmail.com
-"Hotlines 
-(全国の帰国者・接触者相談センター)","What should we do if we get sick?
-(体調が悪くなったらどうする?)",Explanation,"【帰国者・接触者相談センター】
-新型コロナウイルス感染症の感染が疑われる方、または次の症状がある方は、
+COVID19,"What is COVID19?
+新型コロナウィルスとは?",,"新型コロナウィルスとは?
+世界保健機関(WHO)によると、新型コロナウイルス(COVID-19)はコロナウイルスのひとつです。
+2019年12月、中華人民共和国湖北省武漢市で「原因不明のウイルス性肺炎」として最初の症例が確認されました。
+主に肺炎のような呼吸器系の症状を引き起こしますが、全身に重篤な症状が表れることもあり、中国以外の国家と地域に感染が拡大しています。","What is COVID-19?
+According to the WHO, COVID-19 is an infectious disease caused by a recently-discovered coronavirus (SARS-CoV-2) that has caused an outbreak beginning in Wuhan, China, in December 2019. It causes a highly-infectious respiratory illness that can become life-threatening."
+,"What is its symptoms?
+新型コロナウィルスの症状は?",,"新型コロナウィルスの症状は?
+
+-発熱
+-咳
+-喉の痛み
+-強いだるさ
+-嗅覚・味覚障害
+-息苦しさ","What Are Its Symptoms?
+COVID-19 exhibits the following symptoms:
+
+-Fever
+-Coughing
+-Sore throat
+-Fatigue
+-Loss of smell or taste
+-Shortness of breath"
+,"What should we do if we get sick?
+(体調が悪くなったらどうする?)",Explanation,"新型コロナウイルス感染症の感染が疑われる方、または次の症状がある方は、
 直接医療機関へ受診せず、事前に帰国者・接触者相談センターまでご相談ください。
 マップをクリックすると、各都道府県のセンターの情報が見られます。
 
 •風邪の症状や37.5°C以上の発熱が4日以上続いている。
 •強いだるさ(倦怠感)や息苦しさ(呼吸困難)がある。
 
-※高齢者や基礎疾患等のある場合は、上の状態が2日程度続く場合。","【Hotline Center】
-To those who suspect infection or exhibit the following symptoms, 
-do not go directly to a medical facility and instead please contact the dedicated consultation service in each prefecture first. When you click the map, you can see the information about the center in your prefecture. 
+※高齢者や基礎疾患等のある場合は、上の状態が2日程度続く場合。","If you suspect infection or exhibit folloying symptoms, do not go directly to a medical facility. Instead please call the dedicated COVID-19 hotline in your prefecture first.
 
-•Cold-like symptoms, a fever of 37.5°C or above that has continued for 4 or more days.
-•Extreme fatigue (physical weariness) and difficulty breathing (labored breath).
+-Cold-like symptoms, a fever of 37.5°C or above that has continued for 4 or more days.
+-Extreme fatigue (physical weariness) and difficulty breathing (labored breath).
 
-※Elderly people or those with previously underlying conditions should consult when they have had the above symptoms for 2 or more days."
+※Elderly people or those with previously underlying conditions should consult when they have had these symptoms for 2 or more days.
+
+Find a hotline near you by clicking here."
+"Hotlines 
+(全国の帰国者・接触者相談センター)",,,,
 "News
 (現在の状況・ニュース)","What is the current situation?
 (現在の状況は?)",Explanation,厚生労働省データを使用した日本国内感染の状況,"Current status using data by the Ministry of Health, Labour and Welfarein Japan"
