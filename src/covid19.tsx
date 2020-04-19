@@ -61,7 +61,7 @@ const makeSickEn = () => {
       </p>
 
       <p>
-        <Link to="/hotlines">
+        <Link to="/en/hotlines">
           <h5>Find a hotline near you by clicking here.</h5>
         </Link>
       </p>
@@ -105,7 +105,7 @@ const makeSymptomsJa = () => {
       </ul>
 
       <p>
-        <Link to="/hotlines">
+        <Link to="/jp/hotlines">
           <h5>
             このリンクをクリックすると、各都道府県のセンターの情報が 見られます。
           </h5>
