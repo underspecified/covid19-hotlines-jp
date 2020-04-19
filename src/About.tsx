@@ -274,19 +274,10 @@ const makeAboutJa = () => {
 const makeAbout = (lang: string) =>
   lang === 'en' ? makeAboutEn() : makeAboutJa()
 
-class About extends React.Component<{}, {}> {
-  constructor(props: { lang: string }) {
-    super(props)
-    this.state = {
-      lang: 'en',
-    }
-  }
-
-  render() {
-    return (
-      makeAbout("en")
-    )
-  }
+const About = (props: {lang: string}): JSX.Element => {
+  return (
+    makeAbout(props.lang)
+  )
 }
 
 export default About

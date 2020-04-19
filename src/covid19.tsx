@@ -1,8 +1,7 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 import "./Covid19.css"
-import {Link} from "react-router-dom";
-
 
 const makeWhatEn = () => {
   return (
@@ -70,6 +69,7 @@ const makeSickEn = () => {
   )
 }
 
+// eslint-disable-next-line
 const makeWhatJp = () => {
   return (
     <div className="what">
@@ -106,7 +106,9 @@ const makeSymptomsJa = () => {
 
       <p>
         <Link to="/hotlines">
-          <h5>このリンクをクリックすると、各都道府県のセンターの情報が 見られます。</h5>
+          <h5>
+            このリンクをクリックすると、各都道府県のセンターの情報が 見られます。
+          </h5>
         </Link>
       </p>
     </div>
@@ -134,19 +136,10 @@ const makeCovid19Ja = () => {
 const makeCovid19 = (lang: string) =>
   lang === 'en' ? makeCovid19En() : makeCovid19Ja()
 
-class Covid19 extends React.Component<{}, {}> {
-  constructor(props: {}) {
-    super(props)
-    this.state = {
-      lang: 'en',
-    }
-  }
-
-  render() {
-    return (
-      makeCovid19("en")
-    )
-  }
+const Covid19 = (props: {lang: string}): JSX.Element => {
+  return (
+    makeCovid19(props.lang)
+  )
 }
 
 export default Covid19

@@ -1,82 +1,91 @@
-import * as R from "rambda";
 import React from "react"
 import { Jumbotron, Nav, Navbar } from "react-bootstrap"
 import { LinkContainer } from "react-router-bootstrap"
+import { useLocation } from "react-router"
 
-import { tx as _tx } from "./translate";
+import { tx as _tx } from "./translate"
 
 import "./Menu.css"
 
-class Menu extends React.Component<{}, {}> {
-  constructor(props: {}) {
-    super(props)
-    this.state = {
-      lang: 'en',
-    }
-  }
+const path2Lang = (path: string): string =>
+  path.startsWith('/jp') ? 'jp' : 'en'
 
-  tx = R.partial(_tx, 'en')
+const stripLang = (path: string): string => {
+  const xs = path.split('/')
+  const filtered = xs.filter(x => x !== 'en' && x !== 'jp')
+  return filtered.join('/')
+}
 
-  render() {
-    // noinspection HtmlUnknownTarget
-    return (
-      <div className="menu">
-        <Navbar variant="dark"
-                expand="sm"
-                onSelect={
-                  (lang: string) => this.setState({'lang': lang})
-                }>
-          {/*<Navbar.Brand href="#home">#Covid19HotlinesJp</Navbar.Brand>*/}
+const updateLang = (lang: string, path: string) =>
+  "/" + lang + stripLang(path)
 
-          <Nav className="navbar-expand">
-            <Nav.Item>
-              <Nav.Link href="#en" disabled className="EN" eventKey="en">
+const Menu = (): JSX.Element => {
+  // noinspection HtmlUnknownTarget
+  return (
+    <div className="menu">
+      <Navbar variant="dark"
+              expand="sm">
+        {/*<Navbar.Brand href="/">{useLocation().pathname}</Navbar.Brand>*/}
+
+        <Nav className="navbar-expand">
+          <Nav.Item>
+            <LinkContainer to={updateLang("en", useLocation().pathname)}>
+              <Nav.Link active className="EN" eventKey="en">
                 EN
               </Nav.Link>
-            </Nav.Item>
-            <Nav.Item>
-              <Nav.Link href="#jp" disabled className="JP" eventKey="ja">
+            </LinkContainer>
+          </Nav.Item>
+          <Nav.Item>
+            <LinkContainer to={updateLang("jp", useLocation().pathname)}>
+              <Nav.Link active className="JP" eventKey="jp">
                 JP
               </Nav.Link>
+            </LinkContainer>
+          </Nav.Item>
+        </Nav>
+
+        <Navbar.Toggle aria-controls="basic-navbar-nav"/>
+        <Navbar.Collapse id="basic-navbar-nav">
+          <Nav className="ml-auto menu">
+            <Nav.Item>
+              <LinkContainer
+                to={"/" + path2Lang(useLocation().pathname) + "/about"}>
+                <Nav.Link active>ABOUT</Nav.Link>
+              </LinkContainer>
+            </Nav.Item>
+            <Nav.Item>
+              <LinkContainer
+                to={"/" + path2Lang(useLocation().pathname) + "/covid19"}>
+                <Nav.Link active>COVID-19</Nav.Link>
+              </LinkContainer>
+            </Nav.Item>
+            <Nav.Item>
+              <LinkContainer
+                to={"/" + path2Lang(useLocation().pathname) + "/hotlines"}>
+                <Nav.Link active>HOTLINES</Nav.Link>
+              </LinkContainer>
+            </Nav.Item>
+            <Nav.Item>
+              <LinkContainer
+                to={"/" + path2Lang(useLocation().pathname) + "/info"}>
+                <Nav.Link disabled>INFO</Nav.Link>
+              </LinkContainer>
             </Nav.Item>
           </Nav>
+        </Navbar.Collapse>
+      </Navbar>
 
-          <Navbar.Toggle aria-controls="basic-navbar-nav"/>
-          <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="ml-auto menu">
-              <Nav.Item>
-                <LinkContainer to="/about">
-                  <Nav.Link active>ABOUT</Nav.Link>
-                </LinkContainer>
-              </Nav.Item>
-              <Nav.Item>
-                <LinkContainer to="/covid19">
-                  <Nav.Link active>COVID-19</Nav.Link>
-                </LinkContainer>
-              </Nav.Item>
-              <Nav.Item>
-                <LinkContainer to="/hotlines">
-                  <Nav.Link active>HOTLINES</Nav.Link>
-                </LinkContainer>
-              </Nav.Item>
-              <Nav.Item>
-                <LinkContainer to="/info">
-                  <Nav.Link disabled>INFO</Nav.Link>
-                </LinkContainer>
-              </Nav.Item>
-            </Nav>
-          </Navbar.Collapse>
-        </Navbar>
-
-        <a href="/covid19-hotlines-jp">
-          <Jumbotron fluid>
-            <h1>COVID-19 Hotlines in Japan</h1>
-            <p>{this.tx('新型コロナウィルス対策に役立つ情報')}</p>
-          </Jumbotron>
-        </a>
-      </div>
-    )
-  }
+      <a href="/covid19-hotlines-jp">
+        <Jumbotron fluid>
+          <h1>COVID-19 Hotlines in Japan</h1>
+          <p>
+            {_tx(path2Lang(useLocation().pathname),
+              '新型コロナウィルス対策に役立つ情報')}
+          </p>
+        </Jumbotron>
+      </a>
+    </div>
+  )
 }
 
 export default Menu

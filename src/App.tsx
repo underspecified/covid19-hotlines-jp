@@ -7,7 +7,7 @@ import "bootstrap/dist/css/bootstrap.min.css"
 import "./Hotlines.css"
 import "./Menu.css"
 
-function App(): JSX.Element {
+function App(props: {lang: string}): JSX.Element {
   // const lang: string = 'en'
 
   return (

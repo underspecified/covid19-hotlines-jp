@@ -10,11 +10,11 @@ const jaen: Record<string, string> =
 const enja: Record<string, string> =
   makeObj(TX.map(x => [x.English, x.Japanese]))
 const trans: Record<string, Record<string, Record<string, string>>>
-  = {'ja': {'en': jaen}, 'en': {'ja': enja}}
+  = {'jp': {'en': jaen}, 'en': {'jp': enja}}
 
 // noinspection JSUnusedGlobalSymbols
 export const tx = (tgtLang: string, s: string): string => {
-  const srcLang = (tgtLang === 'ja') ? 'en' : 'ja'
+  const srcLang = (tgtLang === 'jp') ? 'en' : 'jp'
   const TX = trans[srcLang][tgtLang]
   for (const phrase in TX) {
     for (; ;) {
