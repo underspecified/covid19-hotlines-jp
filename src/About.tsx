@@ -109,10 +109,10 @@ const makeAboutUsEn = () => {
             Science, Nara Institute of Science and Technology</li>
           <li>Specialty: Artificial intelligence, natural language
             processing, machine learning</li>
-          <li>Homepage: <a href="https://scholar.google.co.jp/citations?user=I3_MfAMAAAAJ&hl=en"
-                           target="_blank" rel="noopener noreferrer">
-                          Google Scholar
-                        </a>
+          <li>Homepage: <a
+            href="https://scholar.google.co.jp/citations?user=I3_MfAMAAAAJ&hl=en"
+            target="_blank" rel="noopener noreferrer">
+            Google Scholar</a>
           </li>
           <li>Contact: <a href="javascript:location='mailto:\u0075\u006e\u0064\u0065\u0072\u0073\u0070\u0065\u0063\u0069\u0066\u0069\u0065\u0064\u0040\u0067\u006d\u0061\u0069\u006c\u002e\u0063\u006f\u006d';void 0">Send email</a></li>
         </ul>

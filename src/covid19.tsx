@@ -54,9 +54,12 @@ const makeSickEn = () => {
       <h3>What Should We Do If We Get Sick?</h3>
 
       <p>
-        If you suspect infection or exhibit the following symptoms, do not
-        go directly to a medical facility. Instead please call the dedicated
-        COVID-19 hotline in your prefecture first.<br />
+        <a href="https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/kenkou_iryou/dengue_fever_qa_00014.html"
+           target="_blank" rel="noopener noreferrer">The Ministry of Health,
+          Labor, and Welfare</a> currently requests that if you suspect
+        infection or exhibit the following symptoms, do not go directly to a
+        medical facility. Instead please first call the dedicated COVID-19
+        hotline in your prefecture.<br />
         ※The elderly, the pregnant, and people with previously underlying
         conditions should consult when they have had these symptoms for 2 or
         more days.
@@ -131,8 +134,10 @@ const makeSickJa = () => {
       <h3>体調が悪くなったらどうする？</h3>
 
       <p>
-        新型コロナウイルス感染症の感染が疑われる方、または次の症状がある方は、
-        直接医療機関へ受診せず、事前に帰国者・接触者相談センターまでご相談ください。<br/>
+        <a href="https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/kenkou_iryou/dengue_fever_qa_00001.html#Q5-1"
+           target="_blank" rel="noopener noreferrer">厚生労働省</a>によると、
+        新型コロナウイルス感染症の感染が疑われる方、または次の症状がある方は、 直接医療
+        機関へ受診せず、事前に帰国者・接触者相談センターまでご相談ください。<br/>
         ※高齢者や基礎疾患等のある方、妊娠している方は、上の状態が2日程度続く場合。
       </p>
 
