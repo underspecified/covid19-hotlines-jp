@@ -31,14 +31,14 @@ const Menu = (): JSX.Element => {
           <Nav.Item>
             <LinkContainer to={updateLang("en", useLocation().pathname)}>
               <Nav.Link active className="EN" eventKey="en">
-                EN
+                {_tx(path2Lang(useLocation().pathname) === "jp" ? "en" : "jp", "EN")}
               </Nav.Link>
             </LinkContainer>
           </Nav.Item>
           <Nav.Item>
             <LinkContainer to={updateLang("jp", useLocation().pathname)}>
               <Nav.Link active className="JP" eventKey="jp">
-                JP
+                {_tx(path2Lang(useLocation().pathname) === "en" ? "jp" : "en", "JP")}
               </Nav.Link>
             </LinkContainer>
           </Nav.Item>
