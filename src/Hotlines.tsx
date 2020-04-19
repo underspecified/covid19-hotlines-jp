@@ -107,6 +107,7 @@ const Hotlines = (props: {lang: string}): JSX.Element => {
   return (
     <div className="hotlines">
       <h3>{tx("Hotlines")}</h3>
+      <p>{tx("Last updated")} 2020/4/19.</p>
       {hotlineElems}
     </div>
   )
