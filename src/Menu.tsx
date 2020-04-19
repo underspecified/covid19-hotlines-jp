@@ -80,7 +80,7 @@ const Menu = (): JSX.Element => {
           <h1>COVID-19 Hotlines in Japan</h1>
           <p>
             {_tx(path2Lang(useLocation().pathname),
-              '新型コロナウィルス対策に役立つ情報') #COVID19HotlinesJp}
+              '新型コロナウィルス対策に役立つ情報')} #COVID19HotlinesJp
           </p>
         </Jumbotron>
       </a>
