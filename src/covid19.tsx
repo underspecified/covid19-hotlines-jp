@@ -12,10 +12,10 @@ const makeWhatEn = () => {
         According to the <a
            href="https://www.who.int/news-room/q-a-detail/q-a-coronaviruses"
            target="_blank" rel="noopener noreferrer">WHO</a>, COVID-19 is
-        an infectious disease caused by a recently-discovered coronavirus
-        (SARS-CoV-2) that has caused an outbreak beginning in Wuhan, China,
-        in December 2019. It causes a highly-infectious respiratory
-        illness that can become life-threatening.
+        an infectious disease caused by the recently-discovered novel
+        coronavirus (SARS-CoV-2) that has caused an outbreak beginning in
+        Wuhan, China, in December 2019. It is a highly-infectious
+        respiratory illness that can become life-threatening.
      </p>
 
     </div>
@@ -97,10 +97,7 @@ const makeWhatJp = () => {
       <p>
         <a href="https://www.who.int/news-room/q-a-detail/q-a-coronaviruses"
            target="_blank" rel="noopener noreferrer">世界保健機関(WHO)</a>に
-        よると、新型コロナウイルス(COVID-19)はコロナウイルスのひとつです。2019年12月、
-        中華人民共和国湖北省武漢市で「原因不明のウイルス性肺炎」として最初の症例が確認
-        されました。 主に肺炎のような呼吸器系の症状を引き起こしますが、全身に重篤な症状が
-        表れることもあり、中国以外の国家と地域に感染が拡大しています。
+        よると、世界保健機関(WHO)によると、新型コロナウイルス感染症はコロナウイルス（SARS-CoV2）によって引き起こされる感染症です。2019年12月、中華人民共和国湖北省武漢市で「原因不明のウイルス性肺炎」として最初の症例が確認されました。主に肺炎のような呼吸器系の症状を引き起こしますが、全身に重篤な症状が表れることもあります。
       </p>
     </div>
   )
@@ -137,9 +134,9 @@ const makeSickJa = () => {
       <h3>体調が悪くなったらどうする？</h3>
 
       <p>
-        新型コロナウイルス感染症の感染が疑われる方、または次の症状がある方は、直接医療
-        機関へ受診せず、事前に帰国者・接触者相談センターまでご相談ください。(<a href="https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/kenkou_iryou/dengue_fever_qa_00001.html#Q5-1"
-           target="_blank" rel="noopener noreferrer">厚生労働省HP</a>より)<br/>
+        新型コロナウイルス感染症の感染が疑われる方、または次の症状がある方は、直接医療機関へ受診せず、事前に帰国者・接触者相談センターまでご相談ください。(<a
+        href="https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/kenkou_iryou/dengue_fever_qa_00001.html#Q5-1"
+        target="_blank" rel="noopener noreferrer">厚生労働省HP</a>より)<br/>
       </p>
 
       <ul>
