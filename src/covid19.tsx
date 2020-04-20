@@ -70,40 +70,12 @@ const makeWhyEn = () => {
       <h3>Why call a hotline instead of going to the hospital?</h3>
 
       <p>
-        First and foremost, most of the symptoms of a common cold, fever,
-        lassitude, or difficulty in breathing, at this moment, are being
-        caused by diseases other than the novel coronavirus disease, such as
-        influenza. If a cold or influenza is suspected, it is advised to
-        consult with a family doctor or other doctors nearby as usual.
-      </p>
-
-      <p>
-        Meanwhile, suspected patients of novel coronavirus are visiting
-        outpatient facilities for returnees and potential contacts referred by
-        the Call Centers for Japanese Returnees and Potential Contacts; when
-        a person is not actually infected, visiting those medical institutions,
-        which have outpatient facilities, without proper consultation, just
-        because he or she is concerned about having an infection, will increase
-        the risk of infection.
-      </p>
-
-      <p>
-        In the event of concern over infection by the novel coronavirus, it is
-        advised to consult with the Call Centers. The list of medical
-        institutions that have the aforementioned outpatient facilities
-        is not disclosed. This decision is based on lessons learned during
-        the 2009 novel influenza pandemic whereby it took time to provide care
-        to those who needed urgent attention as many people visited certain
-        medical institutions in some prefectures. This is a necessary response
-        to prioritize the provision of care to those who need urgent attention
-        (i.e. patients with severe symptoms who need intensive care).
-        The government asks for the understanding of the public.
-      </p>
-
-      <p>
-        (From <a href="https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/kenkou_iryou/dengue_fever_qa_00014.html#Q15"
-           target="_blank" rel="noopener noreferrer">The Ministry of Health,
-          Labor, and Welfare</a>)
+        Many common cold-like symptoms are caused by diseases other than
+        COVID-19, and going to medical facilities without prior consultation
+        with an expert increases the risk of spreading COVID-19 and places
+        unnecessary strain on the healthcare system. (From <a href="https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/kenkou_iryou/dengue_fever_qa_00014.html#Q15"
+           target="_blank" rel="noopener noreferrer">
+        the Ministry of Health, Labor, and Welfare</a>.)
       </p>
 
       <p>
