@@ -71,8 +71,7 @@ const makeWhyEn = () => {
 
       <p>
         Many common cold-like symptoms are caused by diseases other than
-        COVID-19, and going to medical facilities without prior consultation
-        with an expert increases the risk of spreading COVID-19 and places
+        COVID-19, and going to medical facilities without prior while placing
         unnecessary strain on the healthcare system. (From <a href="https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/kenkou_iryou/dengue_fever_qa_00014.html#Q15"
            target="_blank" rel="noopener noreferrer">
         the Ministry of Health, Labor, and Welfare</a>.)
