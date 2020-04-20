@@ -87,7 +87,7 @@ const makeAboutUsEn = () => {
             target="_blank" rel="noopener noreferrer">
             researchmap</a>
           </li>
-          <li>Contact: <a href="javascript:location='mailto:\u0063\u0068\u0069\u0068\u0069\u0072\u006f\u002e\u0074\u0073\u0075\u0063\u0068\u0069\u0079\u0061\u0032\u0032\u0037\u0040\u0067\u006d\u0061\u0069\u006c\u002e\u0063\u006f\u006d';void 0">Send email</a></li>
+          <li>Contact: <a href="javascript:location='mailto:\u0063\u0068\u0069\u0068\u0069\u0072\u006f\u0040\u0063\u006f\u0076\u0069\u0064\u0031\u0039\u002d\u0068\u006f\u0074\u006c\u0069\u006e\u0065\u0073\u002e\u006a\u0070';void 0">Send email</a></li>
         </ul>
       </div>
 
@@ -102,7 +102,7 @@ const makeAboutUsEn = () => {
             target="_blank" rel="noopener noreferrer">
             Google Scholar</a>
           </li>
-          <li>Contact: <a href="javascript:location='mailto:\u0075\u006e\u0064\u0065\u0072\u0073\u0070\u0065\u0063\u0069\u0066\u0069\u0065\u0064\u0040\u0067\u006d\u0061\u0069\u006c\u002e\u0063\u006f\u006d';void 0">Send email</a></li>
+          <li>Contact: <a href="javascript:location='mailto:\u0065\u0072\u0069\u0063\u0040\u0063\u006f\u0076\u0069\u0064\u0031\u0039\u002d\u0068\u006f\u0074\u006c\u0069\u006e\u0065\u0073\u002e\u006a\u0070';void 0">Send email</a></li>
         </ul>
       </div>
     </div>
