@@ -168,7 +168,7 @@ const makeNewsJp = () => {
         <li>
           <a href="https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000164708_00001.html"
              target="_blank" rel="noopener noreferrer"
-          >厚生労働省による最新情報が掲載されています</a>
+          >厚生労働省による最新情報</a>
         </li>
         <li>
           <a href="https://www3.nhk.or.jp/news/special/coronavirus/"
