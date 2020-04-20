@@ -117,7 +117,7 @@ const makeAboutUsJa = () => {
       <div className="chihiro-tsuchiya">
         <h5>土谷 ちひろ</h5>
         <ul>
-          <li>在籍: 京都大学 アジアアフリカ研究研究科 博士課程</li>
+          <li>在籍: 京都大学大学院 アジア•アフリカ地域研究研究科(ASAFAS) 博士課程</li>
           <li>資格: 看護師, 保健師, 保健学修士</li>
           <li>専門分野: 国際保健, オセアニア地域研究</li>
           <li>ホームページ: <a href="https://researchmap.jp/peacechyhi?lang=en"
