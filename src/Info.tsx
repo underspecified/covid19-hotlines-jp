@@ -122,17 +122,6 @@ const makeOtherEn = () => {
             Handy point-and-speak guides for dealing with Coronavirus-related
             scenarios</a>
         </li>
-        <li>
-          <a href="https://covid19-jpn.com/forcitizen/"
-             target="_blank" rel="noopener noreferrer">
-            Website about COVID-19 by medical specialists in Japan</a>
-        </li>
-        <li>
-          <a href="http://minato.sip21c.org/2019-nCoV-im3r.html"
-             target="_blank" rel="noopener noreferrer">
-            Website by Dr. Minato Nakazawa, Kobe University who specializes in
-            Public Health and Epidemiology</a>
-        </li>
       </ul>
     </div>
   )
