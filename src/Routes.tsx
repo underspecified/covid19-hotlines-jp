@@ -4,6 +4,7 @@ import { Route, Switch } from "react-router-dom";
 import About from "./About";
 import Covid19 from "./Covid19";
 import Hotlines from "./Hotlines";
+import Info from "./Info";
 
 function Routes() {
   return (
@@ -23,6 +24,9 @@ function Routes() {
       <Route exact path="/en/hotlines">
         <Hotlines lang="en"/>
       </Route>
+      <Route exact path="/en/info">
+        <Info lang="en"/>
+      </Route>
 
       <Route exact path="/jp">
         <Covid19 lang="jp"/>
@@ -36,8 +40,11 @@ function Routes() {
       <Route exact path="/jp/hotlines">
         <Hotlines lang="jp"/>
       </Route>
+      <Route exact path="/jp/info">
+        <Info lang="jp"/>
+      </Route>
 
-      <Route path="*" exact>
+      <Route path="*">
         <Covid19 lang="en"/>
       </Route>
     </Switch>

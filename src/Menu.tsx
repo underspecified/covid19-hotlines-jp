@@ -68,7 +68,7 @@ const Menu = (): JSX.Element => {
             <Nav.Item>
               <LinkContainer
                 to={"/" + path2Lang(useLocation().pathname) + "/info"}>
-                <Nav.Link disabled>INFO</Nav.Link>
+                <Nav.Link active>INFO</Nav.Link>
               </LinkContainer>
             </Nav.Item>
           </Nav>
