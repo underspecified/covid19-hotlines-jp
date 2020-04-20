@@ -9,7 +9,7 @@ import './index.css';
 //import './App.css'
 
 ReactDOM.render(
-  <BrowserRouter basename="/covid19-hotlines-jp/">
+  <BrowserRouter basename="/">
     <App lang="en"/>
   </BrowserRouter>,
   document.getElementById('root')

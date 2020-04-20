@@ -75,7 +75,7 @@ const Menu = (): JSX.Element => {
         </Navbar.Collapse>
       </Navbar>
 
-      <a href={"/covid19-hotlines-jp/" + path2Lang(useLocation().pathname)}>
+      <a href={"/" + path2Lang(useLocation().pathname)}>
         <Jumbotron fluid>
           <h1>COVID-19 Hotlines in Japan</h1>
           <p>
