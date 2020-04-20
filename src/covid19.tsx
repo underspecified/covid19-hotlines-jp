@@ -60,6 +60,51 @@ const makeSickEn = () => {
         infection, do not go directly to a medical facility. Instead please
         first call the dedicated COVID-19 hotline in your prefecture.<br />
       </p>
+    </div>
+  )
+}
+
+const makeWhyEn = () => {
+  return (
+    <div className="why">
+      <h3>Why call a hotline instead of going to the hospital?</h3>
+
+      <p>
+        First and foremost, most of the symptoms of a common cold, fever,
+        lassitude, or difficulty in breathing, at this moment, are being
+        caused by diseases other than the novel coronavirus disease, such as
+        influenza. If a cold or influenza is suspected, it is advised to
+        consult with a family doctor or other doctors nearby as usual.
+      </p>
+
+      <p>
+        Meanwhile, suspected patients of novel coronavirus are visiting
+        outpatient facilities for returnees and potential contacts referred by
+        the Call Centers for Japanese Returnees and Potential Contacts; when
+        a person is not actually infected, visiting those medical institutions,
+        which have outpatient facilities, without proper consultation, just
+        because he or she is concerned about having an infection, will increase
+        the risk of infection.
+      </p>
+
+      <p>
+        In the event of concern over infection by the novel coronavirus, it is
+        advised to consult with the Call Centers. The list of medical
+        institutions that have the aforementioned outpatient facilities
+        is not disclosed. This decision is based on lessons learned during
+        the 2009 novel influenza pandemic whereby it took time to provide care
+        to those who needed urgent attention as many people visited certain
+        medical institutions in some prefectures. This is a necessary response
+        to prioritize the provision of care to those who need urgent attention
+        (i.e. patients with severe symptoms who need intensive care).
+        The government asks for the understanding of the public.
+      </p>
+
+      <p>
+        (From <a href="https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/kenkou_iryou/dengue_fever_qa_00014.html#Q15"
+           target="_blank" rel="noopener noreferrer">The Ministry of Health,
+          Labor, and Welfare</a>)
+      </p>
 
       <p>
         <Link to="/en/hotlines">
@@ -120,6 +165,20 @@ const makeSickJa = () => {
         href="https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/kenkou_iryou/dengue_fever_qa_00001.html#Q5-1"
         target="_blank" rel="noopener noreferrer">厚生労働省HP</a>より)<br/>
       </p>
+    </div>
+  )
+}
+
+const makeWhyJp = () => {
+  return (
+    <div className="why">
+      <h3>なぜ直に医療機関を受診してはいけないの？</h3>
+
+      <p>
+        風邪の症状があっても、新型コロナウイルス感染症以外の病気の方が圧倒的に多い状況です。また、適切な相談をせずに医療機関を受診することは、新型コロナウイルス感染症でなかった場合に、かえって感染するリスクを招くことになります。        (<a href="https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/kenkou_iryou/dengue_fever_qa_00001.html#Q2-1"
+           target="_blank" rel="noopener noreferrer"
+      >厚生労働省HP</a>より)
+      </p>
 
       <p>
         <Link to="/jp/hotlines">
@@ -138,6 +197,7 @@ const makeCovid19En = () => {
       {makeWhatEn()}
       {makeSymptomsEn()}
       {makeSickEn()}
+      {makeWhyEn()}
     </div>
   )
 }
@@ -148,6 +208,7 @@ const makeCovid19Ja = () => {
       {makeWhatJp()}
       {makeSymptomsJa()}
       {makeSickJa()}
+      {makeWhyJp()}
     </div>
   )
 }
