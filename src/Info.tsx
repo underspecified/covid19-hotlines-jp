@@ -14,7 +14,7 @@ const makeSituationEn = () => {
           data by the Ministry of Health, Labor and Welfare in Japan</a>
         </li>
         <li>
-          <a href="https://gisanddata.maps.arcgis.com/apps/opsdashboard/index.html"
+          <a href="https://gisanddata.maps.arcgis.com/apps/opsdashboard/index.html#/bda7594740fd40299423467b48e9ecf6"
              target="_blank" rel="noopener noreferrer">COVID-19 Global Cases
             by the Center for Systems Science and Engineering (CSSE) at Johns
             Hopkins University</a>
@@ -149,7 +149,7 @@ const makeSituationJp = () => {
           >厚生労働省データを使用した日本国内感染の状況</a>
         </li>
         <li>
-          <a href="https://gisanddata.maps.arcgis.com/apps/opsdashboard/index.html"
+          <a href="https://gisanddata.maps.arcgis.com/apps/opsdashboard/index.html#/bda7594740fd40299423467b48e9ecf6"
              target="_blank" rel="noopener noreferrer"
           >ジョンズ・ホプキンス大学が公開した世界の新型コロナウィルス感染状況 (英語)</a>
         </li>
