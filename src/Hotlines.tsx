@@ -4,7 +4,7 @@ import { Accordion, Card } from "react-bootstrap"
 import { StringUtils } from "turbocommons-ts"
 
 import hotlines from "./data/all.json"
-import webpages from "./data/webpages.json"
+//import webpages from "./data/webpages.json"
 import { Hotline } from "./hotline"
 import { tx as _tx } from "./translate"
 
@@ -17,10 +17,10 @@ const makeId = (s: string): string =>
     StringUtils.FORMAT_LOWER_CAMEL_CASE
   )
 
-const urls: Record<string, string> =
-  Object.fromEntries(
-    webpages.map(d => [d['pref_ja'], d['url']])
-  )
+// const urls: Record<string, string> =
+//   Object.fromEntries(
+//     webpages.map(d => [d['pref_ja'], d['url']])
+//   )
 
 const Hotlines = (props: {lang: string}): JSX.Element => {
   const tx = R.partial(_tx, props.lang)
@@ -99,7 +99,10 @@ const Hotlines = (props: {lang: string}): JSX.Element => {
     )
   }
 
-  // const area2Element = (area: Array<Hotline>, pref: string): JSX.Element => {
+  // const area2Element = (
+  //   area: Array<Hotline>,
+  //   pref: string
+  // ): JSX.Element => {
   //   const lis = area.map(hotline2Element)
   //   const prefElem =
   //     <h4>
@@ -117,7 +120,7 @@ const Hotlines = (props: {lang: string}): JSX.Element => {
   //   )
   // }
 
-  const makeToggle = (area: Array<Hotline>, pref: string) => (
+  const makeToggle = (pref: string, area: Array<Hotline>) => (
     <Card>
       <Accordion.Toggle as={Card.Header} eventKey={makeId(tx(pref))}>
         <Card.Title>
@@ -132,11 +135,36 @@ const Hotlines = (props: {lang: string}): JSX.Element => {
     </Card>
   )
 
-  const makeAccordion = () => (
-    <Accordion defaultActiveKey="allOfJapan">
-      {Object.values(R.map(makeToggle, hotlines.area))}
-    </Accordion>
-  )
+  const sortByPrefId = (pref: string, area: Array<Hotline>) =>
+    makeId(tx(pref))
+
+  const sortEnAreas = (
+    area: Record<string, Array<Hotline>>
+  ): Array<[string, Array<Hotline>]> => {
+    const entries: Array<[string, Array<Hotline>]> = Object.entries(area)
+    const head: [string, Array<Hotline>] = R.head(entries)!
+    const tail: Array<[string, Array<Hotline>]> = R.tail(entries)
+    const sorted: Array<[string, Array<Hotline>]> = R.sortBy(
+      ([k, v]) => sortByPrefId(k, v),
+      tail
+    )
+    return R.concat([head, ], sorted)
+  }
+
+  const makeAccordion = () => {
+    const sorted: Array<[string, Array<Hotline>]> =
+      props.lang === 'en' ?
+        sortEnAreas(hotlines.area) :
+        Object.entries(hotlines.area)
+    const toggles: Array<JSX.Element> =
+      sorted.map(([k, v]) => makeToggle(k, v))
+
+    return (
+      <Accordion defaultActiveKey="allOfJapan">
+        {toggles}
+      </Accordion>
+    )
+  }
 
   return (
     <div className="hotlines">
