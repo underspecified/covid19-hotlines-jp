@@ -1,4 +1,5 @@
 import React from "react"
+import {Accordion, Card, Dropdown, DropdownButton} from "react-bootstrap"
 import * as R from "rambda"
 import { StringUtils } from "turbocommons-ts"
 
@@ -85,30 +86,87 @@ const Hotlines = (props: {lang: string}): JSX.Element => {
     )
   }
 
-  const area2Element = (area: Array<Hotline>, pref: string): JSX.Element => {
+  const hotlines2Element = (
+    area: Array<Hotline>,
+    pref: string
+  ): JSX.Element => {
     const lis = area.map(hotline2Element)
-    const prefElem =
-      <a href={urls[pref]} target="_blank" rel="noopener noreferrer">
-        {tx(pref)}
-      </a> || tx(pref)
     return (
       <div id={makeId(pref)} className="area">
         <ul>
-          <h4>{prefElem}</h4>
           {lis}
         </ul>
       </div>
     )
   }
 
+  const area2Element = (area: Array<Hotline>, pref: string): JSX.Element => {
+    const lis = area.map(hotline2Element)
+    const prefElem =
+      <h4>
+        (<a href={urls[pref]} target="_blank" rel="noopener noreferrer">
+          {tx(pref)}
+        </a> || tx(pref))
+      </h4>
+    return (
+      <div id={makeId(pref)} className="area">
+        <ul>
+          {prefElem}
+          {lis}
+        </ul>
+      </div>
+    )
+  }
+
+  const pref2DropdownItem = (pref: string) => (
+    <Dropdown.Item href={"#" + makeId(tx(pref))}>{tx(pref)}</Dropdown.Item>
+  )
+
+  // eslint-disable-next-line
   const hotlineElems: Array<JSX.Element> =
     Object.values(R.map(area2Element, hotlines.area))
-  
+
+  const makeDropdown = () => {
+    const areas: Array<string> = props.lang === "en" ?
+      R.sortBy(x => tx(x), Object.keys(hotlines.area)) :
+      Object.keys(hotlines.area)
+    const items = areas.map(pref2DropdownItem)
+    return (
+      <div className="hotlines-dropdown">
+        <DropdownButton id="hotlines-dropdown-button"
+                        title="Select a prefecture">
+          {items}
+        </DropdownButton>
+      </div>
+    )
+  }
+
+  const makeToggle = (area: Array<Hotline>, pref: string) => (
+    <Card>
+      <Accordion.Toggle as={Card.Header} eventKey={makeId(tx(pref))}>
+        <Card.Title>
+          {tx(pref)}
+        </Card.Title>
+      </Accordion.Toggle>
+      <Accordion.Collapse eventKey={makeId(tx(pref))}>
+        <Card.Body>
+          {hotlines2Element(area, pref)}
+        </Card.Body>
+      </Accordion.Collapse>
+    </Card>
+  )
+
+  const makeAccordion = () => (
+    <Accordion defaultActiveKey="allOfJapan">
+      {Object.values(R.map(makeToggle, hotlines.area))}
+    </Accordion>
+  )
+
   return (
     <div className="hotlines">
       <h3>{tx("Hotlines")}</h3>
       <p>{tx("Last updated")} 2020/4/19.</p>
-      {hotlineElems}
+      {makeAccordion()}
     </div>
   )
 }
