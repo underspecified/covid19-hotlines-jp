@@ -1,44 +1,45 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# COVID-19 Hotlines in Japan
 
-## Available Scripts
+This is the repository for the website COVID-19 Hotlines in Japan (\#COVID19HotlinesJp)
 
-In the project directory, you can run:
+## Our Goal
 
-### `yarn start`
+The pandemic of Coronavirus disease 2019 (COVID-19) is causing hardship for people all over the world. Given the rapidly-changing situation, the spread of information is chaotic. We heard from many people that it is difficult to obtain reliable information on important matters related to COVID-19, and from foreign residents in Japan who are made anxious by the lack of multi-lingual information.
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Given this situation, we launched this project in order to:
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+* Share reliable information related to COVID-19 with the general public in both Japanese and English
+* Provide a single resource for finding hotlines dedicated to COVID-19 consultations throughout Japan in both Japanese and English
+* It is our sincere hope that we can help make reliable information available to everybody in Japan.
 
-### `yarn test`
+## About Us
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Chihiro Tsuchiya
+* Affiliation: PhD Candidate of Graduate School of Asian African Area Studies, Kyoto University
+* Qualification: Registered Nurse, Public Health Nurse, and Master of Health Science
+* Specialty: Global Health, Area Study in Oceania
+* Homepage: (researchmap)[https://researchmap.jp/peacechyhi?lang=en]
+* Contact: chihiro -at- covid19-hotlines.jp
 
-### `yarn build`
+### Eric Nichols
+* Affiliation: Dr.Eng. in Information Science
+* Specialty: Artificial intelligence, natural language processing, machine learning
+* Homepage: (Google Scholar)[https://scholar.google.co.jp/citations?user=I3_MfAMAAAAJ&hl=en]
+* Contact: eric -at- covid19-hotlines.jp
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Disclaimer
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+### Accuracy of information on this site
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+* We try to post information that is as accurate as possible on this site. However, the information may become outdated.
+* We cannot guarantee the accuracy, legality, or safety of the information on this site.
 
-### `yarn eject`
+### Liability
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+* We are not responsible for any damages caused by the contents posted on this site.
+* In addition, if you move from this site to another site by the links we posted, we will not take any responsibility for the information and services on those sites.
+* You use the information on this site at your own risk.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Reproduction prohibited
+* Reproduction of copyrighted works such as texts existing on this site for commercial purposes is prohibited without permission.
+* Please contact us with the URL if you link to this site.
