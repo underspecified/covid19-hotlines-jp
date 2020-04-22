@@ -1,10 +1,6 @@
-.area, .hotline, .hours li {
+.hotlines .title, .hotlines .date-updated {
   padding-left: 1.5rem;
   padding-right: 1.0rem;
-}
-
-.hotlines h3, .hotlines p {
-  margin-left: 1.5rem;
 }
 
 .card-header {
@@ -16,12 +12,7 @@
   margin-bottom: 0 !important;
 }
 
-.card-body {
-  margin-left: 0;
-  padding-left: 0;
-}
-
-.area {
+.area, .hotline {
   margin-left: 0;
   margin-right: 0;
   padding-left: 0;
@@ -32,6 +23,10 @@
   list-style-type: none;
 }
 
-.hotline {
+.center, .hotline {
   margin-bottom: 0.75rem;
+}
+
+.center {
+  margin-bottom: 1.5rem;
 }
