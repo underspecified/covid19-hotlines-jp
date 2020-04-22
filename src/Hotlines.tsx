@@ -160,9 +160,6 @@ const Hotlines = (props: {lang: string}): JSX.Element => {
     </Card>
   )
 
-  const sortByPrefId = (pref: string, area: Array<Hotline>) =>
-    makeId(pref)
-
   const sortEnPrefs = (
     prefs: Record<string, Array<Hotline>>
   ): Array<[string, Array<Hotline>]> => {
@@ -173,6 +170,30 @@ const Hotlines = (props: {lang: string}): JSX.Element => {
       tail
     )
   }
+
+  const makeAccordionEn = () => {
+    const sorted: Array<[string, Array<Hotline>]> =
+      sortEnPrefs(hotlines.area)
+    const toggles: Array<JSX.Element> =
+      sorted.map(([k, v]) => makePrefToggle(k, v))
+
+    return (
+      <Accordion>
+        {toggles}
+      </Accordion>
+    )
+  }
+
+  const prefs2Regions = (
+    prefs: Record<string, Array<Hotline>>
+  ): Record<string, Array<[string, Array<Hotline>]>> => {
+    const entries: Array<[string, Array<Hotline>]> = Object.entries(prefs)
+    const tail: Array<[string, Array<Hotline>]> = R.tail(entries)
+    return R.groupBy(([k, v]) => region[k], tail)
+  }
+
+    const sortByPrefId = (pref: string, area: Array<Hotline>) =>
+    makeId(pref)
 
   const makeRegionToggle = (
     region: string,
@@ -195,27 +216,6 @@ const Hotlines = (props: {lang: string}): JSX.Element => {
           </Accordion.Collapse>
         </Card>
       )
-  }
-
-  const makeAccordionEn = () => {
-    const sorted: Array<[string, Array<Hotline>]> =
-      sortEnPrefs(hotlines.area)
-    const toggles: Array<JSX.Element> =
-      sorted.map(([k, v]) => makePrefToggle(k, v))
-
-    return (
-      <Accordion>
-        {toggles}
-      </Accordion>
-    )
-  }
-
-  const prefs2Regions = (
-    prefs: Record<string, Array<Hotline>>
-  ): Record<string, Array<[string, Array<Hotline>]>> => {
-    const entries: Array<[string, Array<Hotline>]> = Object.entries(prefs)
-    const tail: Array<[string, Array<Hotline>]> = R.tail(entries)
-    return R.groupBy(([k, v]) => region[k], tail)
   }
 
   const makeAccordionJp = () => {
