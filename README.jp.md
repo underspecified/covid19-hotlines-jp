@@ -1,6 +1,6 @@
 # COVID-19 Hotlines in Japan
 
-(COVID-19 Hotlines in Japan)[https://covid19-hotlines.jp] のホームページのレポです。 \#COVID19HotlinesJp.
+[COVID-19 Hotlines in Japan](https://covid19-hotlines.jp)のホームページのレポです。 \#COVID19HotlinesJp.
 
 ## Our Goal
 
@@ -21,13 +21,13 @@
 * 在籍: 京都大学大学院 アジア•アフリカ地域研究研究科(ASAFAS) 博士課程
 * 資格: 看護師, 保健師, 保健学修士
 * 専門分野: 国際保健, オセアニア地域研究
-* ホームページ: (researchmap)[https://researchmap.jp/peacechyhi?lang=en] 
+* ホームページ: [researchmap](https://researchmap.jp/peacechyhi?lang=en) 
 * コンタクト: chihiro -at- covid19-hotlines.jp
 
 ### エリック・ニコルズ
 * 資格: 情報科学博士(工)
 * 専門分野: 人工知能, 自然言語処理, 機械学習
-* ホームページ: (Google Scholar)[https://scholar.google.co.jp/citations?user=I3_MfAMAAAAJ&hl=en] 
+* ホームページ: [Google Scholar](https://scholar.google.co.jp/citations?user=I3_MfAMAAAAJ&hl=en)
 * コンタクト: eric -at- covid19-hotlines.jp
 
 ## 免責事項
