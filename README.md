@@ -1,6 +1,6 @@
 # COVID-19 Hotlines in Japan
 
-This is the repository for the website COVID-19 Hotlines in Japan (\#COVID19HotlinesJp)
+This is the repository for the website (COVID-19 Hotlines in Japan)[https://covid19-hotlines.jp] \#COVID19HotlinesJp.
 
 ## Our Goal
 
@@ -10,7 +10,8 @@ Given this situation, we launched this project in order to:
 
 * Share reliable information related to COVID-19 with the general public in both Japanese and English
 * Provide a single resource for finding hotlines dedicated to COVID-19 consultations throughout Japan in both Japanese and English
-* It is our sincere hope that we can help make reliable information available to everybody in Japan.
+
+It is our sincere hope that we can help make reliable information available to everybody in Japan.
 
 ## About Us
 
