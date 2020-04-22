@@ -18,13 +18,13 @@ Given this situation, we launched this project in order to:
 * Affiliation: PhD Candidate of Graduate School of Asian African Area Studies, Kyoto University
 * Qualification: Registered Nurse, Public Health Nurse, and Master of Health Science
 * Specialty: Global Health, Area Study in Oceania
-* Homepage (researchmap): https://researchmap.jp/peacechyhi?lang=en
+* Homepage: (researchmap)[https://researchmap.jp/peacechyhi?lang=en]
 * Contact: chihiro -at- covid19-hotlines.jp
 
 ### Eric Nichols
 * Affiliation: Dr.Eng. in Information Science
 * Specialty: Artificial intelligence, natural language processing, machine learning
-* Homepage (Google Scholar): https://scholar.google.co.jp/citations?user=I3_MfAMAAAAJ&hl=en
+* Homepage: (Google Scholar)[https://scholar.google.co.jp/citations?user=I3_MfAMAAAAJ&hl=en]
 * Contact: eric -at- covid19-hotlines.jp
 
 ## Disclaimer
