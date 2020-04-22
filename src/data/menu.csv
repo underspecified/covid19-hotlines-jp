@@ -103,8 +103,7 @@ Find a hotline near you by clicking here."
 "Hotlines 
 (全国の帰国者・接触者相談センター)",,,,
 "News
-(現在の状況・ニュース)","What is the current situation?
-(現在の状況は?)",Explanation,厚生労働省データを使用した日本国内感染の状況,"Current status using data by the Ministry of Health, Labour and Welfarein Japan"
+(現在の状況・ニュース)",What is the current situation? (現在の状況は?),Explanation,厚生労働省データを使用した日本国内感染の状況,"Current status using data by the Ministry of Health, Labour and Welfarein Japan"
 ,,URL,https://toyokeizai.net/sp/visual/tko/covid19/,https://toyokeizai.net/sp/visual/tko/covid19/en.html
 ,,Explanation,ジョンズ・ホプキンス大学が公開した世界の新型コロナウィルス感染状況,COVID-19 Global Cases by the Center for Systems Science and Engineering (CSSE) at Johns Hopkins University
 ,,URL,https://gisanddata.maps.arcgis.com/apps/opsdashboard/index.html#/bda7594740fd40299423467b48e9ecf6,https://gisanddata.maps.arcgis.com/apps/opsdashboard/index.html#/bda7594740fd40299423467b48e9ecf6
