@@ -1,10 +1,10 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import * as R from "rambda"
 import React from "react"
 import { Accordion, Card } from "react-bootstrap"
 import { StringUtils } from "turbocommons-ts"
 
 import hotlines from "./data/all.json"
-//import webpages from "./data/webpages.json"
 import { Hotline } from "./hotline"
 import { tx as _tx } from "./translate"
 
@@ -17,10 +17,56 @@ const makeId = (s: string): string =>
     StringUtils.FORMAT_LOWER_CAMEL_CASE
   )
 
-// const urls: Record<string, string> =
-//   Object.fromEntries(
-//     webpages.map(d => [d['pref_ja'], d['url']])
-//   )
+// noinspection NonAsciiCharacters
+const region: Record<string, string> = {
+  '北海道': '北海道',
+  '青森県': '東北',
+  '岩手県': '東北',
+  '宮城県': '東北',
+  '秋田県': '東北',
+  '山形県': '東北',
+  '福島県': '東北',
+  '東京都': '関東',
+  '茨城県': '関東',
+  '栃木県': '関東',
+  '群馬県': '関東',
+  '埼玉県': '関東',
+  '千葉県': '関東',
+  '神奈川県': '関東',
+  '新潟県': '中部',
+  '富山県': '中部',
+  '石川県': '中部',
+  '福井県': '中部',
+  '山梨県': '中部',
+  '長野県': '中部',
+  '岐阜県': '中部',
+  '静岡県': '中部',
+  '愛知県': '中部',
+  '三重県': '関西',
+  '滋賀県': '関西',
+  '京都府': '関西',
+  '大阪府': '関西',
+  '兵庫県': '関西',
+  '奈良県': '関西',
+  '和歌山県': '関西',
+  '鳥取県': '中国',
+  '島根県': '中国',
+  '岡山県': '中国',
+  '広島県': '中国',
+  '山口県': '中国',
+  '徳島県': '四国',
+  '香川県': '四国',
+  '愛媛県': '四国',
+  '高知県': '四国',
+  '福岡県': '九州・沖縄',
+  '佐賀県': '九州・沖縄',
+  '長崎県': '九州・沖縄',
+  '熊本県': '九州・沖縄',
+  '大分県': '九州・沖縄',
+  '宮崎県': '九州・沖縄',
+  '鹿児島県': '九州・沖縄',
+  '沖縄県': '九州・沖縄'
+}
 
 const Hotlines = (props: {lang: string}): JSX.Element => {
   const tx = R.partial(_tx, props.lang)
@@ -99,35 +145,14 @@ const Hotlines = (props: {lang: string}): JSX.Element => {
     )
   }
 
-  // const area2Element = (
-  //   area: Array<Hotline>,
-  //   pref: string
-  // ): JSX.Element => {
-  //   const lis = area.map(hotline2Element)
-  //   const prefElem =
-  //     <h4>
-  //       (<a href={urls[pref]} target="_blank" rel="noopener noreferrer">
-  //         {tx(pref)}
-  //       </a> || tx(pref))
-  //     </h4>
-  //   return (
-  //     <div id={makeId(pref)} className="area">
-  //       <ul>
-  //         {prefElem}
-  //         {lis}
-  //       </ul>
-  //     </div>
-  //   )
-  // }
-
-  const makeToggle = (pref: string, area: Array<Hotline>) => (
+  const makePrefToggle = (pref: string, area: Array<Hotline>) => (
     <Card>
-      <Accordion.Toggle as={Card.Header} eventKey={makeId(tx(pref))}>
+      <Accordion.Toggle as={Card.Header} eventKey={"pref-" + makeId(pref)}>
         <Card.Title>
           {tx(pref)}
         </Card.Title>
       </Accordion.Toggle>
-      <Accordion.Collapse eventKey={makeId(tx(pref))}>
+      <Accordion.Collapse eventKey={"pref-" + makeId(pref)}>
         <Card.Body>
           {hotlines2Element(area, pref)}
         </Card.Body>
@@ -136,41 +161,89 @@ const Hotlines = (props: {lang: string}): JSX.Element => {
   )
 
   const sortByPrefId = (pref: string, area: Array<Hotline>) =>
-    makeId(tx(pref))
+    makeId(pref)
 
-  const sortEnAreas = (
-    area: Record<string, Array<Hotline>>
+  const sortEnPrefs = (
+    prefs: Record<string, Array<Hotline>>
   ): Array<[string, Array<Hotline>]> => {
-    const entries: Array<[string, Array<Hotline>]> = Object.entries(area)
-    const head: [string, Array<Hotline>] = R.head(entries)!
+    const entries: Array<[string, Array<Hotline>]> = Object.entries(prefs)
     const tail: Array<[string, Array<Hotline>]> = R.tail(entries)
-    const sorted: Array<[string, Array<Hotline>]> = R.sortBy(
+    return R.sortBy(
       ([k, v]) => sortByPrefId(k, v),
       tail
     )
-    return R.concat([head, ], sorted)
   }
 
-  const makeAccordion = () => {
+  const makeRegionToggle = (
+    region: string,
+    prefs: Array<[string, Array<Hotline>]>
+  ): JSX.Element => {
+    return prefs.length === 1 ?
+      R.head(prefs.map(([k, v]) => makePrefToggle(k, v)))! :
+      (
+        <Card>
+          <Accordion.Toggle as={Card.Header}
+                            eventKey={"region" + makeId(region)}>
+            <Card.Title>
+              {region}
+            </Card.Title>
+          </Accordion.Toggle>
+          <Accordion.Collapse eventKey={"region" + makeId(region)}>
+            <Card.Body>
+              {prefs.map(([k, v]) => makePrefToggle(k, v))}
+            </Card.Body>
+          </Accordion.Collapse>
+        </Card>
+      )
+  }
+
+  const makeAccordionEn = () => {
     const sorted: Array<[string, Array<Hotline>]> =
-      props.lang === 'en' ?
-        sortEnAreas(hotlines.area) :
-        Object.entries(hotlines.area)
+      sortEnPrefs(hotlines.area)
     const toggles: Array<JSX.Element> =
-      sorted.map(([k, v]) => makeToggle(k, v))
+      sorted.map(([k, v]) => makePrefToggle(k, v))
 
     return (
-      <Accordion defaultActiveKey="allOfJapan">
+      <Accordion>
         {toggles}
       </Accordion>
     )
   }
 
+  const prefs2Regions = (
+    prefs: Record<string, Array<Hotline>>
+  ): Record<string, Array<[string, Array<Hotline>]>> => {
+    const entries: Array<[string, Array<Hotline>]> = Object.entries(prefs)
+    const tail: Array<[string, Array<Hotline>]> = R.tail(entries)
+    return R.groupBy(([k, v]) => region[k], tail)
+  }
+
+  const makeAccordionJp = () => {
+    // const sorted = Object.entries(prefs2Regions(hotlines.area))
+    // const toggles: Array<JSX.Element> =
+    //   sorted.map(([k, v]) =>
+    //     makeRegionToggle(k, v)
+    //   )
+    const entries: Array<[string, Array<Hotline>]> =
+      Object.entries(hotlines.area)
+    const tail: Array<[string, Array<Hotline>]> =
+      R.tail(entries)
+    const toggles: Array<JSX.Element> =
+      tail.map(([k, v]) => makePrefToggle(k, v))
+
+    return (
+      <Accordion>
+        {toggles}
+      </Accordion>
+    )
+  }
+
+
   return (
     <div className="hotlines">
       <h3>{tx("Hotlines")}</h3>
+      {props.lang === 'en' ? makeAccordionEn(): makeAccordionJp()}
       <p>{tx("Last updated")} 2020/4/19.</p>
-      {makeAccordion()}
     </div>
   )
 }
