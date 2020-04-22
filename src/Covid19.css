@@ -13,7 +13,7 @@
 }
 
 Link {
-  color: var(--main-color);
+  color: #005caf;
   text-decoration: underline !important;
 }
 

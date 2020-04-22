@@ -78,11 +78,9 @@ const makeWhyEn = () => {
         the Ministry of Health, Labor, and Welfare</a>.)
       </p>
 
-      <p>
-        <Link to="/en/hotlines">
-          <h5>Find a hotline near you</h5>
-        </Link>
-      </p>
+      <Link to="/en/hotlines">
+        <h5>Find a hotline near you</h5>
+      </Link>
     </div>
   )
 }

@@ -1,5 +1,5 @@
 .menu .navbar {
-  background-color: var(--main-color) !important;
+  background-color: #005caf !important;
 }
 
 .menu .nav-link {
@@ -34,7 +34,7 @@
 @media (min-width: 1200px) {  }
 
 .menu .jumbotron {
-  background-color: var(--main-color) !important;
+  background-color: #005caf !important;
   color: white;
   padding: 0 1.5rem 0.01rem;
   margin-bottom: 1.5rem;

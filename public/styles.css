@@ -1,0 +1,164 @@
+.about {
+    margin-left: 1.5rem !important;
+    margin-right: 1.5rem !important;
+}
+
+.about h3 {
+    margin-top: 2rem;
+}
+
+.about .our-goal h3 {
+    margin-top: 1.5rem !important;
+}
+
+.area, .hotline, .hours li {
+  padding-left: 1.5rem;
+  padding-right: 1.0rem;
+}
+
+.area ul {
+  margin-left: 0;
+  padding-left: 0;
+}
+
+/*.area li {*/
+/*  list-style-type: none;*/
+/*}*/
+.covid19 {
+    margin: 0 1.5rem !important;
+}
+
+.area, .hotline, .hours li {
+  padding-left: 1.5rem;
+  padding-right: 1.0rem;
+}
+
+.area ul {
+  margin-left: 0;
+  padding-left: 0;
+}
+
+Link {
+  color: var(--main-color);
+  text-decoration: underline !important;
+}
+
+/*.area li {*/
+/*  list-style-type: none;*/
+/*}*/
+.area, .hotline, .hours li {
+  padding-left: 1.5rem;
+  padding-right: 1.0rem;
+}
+
+.hotlines h3, .hotlines p {
+  margin-left: 1.5rem;
+}
+
+.card-header {
+  cursor: pointer;
+}
+
+.card-title {
+  color: var(--main-color);
+  margin-bottom: 0 !important;
+}
+
+.card-body {
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.area {
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.area li {
+  list-style-type: none;
+}
+
+.hotline {
+  margin-bottom: 0.75rem;
+}
+.info {
+    margin-left: 1.5rem !important;
+    margin-right: 1.5rem !important;
+}
+
+/*.info h3 {*/
+/*    margin-top: 2rem;*/
+/*}*/
+
+/*.info h3 {*/
+/*    margin-top: 1.5rem !important;*/
+/*}*/
+
+.menu .navbar {
+  background-color: var(--main-color) !important;
+}
+
+.menu .nav-link {
+  text-decoration: none !important;
+}
+
+.menu a {
+    text-decoration: none;
+}
+
+.menu .nav-item li {
+    color: white;
+}
+
+/* small devices (landscape phones, 576px and up) */
+@media (max-width: 576px) {
+    .EN, .menu .nav-link {
+        margin-left: 0.5rem;
+    }
+    .JP {
+        margin-left: 1.0rem;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { }
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { }
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {  }
+
+.menu .jumbotron {
+  background-color: var(--main-color) !important;
+  color: white;
+  padding: 0 1.5rem 0.01rem;
+  margin-bottom: 1.5rem;
+  justify-content: center;
+  text-align: center;
+}
+
+.menu .jumbotron h1, .menu .jumbotron p {
+  font-style: italic;
+}
+body {
+  --main-color: #005caf;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto',
+    'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
+    'Helvetica Neue', sans-serif;
+  word-wrap: break-word;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+a {
+  color: var(--main-color);
+  text-decoration: underline;
+}
