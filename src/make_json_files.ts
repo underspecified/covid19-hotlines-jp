@@ -1,16 +1,22 @@
+import * as A from "fp-ts/lib/Array"
 import * as E from "fp-ts/lib/Either"
 import * as IOE from "fp-ts/lib/IOEither"
+import * as NEA from "fp-ts/lib/NonEmptyArray"
+import * as O from "fp-ts/lib/Option"
+import * as P from "fp-ts/lib/pipeable"
+import * as Rec from "fp-ts/lib/Record"
 import * as R from "rambda"
 import { array } from "fp-ts/lib/Array"
 import { ioEither, IOEither } from "fp-ts/lib/IOEither"
-import { pipe } from "fp-ts/lib/pipeable"
+import { NonEmptyArray } from "fp-ts/lib/NonEmptyArray"
+import { Option } from "fp-ts/lib/Option"
 
 import * as util from "./util"
 import { areas, fns, getSheet, makeFn } from "./get_csv_files"
 import { readFile, writeFile, run } from "./under_util"
 
 type Row = Array<string>
-type CSV = Array<Array<string>>
+type CSV = Array<Row>
 
 // noinspection NonAsciiCharacters,JSNonASCIINames
 const header: Record<string, string> = {
@@ -27,32 +33,75 @@ const header: Record<string, string> = {
   'Comments\nコメント': 'comments'
 }
 
-const normalizeHeader = (csv: CSV) => {
-  if (R.isEmpty(csv)) {
-    return csv
-  } else {
-    const head = R.head(csv)!.map(x => header[x] || x)
-    const tail = R.tail(csv)
-    return R.concat([head,], tail)
-  }
-}
+const lookupHeader = (k: string): string =>
+  P.pipe(
+    Rec.lookup(k, header),
+    O.getOrElse(() => k)
+  )
+
+const lookupHeaders:(row: Row) => Row =
+  A.map(lookupHeader)
+
+const normalizeHeader = (csv: CSV): CSV =>
+  P.pipe(
+    A.modifyAt(0, lookupHeaders)(csv),
+    O.getOrElse(() => csv)
+  )
+
+const isDefined = (str?: string): boolean =>
+  str !== undefined && str !== ''
+
+const isDefinedEntry = ([k, v]: [string, string]) =>
+  isDefined(v)
+
+const headerAndRowToRecord:
+  (header: Row) => (row: Row) => Record<string, string> =
+  (header: Row) => (row: Row) =>
+    P.pipe(
+      A.zip(header, row),
+      A.filter(isDefinedEntry),
+      Object.fromEntries
+    )
+
+const headerAndRowsToRecords:
+  (header: Row) => (rows: CSV) => Array<Record<string, string>> =
+  (header: Row) => (rows: CSV) =>
+    rows.map(headerAndRowToRecord(header))
+
+const headerAndGroupsToRecordGroups:
+  (header: Row) => (groups: Record<string, CSV>) =>
+      Record<string, Array<Record<string, string>>> =
+  (header: Row) => (groups: Record<string, CSV>) =>
+      Rec.map(headerAndRowsToRecords(header))(groups)
+
+const groupByPrefJa = (rows: NonEmptyArray<Row>): Record<string, CSV> =>
+  P.pipe(
+    NEA.groupBy((row: Row) => row[0])(rows),
+    Rec.map(nea => nea.slice())
+  )
+
+const O_apFlip:
+  <A, B>(fab: Option<(a: A) => B>) => (fa: Option<A>) => Option<B> =
+  <A, B>(fab: Option<(a: A) => B>) => (fa: Option<A>) => O.ap(fa)(fab)
 
 const formatCsv = (csv: CSV) => {
-  const normalized = normalizeHeader(csv)
-  const head = R.head(normalized) || []
-  const tail = R.tail(normalized)
-  const grouped: Record<string, Array<Row>> =
-    R.groupBy(row => row[0], tail)
-  const mapped: Record<string, Array<Record<string, string>>> =
-      R.map(
-        (v: Array<Row>, _: string) =>
-          v.map(row => Object.fromEntries(
-            R.zip(head, row).filter(([_, v]) => v !== '' && v !== undefined)
-          )),
-         grouped
-      )
-  //console.log(mapped)
-  return { 'area': mapped }
+  const groups2RecordGroups =
+    P.pipe(
+      A.head(csv),
+      O.map(lookupHeaders),
+      O.map(headerAndGroupsToRecordGroups)
+    )
+
+  const records: Record<string, Array<Record<string, string>>> =
+    P.pipe(
+      A.tail(csv),
+      O.chain(NEA.fromArray),
+      O.map(groupByPrefJa),
+      O_apFlip(groups2RecordGroups),
+      O.getOrElse({} as any)
+    )
+
+  return { 'area': records }
 }
 
 const csvToFormattedJson: (_: string) => string =
@@ -73,7 +122,7 @@ const csvToJson: (_: string) => string =
 const csvFileToJson = (fn: string): IOEither<Error, string> => {
   const sheet = getSheet(fn)
   const csv2json = areas.includes(sheet) ? csvToFormattedJson : csvToJson
-  return pipe(
+  return P.pipe(
     readFile(fn + ".csv"),
     IOE.map(x => x.toString()),
     IOE.map(csv2json)
@@ -82,7 +131,7 @@ const csvFileToJson = (fn: string): IOEither<Error, string> => {
 
 const csvFileToJsonFile = (fn: string): IOEither<Error, string> => {
   const json = `${fn}.json`
-  return pipe(
+  return P.pipe(
     csvFileToJson(fn),
     IOE.chain(R.partial(writeFile, json)),
     IOE.map(_ => json)
@@ -104,7 +153,7 @@ export const writeCsvFileToJsonFiles = (): void => {
   const makeJsonFiles: IOEither<Error, Array<string>> =
     array.traverse(ioEither)(allFns, csvFileToJsonFile)
 
-  pipe(
+  P.pipe(
     run(makeJsonFiles),
     E.fold(logError, logFiles)
   )
