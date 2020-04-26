@@ -1,14 +1,10 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
-// noinspection ES6UnusedImports
 import * as A from "fp-ts/lib/Array"
 import * as NEA from "fp-ts/lib/NonEmptyArray"
-// noinspection ES6UnusedImports
 import * as O from "fp-ts/lib/Option"
 import * as P from "fp-ts/lib/pipeable"
 import * as Rec from "fp-ts/lib/Record"
 import { NonEmptyArray } from "fp-ts/lib/NonEmptyArray"
-// noinspection ES6UnusedImports
-import { Option } from "fp-ts/lib/Option"
+//import { Option } from "fp-ts/lib/Option"
 
 import data from "./data/all.json"
 
@@ -26,29 +22,36 @@ export interface Hotline {
   comments?: string | undefined
 }
 
-const hoursLangKey = (h: Hotline): string =>
-  `Hours: ${h.hours}\nSupported languages: ${h.lang}`
+const mergePhone:
+  (a: Hotline) => (b: Hotline) => Hotline =
+  (a: Hotline) => (b: Hotline) => {
+    a.phone = `${a.phone}, ${b.phone}`
+    return a
+  }
 
-const phoneKey = (h: Hotline): string =>
-  `Phone: ${h.phone}\nHours: ${h.hours}`
+const mergeLang:
+  (a: Hotline) => (b: Hotline) => Hotline =
+  (a: Hotline) => (b: Hotline) => {
+    a.lang = `${a.lang}, ${b.lang}`
+    return a
+  }
 
-const groupByHoursLang:
-  (_: NonEmptyArray<Hotline>) => Record<string, NonEmptyArray<Hotline>> =
-    NEA.groupBy(hoursLangKey)
-
-const groupByPhone:
-  (_: NonEmptyArray<Hotline>) => Record<string, NonEmptyArray<Hotline>> =
-    NEA.groupBy(phoneKey)
 
 const mergeHotlines:
   (a: Hotline) => (b: Hotline) => Array<Hotline> =
   (a: Hotline) => (b: Hotline) => {
-    if (a.lang === 'Japanese') {
-      a.lang = `${a.lang}, ${b.lang}`
-      return [a, ]
-    } else if (b.lang === ' Japanese') {
-      b.lang = `${b.lang}, ${a.lang}`
-      return [b, ]
+    if (a.hours === b.hours &&
+        a.lang === b.lang &&
+        a.phone !== b.phone) {
+      return [mergePhone(a)(b),]
+    } else if (a.phone === b.phone &&
+               a.hours === b.hours &&
+               a.lang === 'Japanese') {
+      return [mergeLang(a)(b),]
+    } else if (a.phone === b.phone &&
+               a.hours === b.hours &&
+               b.lang === 'Japanese') {
+      return [mergeLang(b)(a),]
     } else {
       return [a, b]
     }
@@ -68,90 +71,78 @@ const reduceHotlines:
       O.getOrElse(() => [a, ])
     )
 
-const formatHourLangs:
-  (phoneKey: string) => (hotlines: NonEmptyArray<Hotline>) => string =
-  (phoneKey: string) => (hotlines: NonEmptyArray<Hotline>) =>
+const groupHotlines:
+  (hotlines: NonEmptyArray<Hotline>) => Array<Hotline> =
+  (hotlines: NonEmptyArray<Hotline>) =>
     P.pipe(
-      A.reduce([], reduceHotlines)(hotlines),
-      A.mapWithIndex((i, h: Hotline) =>
-        `${i+1} ${phoneKey}\nSupported languages: ${h.lang}`
-      )
-    ).join("\n\n")
+      hotlines,
+      A.reduce([], reduceHotlines),
+    )
 
-const formatPhones = (phones: NonEmptyArray<Hotline>): string =>
-  `Phone: ${phones.map(h => h.phone).join(", ")}`
+const formatHotline:
+  (h: Hotline) => string =
+  (h: Hotline) => `Phone: ${h.phone}
+Available hours: ${h.hours}
+Supported languages: ${h.lang}`
 
 const A_join:
   (key: string) => (xs: Array<string>) => string =
   (key: string) => (xs: Array<string>) => xs.join(key)
 
-const formatHourLangGroups:
-  (groups: Record<string, NonEmptyArray<Hotline>>) => string =
-  (groups: Record<string, NonEmptyArray<Hotline>>) =>
-    P.pipe(
-      groups,
-      Rec.map(formatPhones),
-      Rec.collect((k, a: string) => `${a}\n${k}`),
-      A_join("\n\n")
-    )
-
-const formatPhoneGroups:
-  (groups: Record<string, NonEmptyArray<Hotline>>) => string =
-  (groups: Record<string, NonEmptyArray<Hotline>>) =>
-    P.pipe(
-      groups,
-      Rec.collect((k, a) => formatHourLangs(k)(a)),
-      A_join("\n\n")
-    )
-
-const groupAndFormatByHourLang:
+const groupAndFormatHotlines:
   (hotlines: NonEmptyArray<Hotline>) => string =
   (hotlines: NonEmptyArray<Hotline>) =>
     P.pipe(
       hotlines,
-      groupByHoursLang,
-      formatHourLangGroups
-    )
-
-const groupAndFormatByPhone:
-  (hotlines: NonEmptyArray<Hotline>) => string =
-  (hotlines: NonEmptyArray<Hotline>) =>
-    P.pipe(
-      hotlines,
-      groupByPhone,
-      formatPhoneGroups
+      groupHotlines,
+      A.map(formatHotline),
+      A_join("\n\n")
     )
 
 const groupByCenterJa:
   (_: NonEmptyArray<Hotline>) => Record<string, NonEmptyArray<Hotline>> =
     NEA.groupBy((h: Hotline) => h.center_ja)
 
-const formatCenterName:
-  (center: string) => string =
-  (center: string) => `Center: ${center}`
+// fp-ts's implementation doesn't respect key order
+const Rec_collect:
+  <A, B>(f: (k: string, a: A) => B) => (r: Record<string, A>) => Array<B> =
+  <A, B>(f: (k: string, a: A) => B) => (r: Record<string, A>) =>
+    P.pipe(
+      r,
+      Object.entries,
+      A.map(([k, a]) => f(k, a))
+    )
 
 const formatCenter:
   (centers: Record<string, NonEmptyArray<Hotline>>) => string =
   (centers: Record<string, NonEmptyArray<Hotline>>) =>
     P.pipe(
       centers,
-      Rec.map(groupAndFormatByPhone),
-      Rec.collect((k, a: string) =>
-        `## ${formatCenterName(k)}\n\n${a}`
+      Rec.map(groupAndFormatHotlines),
+      Rec_collect((k, a: string) =>
+        `## Center: ${k}\n\n${a}`
       ),
       A_join("\n\n")
     )
 
-function main(): void {
-  const areas: Record<string, Array<Hotline>> =
-    data.area
-  const grouped =
+const groupStuff:
+  (areas: Record<string, Array<Hotline>>) =>
+    Record<string, Record<string, NonEmptyArray<Hotline>>> =
+  (areas: Record<string, Array<Hotline>>) =>
     P.pipe(
       areas,
       Rec.filterMap(NEA.fromArray),
-      Rec.map(groupByCenterJa),
+      Rec.map(groupByCenterJa)
+    )
+
+function main(): void {
+  //console.log(data.area)
+  const grouped =
+    P.pipe(
+      data.area,
+      groupStuff,
       Rec.map(formatCenter),
-      Rec.collect((k, a: string) => `# ${k}\n\n${a}`),
+      Rec_collect((k, a: string) => `# ${k}\n\n${a}`),
       A_join("\n\n")
     )
     console.log(grouped)

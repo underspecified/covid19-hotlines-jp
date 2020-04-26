@@ -1,11 +1,11 @@
 import * as CF from "cross-fetch"
 import * as E from "fp-ts/lib/Either"
 import * as TE from "fp-ts/lib/TaskEither"
+import * as R from "rambda"
 import { promises as fs } from "fs"
 import { array } from "fp-ts/lib/Array"
 import { pipe } from "fp-ts/lib/pipeable"
 import { TaskEither, taskEither, tryCatch } from "fp-ts/lib/TaskEither"
-import * as R from "rambda"
 
 import { run } from "./under_util"
 
