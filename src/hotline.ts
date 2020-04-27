@@ -79,24 +79,27 @@ const groupHotlines:
       A.reduce([], reduceHotlines),
     )
 
-const formatHotline:
-  (h: Hotline) => string =
-  (h: Hotline) => `Phone: ${h.phone}
-Available hours: ${h.hours}
-Supported languages: ${h.lang}`
+const formatStrHotline:
+  (h: Hotline) => Array<string> =
+  (h: Hotline) =>
+    [`Phone: ${h.phone}`,
+     `Available hours: ${h.hours}`,
+     `Supported languages: ${h.lang}`]
 
+// eslint-disable-next-line
 const A_join:
   (key: string) => (xs: Array<string>) => string =
   (key: string) => (xs: Array<string>) => xs.join(key)
 
-const groupAndFormatHotlines:
-  (hotlines: NonEmptyArray<Hotline>) => string =
+const groupAndFormatStrHotlines:
+  (hotlines: NonEmptyArray<Hotline>) => Array<string> =
   (hotlines: NonEmptyArray<Hotline>) =>
     P.pipe(
       hotlines,
       groupHotlines,
-      A.map(formatHotline),
-      A_join("\n\n")
+      A.map(formatStrHotline),
+      A.map(xs => xs.concat(["", ])),
+      A.flatten
     )
 
 const groupByCenterJa:
@@ -113,16 +116,20 @@ const Rec_collect:
       A.map(([k, a]) => f(k, a))
     )
 
+const formatStrCenterName:
+  (center: string) => string =
+  (center: string) => `## Center: ${center}`
+
 const formatCenter:
-  (centers: Record<string, NonEmptyArray<Hotline>>) => string =
+  (centers: Record<string, NonEmptyArray<Hotline>>) => Array<string> =
   (centers: Record<string, NonEmptyArray<Hotline>>) =>
     P.pipe(
       centers,
-      Rec.map(groupAndFormatHotlines),
-      Rec_collect((k, a: string) =>
-        `## Center: ${k}\n\n${a}`
+      Rec.map(groupAndFormatStrHotlines),
+      Rec_collect((k, a: Array<string>) =>
+        [formatStrCenterName(k), ""].concat(a)
       ),
-      A_join("\n\n")
+      A.flatten
     )
 
 const groupStuff:
@@ -135,17 +142,34 @@ const groupStuff:
       Rec.map(groupByCenterJa)
     )
 
+const formatStrPrefName:
+  (pref: string) => string =
+  (pref: string) => `# ${pref}`
+
+const formatStrPref:
+  (prefs: Record<string, Record<string, NonEmptyArray<Hotline>>>) =>
+    Array<string> =
+  (prefs: Record<string, Record<string, NonEmptyArray<Hotline>>>) =>
+    P.pipe(
+      prefs,
+      Rec.map(formatCenter),
+      Rec_collect((k, a: Array<string>) =>
+        [formatStrPrefName(k), ""].concat(a)
+      ),
+      A.flatten
+    )
+
 function main(): void {
-  //console.log(data.area)
   const grouped =
     P.pipe(
       data.area,
       groupStuff,
-      Rec.map(formatCenter),
-      Rec_collect((k, a: string) => `# ${k}\n\n${a}`),
-      A_join("\n\n")
     )
-    console.log(grouped)
+
+  const formatted =
+    formatStrPref(grouped)
+
+  console.log(formatted.join("\n"))
 }
 
 if (require.main === module) {
