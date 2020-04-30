@@ -25,7 +25,7 @@ const makeWhatEn = () => {
 const makeSymptomsEn = () => {
   return (
     <div className="symptoms">
-      <h3>What Are Its Symptoms?</h3>
+      <h3>What are its symptoms?</h3>
 
       <p>
         According to the <a
@@ -51,7 +51,7 @@ const makeSymptomsEn = () => {
 const makeSickEn = () => {
   return (
     <div className="sick">
-      <h3>What Should We Do If We Get Sick?</h3>
+      <h3>What should we do if we get sick?</h3>
 
       <p>
         <a href="https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/kenkou_iryou/dengue_fever_qa_00014.html"

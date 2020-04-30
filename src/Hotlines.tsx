@@ -1,3 +1,5 @@
+import * as O from "fp-ts/lib/Option"
+import { pipe } from "fp-ts/lib/pipeable"
 import * as R from "rambda"
 import React from "react"
 import { Accordion, Card } from "react-bootstrap"
@@ -7,17 +9,16 @@ import hotlines from "./data/all.json"
 import { Hotline } from "./hotline"
 import { tx as _tx } from "./translate"
 
-import "bootstrap/dist/css/bootstrap.min.css"
 import "./Hotlines.css"
 
 const makeId = (s: string): string =>
   StringUtils.formatCase(
-    _tx('en', s),
+    _tx('en')(s),
     StringUtils.FORMAT_LOWER_CAMEL_CASE
   )
 
 const Hotlines = (props: {lang: string}): JSX.Element => {
-  const tx = R.partial(_tx, props.lang)
+  const tx = _tx(props.lang)
 
   const makeContactA = (phone: string): JSX.Element =>
     phone.startsWith('http') ?
@@ -64,7 +65,12 @@ const Hotlines = (props: {lang: string}): JSX.Element => {
   }
 
   const makeLangLi = (h: Hotline): JSX.Element => {
-    const supportedLangs = h.lang || 'Japanese'
+    const supportedLangs: string =
+      pipe(
+        O.fromNullable(h.lang),
+        O.getOrElse(() => 'Japanese')
+      )
+
     return (
       <li>
         <div className='lang'>
@@ -74,10 +80,30 @@ const Hotlines = (props: {lang: string}): JSX.Element => {
     )
   }
 
-  const makeCenterLi  = (center :string, hotlines: Array<Hotline>) => {
+  const makeCenterLi  = (center: string, hotlines: Array<Hotline>) => {
+    const url: string =
+      pipe(
+        R.head(hotlines),
+        O.fromNullable,
+        O.mapNullable(h => h.url),
+        O.getOrElse(() => '')
+      )
+
+    const centerElem: string | JSX.Element =
+      url ?
+        <a target="_blank" rel="noopener noreferrer"
+           href={url}>{center}</a> :
+        center
+
     const grouped: Array<Array<Hotline>> =
       R.values(R.groupBy(h => `{h.hours}; {h.lang}`, hotlines))
-    const body =
+
+    if (R.head(hotlines)!.pref_ja === '鳥取県') {
+      console.log("grouped:",
+        grouped.map(hs => hs.map(h => [h.phone, h.hours, h.lang])))
+    }
+
+    const body: Array<JSX.Element> =
       grouped.map((hs: Array<Hotline>) => {
         const phones = hs.map(h => h.phone)
         const head = R.head(hs)!
@@ -89,9 +115,12 @@ const Hotlines = (props: {lang: string}): JSX.Element => {
           </div>
         )
       })
+
     return (
       <div className='center'>
-        <h5>{tx(center)}</h5>
+        <h5>
+          {centerElem}
+        </h5>
         {body}
       </div>
     )
@@ -159,7 +188,7 @@ const Hotlines = (props: {lang: string}): JSX.Element => {
     )
   }
 
-    const sortByPrefId = (pref: string, area: Array<Hotline>) =>
+  const sortByPrefId = (pref: string, area: Array<Hotline>) =>
     makeId(pref)
 
   const makeAccordionJp = () => {

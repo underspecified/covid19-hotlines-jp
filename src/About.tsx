@@ -6,7 +6,7 @@ import "./About.css"
 const makeOurGoalsEn = () => {
   return (
     <div className="our-goal">
-      <h3>Our Goal</h3>
+      <h3>Our goal</h3>
 
       <p>
         The pandemic of Coronavirus disease 2019 (COVID-19) is causing
@@ -73,7 +73,7 @@ const makeAboutUsEn = () => {
   // noinspection JSValidateTypes
   return (
     <div className="about-us">
-      <h3>About Us</h3>
+      <h3>About us</h3>
       <div className="chihiro-tsuchiya">
         <h5>Chihiro Tsuchiya</h5>
         <ul>
@@ -113,7 +113,7 @@ const makeAboutUsJa = () => {
   // noinspection JSValidateTypes
   return (
     <div className="about-us">
-      <h3>About Us</h3>
+      <h3>About us</h3>
       <div className="chihiro-tsuchiya">
         <h5>土谷 ちひろ</h5>
         <ul>

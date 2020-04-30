@@ -1,11 +1,11 @@
+import * as A from "fp-ts/lib/Array"
 import * as CF from "cross-fetch"
 import * as E from "fp-ts/lib/Either"
+import * as P  from "fp-ts/lib/pipeable"
 import * as TE from "fp-ts/lib/TaskEither"
 import * as R from "rambda"
 import { promises as fs } from "fs"
-import { array } from "fp-ts/lib/Array"
-import { pipe } from "fp-ts/lib/pipeable"
-import { TaskEither, taskEither, tryCatch } from "fp-ts/lib/TaskEither"
+import { TaskEither } from "fp-ts/lib/TaskEither"
 
 import { run } from "./under_util"
 
@@ -18,7 +18,7 @@ const fetchGoogleSpreadSheetCsv = (
   gid: string
 ): TaskEither<Error, string> => {
   const url = makeSpreadsheetUrl(key, gid)
-  return tryCatch(
+  return TE.tryCatch(
     () =>  CF.fetch(url).then((x) => x.text()),
     E.toError
   )
@@ -31,9 +31,9 @@ const makeCsvFile = (
 ): TaskEither<Error, string> => {
   const csv = `${fn}.csv`
   const writeM = (file: string, data: string): TaskEither<Error, void> =>
-    tryCatch(() => fs.writeFile(csv, data), E.toError)
+    TE.tryCatch(() => fs.writeFile(csv, data), E.toError)
 
-  return pipe(
+  return P.pipe(
     fetchGoogleSpreadSheetCsv(key, gid),
     TE.chain(R.partial(writeM, csv)),
     TE.map(_ => csv)
@@ -116,7 +116,7 @@ const logFiles = (files: Array<string>): void => {
 
 export const makeAllCsvFiles = (): Promise<void> => {
   const makeCsvFiles: TaskEither<Error, Array<string>> =
-    array.traverse(taskEither)(fnKeyGids, makeCsvFile_)
+    A.array.traverse(TE.taskEither)(fnKeyGids, makeCsvFile_)
 
   return run(makeCsvFiles)
     .then(E.fold(logError, logFiles))

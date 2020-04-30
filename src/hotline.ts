@@ -86,7 +86,7 @@ const collectHotlines:
 const formatStrLabel:
   (label: string) => (value: string) => (lang: string) => string =
   (label: string) => (value: string) => (lang: string) =>
-    `${tx(lang, label)}: ${tx(lang, value)}`
+    `${tx(lang)(label)}: ${tx(lang)(value)}`
 
 const formatStrPhone:
   (phone: string) => Reader<string, string> =
@@ -177,7 +177,7 @@ const groupPrefs:
 const formatStrPrefName:
   (pref: string) => (lang: string) => string =
   (pref: string) => (lang: string) =>
-    `# ${tx(lang, pref)}`
+    `# ${tx(lang)(pref)}`
 
 const formatStrPrefs:
   (prefs: Record<string, Group<Hotline>>) => (lang: string) => Array<string> =

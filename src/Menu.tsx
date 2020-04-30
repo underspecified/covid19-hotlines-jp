@@ -31,14 +31,14 @@ const Menu = (): JSX.Element => {
           <Nav.Item>
             <LinkContainer to={updateLang("en", useLocation().pathname)}>
               <Nav.Link active className="EN" eventKey="en">
-                {_tx(path2Lang(useLocation().pathname) === "jp" ? "en" : "jp", "EN")}
+                {_tx(path2Lang(useLocation().pathname) === "jp" ? "en" : "jp")("EN")}
               </Nav.Link>
             </LinkContainer>
           </Nav.Item>
           <Nav.Item>
             <LinkContainer to={updateLang("jp", useLocation().pathname)}>
               <Nav.Link active className="JP" eventKey="jp">
-                {_tx(path2Lang(useLocation().pathname) === "en" ? "jp" : "en", "JP")}
+                {_tx(path2Lang(useLocation().pathname) === "en" ? "jp" : "en")("JP")}
               </Nav.Link>
             </LinkContainer>
           </Nav.Item>
@@ -79,7 +79,7 @@ const Menu = (): JSX.Element => {
         <Jumbotron fluid>
           <h1>COVID-19 Hotlines in Japan</h1>
           <p>
-            {_tx(path2Lang(useLocation().pathname),
+            {_tx(path2Lang(useLocation().pathname))(
               '新型コロナウィルス対策に役立つ情報')} #COVID19HotlinesJp
           </p>
         </Jumbotron>

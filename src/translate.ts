@@ -13,7 +13,9 @@ const trans: Record<string, Record<string, Record<string, string>>>
   = {'jp': {'en': jaen}, 'en': {'jp': enja}}
 
 // noinspection JSUnusedGlobalSymbols
-export const tx = (tgtLang: string, s: string): string => {
+export const tx:
+  (tgtLang: string) => (s: string) => string =
+  (tgtLang: string) => (s: string) => {
   const srcLang = (tgtLang === 'jp') ? 'en' : 'jp'
   const TX = trans[srcLang][tgtLang]
   for (const phrase in TX) {
