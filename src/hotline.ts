@@ -9,8 +9,10 @@ import * as Rec from "fp-ts/lib/Record"
 import { NonEmptyArray } from "fp-ts/lib/NonEmptyArray"
 // noinspection ES6UnusedImports
 import { Option } from "fp-ts/lib/Option"
+import { Reader } from "fp-ts/lib/Reader"
 
 import data from "./data/all.json"
+import { tx } from "./translate";
 
 export interface Hotline {
   pref_ja: string,
@@ -82,29 +84,29 @@ const collectHotlines:
     A.reduce([], reduceHotlines)(hotlines)
 
 const formatStrLabel:
-  (label: string) => (value: string) => string =
-  (label: string) => (value: string) =>
-    `${label}: ${value}`
+  (label: string) => (value: string) => (lang: string) => string =
+  (label: string) => (value: string) => (lang: string) =>
+    `${tx(lang, label)}: ${tx(lang, value)}`
 
 const formatStrPhone:
-  (phone: string) => string =
+  (phone: string) => Reader<string, string> =
   (phone: string) => {
     const lbl = phone.startsWith('http') ? "Contact (VoIP)" : "Phone"
     return formatStrLabel(lbl)(phone)
   }
 
-const formatStrHours: (_: string) => string =
+const formatStrHours: (_: string) => (lang: string) => string =
   formatStrLabel("Hours of operation")
 
-const formatStrLang: (_: string) => string =
+const formatStrLang: (_: string) => Reader<string, string> =
   formatStrLabel("Supported languages")
 
 const formatStrHotline:
-  (h: Hotline) => Array<string> =
-  (h: Hotline) =>
-    [formatStrPhone(h.phone),
-     formatStrHours(h.hours),
-     formatStrLang(h.lang)]
+  (h: Hotline) => (lang: string) => Array<string> =
+  (h: Hotline) => (lang: string) =>
+    [formatStrPhone(h.phone)(lang),
+     formatStrHours(h.hours)(lang),
+     formatStrLang(h.lang)(lang)]
 
 // eslint-disable-next-line
 const A_join:
@@ -119,18 +121,21 @@ const A_concat:
     xs.concat(ys)
 
 const groupAndFormatStrHotlines:
-  (hotlines: NonEmptyArray<Hotline>) => Array<string> =
-  (hotlines: NonEmptyArray<Hotline>) =>
+  (hotlines: NonEmptyArray<Hotline>) => (lang: string) => Array<string> =
+  (hotlines: NonEmptyArray<Hotline>) => (lang: string) =>
     P.pipe(
       collectHotlines(hotlines),
-      A.map(formatStrHotline),
+      A.map(h => formatStrHotline(h)(lang)),
       A.map(xs => xs.concat(["", ])),
       A.flatten
     )
 
-const groupByCenterJa:
-  (_: NonEmptyArray<Hotline>) => Group<Hotline> =
-    NEA.groupBy((h: Hotline) => h.center_ja)
+const groupByCenter:
+  (_: NonEmptyArray<Hotline>) => (lang: string) => Group<Hotline> =
+  (_: NonEmptyArray<Hotline>) => (lang: string) =>
+    NEA.groupBy((h: Hotline) =>
+      lang === "en" ? h.center_en : h.center_ja
+    )(_)
 
 // fp-ts's implementation doesn't respect key order
 const Rec_collect:
@@ -142,54 +147,59 @@ const Rec_collect:
     )
 
 const formatStrCenterName:
-  (center: string) => string =
-  (center: string) => `## Center: ${center}`
+  (center: string) => (lang: string) => string =
+  (center: string) => (lang: string) =>
+    `## ${formatStrLabel("Center")(center)(lang)}`
 
 const formatStrCenters:
-  (centers: Group<Hotline>) => Array<string> =
-  (centers: Group<Hotline>) =>
+  (centers: Group<Hotline>) => (lang: string) => Array<string> =
+  (centers: Group<Hotline>) => (lang: string) =>
     P.pipe(
       centers,
-      Rec.map(groupAndFormatStrHotlines),
+      Rec.map(hs => groupAndFormatStrHotlines(hs)(lang)),
       Rec_collect((k, a: Array<string>) =>
-        [formatStrCenterName(k), ""]
+        [formatStrCenterName(k)(lang), ""]
           .concat(a)
       ),
       A.flatten
     )
 
 const groupPrefs:
-  (areas: Record<string, Array<Hotline>>) => Record<string, Group<Hotline>> =
-  (areas: Record<string, Array<Hotline>>) =>
+  (areas: Record<string, Array<Hotline>>) => (lang: string) =>
+    Record<string, Group<Hotline>> =
+  (areas: Record<string, Array<Hotline>>) => (lang: string) =>
     P.pipe(
       areas,
       Rec.filterMap(NEA.fromArray),
-      Rec.map(groupByCenterJa)
+      Rec.map(hs => groupByCenter(hs)(lang))
     )
 
 const formatStrPrefName:
-  (pref: string) => string =
-  (pref: string) => `# ${pref}`
+  (pref: string) => (lang: string) => string =
+  (pref: string) => (lang: string) =>
+    `# ${tx(lang, pref)}`
 
 const formatStrPrefs:
-  (prefs: Record<string, Group<Hotline>>) => Array<string> =
-  (prefs: Record<string, Group<Hotline>>) =>
+  (prefs: Record<string, Group<Hotline>>) => (lang: string) => Array<string> =
+  (prefs: Record<string, Group<Hotline>>) => (lang: string) =>
     P.pipe(
       prefs,
-      Rec.map(formatStrCenters),
+      Rec.map(cs => formatStrCenters(cs)(lang)),
       Rec_collect((k, a: Array<string>) =>
-        [formatStrPrefName(k), ""]
+        [formatStrPrefName(k)(lang), ""]
           .concat(a)
       ),
       A.flatten
     )
 
 function main(): void {
+  const lang = "en"
+
   const grouped: Record<string, Group<Hotline>> =
-      groupPrefs(data.area)
+      groupPrefs(data.area)(lang)
 
   const formatted: Array<string> =
-    formatStrPrefs(grouped)
+    formatStrPrefs(grouped)(lang)
 
   console.log(formatted.join("\n"))
 }
