@@ -28,13 +28,8 @@ export interface Hotline {
   comments?: string | undefined
 }
 
-interface Tx {
-  lang: string,
-  tx: (_: string) => string
-}
-
-type Group<T> = Record<string, NonEmptyArray<T>>
-type WithLang<T> = Reader<string, T>
+export type Group<T> = Record<string, NonEmptyArray<T>>
+export type WithLang<T> = Reader<string, T>
 
 const mergePhone:
   (a: Hotline) => (b: Hotline) => Hotline =
@@ -143,7 +138,7 @@ const groupAndFormatStrHotlines:
     )
   )
 
-const groupByCenter:
+export const groupByCenter:
   (hotlines: NonEmptyArray<Hotline>) => Group<Hotline> =
     NEA.groupBy((h: Hotline) => h.center_ja)
 
@@ -164,7 +159,7 @@ const formatStrCenterName:
       Read.map(x => `## ${x}`)
     )
 
-const Rec_mapKeys:
+export const Rec_mapKeys:
   <A>(f: ([k, a]: [string, A]) => string) => (r: Record<string, A>) =>
     Record<string, A> =
   <A>(f: ([k, a]: [string, A]) => string) => (r: Record<string, A>) =>
@@ -180,10 +175,21 @@ const getCenterName:
     lang === "en" ? h.center_en : h.center_ja
   )
 
-const updateCenterName:
+export const updateCenterName:
   (k: string) => (v: NonEmptyArray<Hotline>) => Reader<string, string> =
   (k: string) => (v: NonEmptyArray<Hotline>) =>
     getCenterName(NEA.head(v))
+
+export const updateCenterNames:
+  (centers: Group<Hotline>) => Reader<string, Group<Hotline>> =
+  (centers: Group<Hotline>) => Read.asks((lang: string) =>
+    P.pipe(
+      centers,
+      Rec_mapKeys(([k, v]: [string, NonEmptyArray<Hotline>]) =>
+        updateCenterName(k)(v)(lang)
+      )
+    )
+  )
 
 const formatStrCenters:
   (centers: Group<Hotline>) => Reader<string, Array<string>> =
@@ -200,7 +206,7 @@ const formatStrCenters:
     )
   )
 
-const groupPrefs:
+export const groupPrefs:
   (areas: Record<string, Array<Hotline>>) => Record<string, Group<Hotline>> =
   (areas: Record<string, Array<Hotline>>) =>
     P.pipe(

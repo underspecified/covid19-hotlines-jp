@@ -1,12 +1,13 @@
 import * as O from "fp-ts/lib/Option"
-import { pipe } from "fp-ts/lib/pipeable"
+import * as NEA from "fp-ts/lib/NonEmptyArray"
+import * as P from "fp-ts/lib/pipeable"
 import * as R from "rambda"
 import React from "react"
 import { Accordion, Card } from "react-bootstrap"
 import { StringUtils } from "turbocommons-ts"
 
 import hotlines from "./data/all.json"
-import { Hotline } from "./hotline"
+import { Group, Hotline, groupByCenter, updateCenterNames } from "./hotline"
 import { tx as _tx } from "./translate"
 
 import "./Hotlines.css"
@@ -66,7 +67,7 @@ const Hotlines = (props: {lang: string}): JSX.Element => {
 
   const makeLangLi = (h: Hotline): JSX.Element => {
     const supportedLangs: string =
-      pipe(
+      P.pipe(
         O.fromNullable(h.lang),
         O.getOrElse(() => 'Japanese')
       )
@@ -82,10 +83,10 @@ const Hotlines = (props: {lang: string}): JSX.Element => {
 
   const makeCenterLi  = (center: string, hotlines: Array<Hotline>) => {
     const url: string =
-      pipe(
+      P.pipe(
         R.head(hotlines),
         O.fromNullable,
-        O.mapNullable(h => h.url),
+        O.mapNullable((h: Hotline) => h.url),
         O.getOrElse(() => '')
       )
 
@@ -130,12 +131,15 @@ const Hotlines = (props: {lang: string}): JSX.Element => {
     area: Array<Hotline>,
     pref: string
   ): JSX.Element => {
-    const centers: Record<string, Array<Hotline>> =
-      R.groupBy(h =>
-        props.lang === 'en' ?
-          h.center_en  :
-          h.center_ja, area
+
+    const centers: Group<Hotline> =
+      P.pipe(
+        NEA.fromArray(area),
+        O.map(groupByCenter),
+        O.map(o => updateCenterNames(o)(props.lang)),
+        O.getOrElse({} as any)
       )
+
     const lis =
       Object.entries(centers)
         .map(([k, v]) => makeCenterLi(k, v))
