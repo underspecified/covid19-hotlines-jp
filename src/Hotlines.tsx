@@ -217,7 +217,7 @@ const Hotlines = (props: {lang: string}): JSX.Element => {
         <h3>{tx("Hotlines")}</h3>
       </div>
       <div className="date-updated">
-        <p>{tx("Last updated")}: 2020/4/22</p>
+        <p>{tx("Last updated")}: 2020/5/3</p>
       </div>
       {props.lang === 'en' ? makeAccordionEn(): makeAccordionJp()}
     </div>
