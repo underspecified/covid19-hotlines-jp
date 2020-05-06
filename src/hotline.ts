@@ -13,34 +13,17 @@ import { Reader } from "fp-ts/lib/Reader"
 import { createCheckers } from "ts-interface-checker"
 
 import data from "./data/all.json"
-import { tx } from "./translate";
-import TypesTIS from "./types-ti"
+import { Hotline } from "./interfaces"
+import InterfacesTIS from "./interfaces-ti"
+import { tx } from "./translate"
+import { Group, WithLang } from "./types"
 
 export const { Hotline: HotlineC } =
-  createCheckers(TypesTIS)
+  createCheckers(InterfacesTIS)
 
 export const verifyHotline:
   (obj: Object) => Option<Hotline> =
   (obj: Object) => HotlineC.test(obj) ? O.some(obj as Hotline) : O.none
-
-export interface Hotline {
-  pref_ja: string,
-  pref_en: string,
-  center_ja: string,
-  center_en: string,
-  phone: string,
-  lang: string,
-  hours: string,
-  postal_code?: string | undefined,
-  address?: string | undefined,
-  url: string,
-  comments?: string | undefined,
-  topics?: string | undefined,
-  hotline?: string | undefined,
-}
-
-export type Group<T> = Record<string, NonEmptyArray<T>>
-export type WithLang<T> = Reader<string, T>
 
 const mergePhone:
   (a: Hotline) => (b: Hotline) => Hotline =

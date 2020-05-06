@@ -13,13 +13,10 @@ import { Option } from "fp-ts/lib/Option"
 
 import * as util from "./util"
 import { areas, fns, getSheet, makeFn } from "./get_csv_files"
-import { Hotline, HotlineC } from "./hotline"
+import { verifyHotline } from "./hotline";
+import { Hotline } from "./interfaces";
 import { CSV, Row } from "./types"
 import { readFile, writeFile, run } from "./under_util"
-
-export const verifyHotline:
-  (obj: Object) => Option<Hotline> =
-  (obj: Object) => HotlineC.test(obj) ? O.some(obj as Hotline) : O.none
 
 // noinspection NonAsciiCharacters,JSNonASCIINames
 export const header: Record<string, string> = {

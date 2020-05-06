@@ -20,13 +20,18 @@ export const Hotline = t.iface([], {
   "hotline": t.opt(t.union("string", "undefined")),
 });
 
-export const Row = t.array("string");
+export const LangProps = t.iface([], {
+  "lang": "string",
+});
 
-export const CSV = t.array("Row");
+export const TxProps = t.iface([], {
+  "lang": "string",
+  "tx": t.func("string", t.param("_", "string")),
+});
 
 const exportedTypeSuite: t.ITypeSuite = {
   Hotline,
-  Row,
-  CSV,
+  LangProps,
+  TxProps,
 };
 export default exportedTypeSuite;
