@@ -3,6 +3,7 @@ import * as NEA from "fp-ts/lib/NonEmptyArray"
 import * as P from "fp-ts/lib/pipeable"
 import * as R from "rambda"
 import * as Read from "fp-ts/lib/Reader"
+import * as Rec from "fp-ts/lib/Record"
 import React from "react"
 import { Reader } from "fp-ts/lib/Reader"
 import { Accordion, Card } from "react-bootstrap"
@@ -212,8 +213,8 @@ const sortByPrefId:
   (pref: string) => (area: Array<Hotline>) => makeId(pref)
 
 const sortEnPrefs:
-  (prefs: Record<string, Array<Hotline>>) => Array<[string, Array<Hotline>]> =
-  (prefs: Record<string, Array<Hotline>>) => {
+  (prefs: Group<Hotline>) => Array<[string, Array<Hotline>]> =
+  (prefs: Group<Hotline>) => {
     const entries: Array<[string, Array<Hotline>]> = Object.entries(prefs)
     const tail: Array<[string, Array<Hotline>]> = R.tail(entries)
     return R.sortBy(
@@ -223,24 +224,22 @@ const sortEnPrefs:
   }
 
 export const makeAccordion:
-  (prefs: Record<string, Array<Hotline>>) =>
-    Reader<TxProps, JSX.Element> =
-  (prefs: Record<string, Array<Hotline>>) =>
-    Read.asks((props: TxProps) => {
-      const sorted: Array<[string, Array<Hotline>]> =
-        props.lang === "en" ?
-          sortEnPrefs(prefs) :
-          R.tail(Object.entries(prefs))
+  (prefs: Group<Hotline>) => Reader<TxProps, JSX.Element> =
+  (prefs: Group<Hotline>) => Read.asks((props: TxProps) => {
+    const sorted: Array<[string, Array<Hotline>]> =
+      props.lang === "en" ?
+        sortEnPrefs(prefs) :
+        R.tail(Object.entries(prefs))
 
-      const toggles: Array<JSX.Element> =
-        sorted.map(([k, v]) => makePrefToggle(k)(v)(props))
+    const toggles: Array<JSX.Element> =
+      sorted.map(([k, v]) => makePrefToggle(k)(v)(props))
 
-      return (
-        <Accordion>
-          {toggles}
-        </Accordion>
-      )
-    })
+    return (
+      <Accordion>
+        {toggles}
+      </Accordion>
+    )
+  })
 
 const Support: Reader<LangProps, JSX.Element> =
   Read.asks((props: LangProps) => {
@@ -249,18 +248,20 @@ const Support: Reader<LangProps, JSX.Element> =
       tx: _tx(props.lang)
     }
 
+    const prefs: Group<Hotline> =
+      Rec.filterMap(NEA.fromArray)(hotlines.area)
+
     return (
       <div className="support">
         <div className="title">
           <h3>{txProps.tx("Support Centers")}</h3>
         </div>
         <div className="date-updated">
-          <p>{txProps.tx("Last updated")}: 2020/5/3</p>
+          <p>{txProps.tx("Last updated")}: 2020/5/7</p>
         </div>
-        {makeAccordion(hotlines.area)(txProps)}
+        {makeAccordion(prefs)(txProps)}
       </div>
     )
-  }
-)
+  })
 
 export default Support

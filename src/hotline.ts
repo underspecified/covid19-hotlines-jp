@@ -10,20 +10,11 @@ import { NonEmptyArray } from "fp-ts/lib/NonEmptyArray"
 // noinspection ES6UnusedImports
 import { Option } from "fp-ts/lib/Option"
 import { Reader } from "fp-ts/lib/Reader"
-import { createCheckers } from "ts-interface-checker"
 
 import data from "./data/all.json"
 import { Hotline } from "./interfaces"
-import InterfacesTIS from "./interfaces-ti"
 import { tx } from "./translate"
 import { Group, WithLang } from "./types"
-
-export const { Hotline: HotlineC } =
-  createCheckers(InterfacesTIS)
-
-export const verifyHotline:
-  (obj: Object) => Option<Hotline> =
-  (obj: Object) => HotlineC.test(obj) ? O.some(obj as Hotline) : O.none
 
 const mergePhone:
   (a: Hotline) => (b: Hotline) => Hotline =

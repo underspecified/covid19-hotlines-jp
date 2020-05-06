@@ -12,12 +12,12 @@ export const Hotline = t.iface([], {
   "phone": "string",
   "lang": "string",
   "hours": "string",
-  "postal_code": t.opt(t.union("string", "undefined")),
-  "address": t.opt(t.union("string", "undefined")),
+  "postal_code": t.opt("string"),
+  "address": t.opt("string"),
   "url": "string",
-  "comments": t.opt(t.union("string", "undefined")),
-  "topics": t.opt(t.union("string", "undefined")),
-  "hotline": t.opt(t.union("string", "undefined")),
+  "comments": t.opt("string"),
+  "topics": t.opt("string"),
+  "hotline": t.opt("string"),
 });
 
 export const LangProps = t.iface([], {

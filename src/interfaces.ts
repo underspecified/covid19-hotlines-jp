@@ -6,12 +6,12 @@ export interface Hotline {
   phone: string,
   lang: string,
   hours: string,
-  postal_code?: string | undefined,
-  address?: string | undefined,
+  postal_code?: string,
+  address?: string,
   url: string,
-  comments?: string | undefined,
-  topics?: string | undefined,
-  hotline?: string | undefined,
+  comments?: string,
+  topics?: string,
+  hotline?: string,
 }
 
 export interface LangProps {

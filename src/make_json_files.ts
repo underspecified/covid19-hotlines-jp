@@ -13,9 +13,8 @@ import { Option } from "fp-ts/lib/Option"
 
 import * as util from "./util"
 import { areas, fns, getSheet, makeFn } from "./get_csv_files"
-import { verifyHotline } from "./hotline";
 import { Hotline } from "./interfaces";
-import { CSV, Row } from "./types"
+import { CSV, Row, verifyHotline } from "./types"
 import { readFile, writeFile, run } from "./under_util"
 
 // noinspection NonAsciiCharacters,JSNonASCIINames
