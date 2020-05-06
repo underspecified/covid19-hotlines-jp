@@ -17,6 +17,8 @@
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-scripts": "3.4.1",
+    "ts-interface-builder": "^0.2.1",
+    "ts-interface-checker": "^0.1.10",
     "typescript": "~3.7.2"
   },
   "scripts": {
