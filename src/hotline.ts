@@ -10,9 +10,18 @@ import { NonEmptyArray } from "fp-ts/lib/NonEmptyArray"
 // noinspection ES6UnusedImports
 import { Option } from "fp-ts/lib/Option"
 import { Reader } from "fp-ts/lib/Reader"
+import { createCheckers } from "ts-interface-checker"
 
 import data from "./data/all.json"
 import { tx } from "./translate";
+import TypesTIS from "./types-ti"
+
+export const { Hotline: HotlineC } =
+  createCheckers(TypesTIS)
+
+export const verifyHotline:
+  (obj: Object) => Option<Hotline> =
+  (obj: Object) => HotlineC.test(obj) ? O.some(obj as Hotline) : O.none
 
 export interface Hotline {
   pref_ja: string,
@@ -25,7 +34,9 @@ export interface Hotline {
   postal_code?: string | undefined,
   address?: string | undefined,
   url: string,
-  comments?: string | undefined
+  comments?: string | undefined,
+  topics?: string | undefined,
+  hotline?: string | undefined,
 }
 
 export type Group<T> = Record<string, NonEmptyArray<T>>

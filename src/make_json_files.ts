@@ -13,13 +13,16 @@ import { Option } from "fp-ts/lib/Option"
 
 import * as util from "./util"
 import { areas, fns, getSheet, makeFn } from "./get_csv_files"
+import { Hotline, HotlineC } from "./hotline"
+import { CSV, Row } from "./types"
 import { readFile, writeFile, run } from "./under_util"
 
-type Row = Array<string>
-type CSV = Array<Row>
+export const verifyHotline:
+  (obj: Object) => Option<Hotline> =
+  (obj: Object) => HotlineC.test(obj) ? O.some(obj as Hotline) : O.none
 
 // noinspection NonAsciiCharacters,JSNonASCIINames
-const header: Record<string, string> = {
+export const header: Record<string, string> = {
   '都道府県': 'pref_ja',
   'Prefecture': 'pref_en',
   'センター名': 'center_ja',
@@ -30,7 +33,9 @@ const header: Record<string, string> = {
   'Postal code\n郵便番号': 'postal_code',
   'Address\n住所': 'address',
   'Homepage\nホームページ': 'url',
-  'Comments\nコメント': 'comments'
+  'Comments\nコメント': 'comments',
+  'For what?': 'topics',
+  'Connect to Hotlines': 'hotline',
 }
 
 const lookupHeader = (k: string): string =>
@@ -54,25 +59,26 @@ const isDefined = (str?: string): boolean =>
 const isDefinedEntry = ([k, v]: [string, string]) =>
   isDefined(v)
 
-const headerAndRowToRecord:
-  (header: Row) => (row: Row) => Record<string, string> =
+const headerAndRowToHotline:
+  (header: Row) => (row: Row) => Option<Hotline> =
   (header: Row) => (row: Row) =>
     P.pipe(
       A.zip(header, row),
       A.filter(isDefinedEntry),
-      Object.fromEntries
+      Object.fromEntries,
+      verifyHotline
     )
 
-const headerAndRowsToRecords:
-  (header: Row) => (rows: CSV) => Array<Record<string, string>> =
+const headerAndRowsToHotlines:
+  (header: Row) => (rows: CSV) => Array<Hotline> =
   (header: Row) => (rows: CSV) =>
-    rows.map(headerAndRowToRecord(header))
+    A.filterMap(headerAndRowToHotline(header))(rows)
 
-const headerAndGroupsToRecordGroups:
+const headerAndGroupsToHotlineGroups:
   (header: Row) => (groups: Record<string, CSV>) =>
-      Record<string, Array<Record<string, string>>> =
+      Record<string, Array<Hotline>> =
   (header: Row) => (groups: Record<string, CSV>) =>
-      Rec.map(headerAndRowsToRecords(header))(groups)
+      Rec.map(headerAndRowsToHotlines(header))(groups)
 
 const groupByPrefJa = (rows: NonEmptyArray<Row>): Record<string, CSV> =>
   P.pipe(
@@ -89,10 +95,10 @@ const formatCsv = (csv: CSV) => {
     P.pipe(
       A.head(csv),
       O.map(lookupHeaders),
-      O.map(headerAndGroupsToRecordGroups)
+      O.map(headerAndGroupsToHotlineGroups)
     )
 
-  const records: Record<string, Array<Record<string, string>>> =
+  const records: Record<string, Array<Hotline>> =
     P.pipe(
       A.tail(csv),
       O.chain(NEA.fromArray),
@@ -119,9 +125,13 @@ const csvToJson: (_: string) => string =
     JSON.stringify
   )
 
+const needsFormatting:
+  (sheet: string) => boolean =
+  (sheet: string) => sheet === 'support' || areas.includes(sheet)
+
 const csvFileToJson = (fn: string): IOEither<Error, string> => {
   const sheet = getSheet(fn)
-  const csv2json = areas.includes(sheet) ? csvToFormattedJson : csvToJson
+  const csv2json = needsFormatting(sheet) ? csvToFormattedJson : csvToJson
   return P.pipe(
     readFile(fn + ".csv"),
     IOE.map(x => x.toString()),

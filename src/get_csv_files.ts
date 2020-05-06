@@ -73,6 +73,7 @@ export const gids: Record<string, string> = {
   'menu': '151378524',
   'translations': '340977019',
   'webpages': '1947687836',
+  'support': '775433730'
 }
 
 // noinspection JSUnusedGlobalSymbols
