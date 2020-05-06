@@ -5,6 +5,7 @@ import About from "./About";
 import Covid19 from "./Covid19";
 import Hotlines from "./Hotlines";
 import Info from "./Info";
+import Support from "./Support";
 
 function Routes() {
   return (
@@ -27,6 +28,9 @@ function Routes() {
       <Route exact path="/en/info">
         <Info lang="en"/>
       </Route>
+      <Route exact path="/en/support">
+        <Support lang="en"/>
+      </Route>
 
       <Route exact path="/jp">
         <Covid19 lang="jp"/>
@@ -42,6 +46,9 @@ function Routes() {
       </Route>
       <Route exact path="/jp/info">
         <Info lang="jp"/>
+      </Route>
+      <Route exact path="/jp/support">
+        <Support lang="jp"/>
       </Route>
 
       <Route path="*">
