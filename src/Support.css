@@ -30,3 +30,8 @@
 .center {
   margin-bottom: 1.5rem;
 }
+
+.hotline, .hours li, .lang li {
+  padding-left: 1.5rem;
+  padding-right: 1.0rem;
+}

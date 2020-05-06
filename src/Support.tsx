@@ -11,6 +11,7 @@ import { Group, Hotline, groupByCenter, updateCenterNames } from "./hotline"
 import { tx as _tx } from "./translate"
 
 import "./Support.css"
+import {Option} from "fp-ts/lib/Option";
 
 const makeId = (s: string): string =>
   StringUtils.formatCase(
@@ -72,13 +73,35 @@ const Hotlines = (props: {lang: string}): JSX.Element => {
         O.getOrElse(() => 'Japanese')
       )
 
+    const langs = supportedLangs.split('\n').map(tx)
+    const langsBody = langs.length > 1 ?
+      <ul>{langs.map(x => <li>{tx(x)}</li>)}</ul> :
+      langs
     return (
-      <li>
-        <div className='lang'>
-          {tx('Supported languages')}: {tx(supportedLangs)}
-        </div>
-      </li>
+      <div className='lang-list'>
+        <li>
+          <div className='lang'>
+            {tx('Supported languages')}: {langsBody}
+          </div>
+        </li>
+      </div>
     )
+  }
+
+  const makeTopicsLi = (h: Hotline): JSX.Element | undefined => {
+    const elem = P.pipe(
+      h.topics,
+      O.fromNullable,
+      O.map(topics => {
+        return (
+          <div className='topics'>
+            {tx('Topics')}: {tx(topics)}
+          </div>
+        )
+      })
+    )
+
+    return O.toUndefined(elem)
   }
 
   const makeCenterLi  = (center: string, hotlines: Array<Hotline>) => {
@@ -99,11 +122,6 @@ const Hotlines = (props: {lang: string}): JSX.Element => {
     const grouped: Array<Array<Hotline>> =
       R.values(R.groupBy(h => `{h.hours}; {h.lang}`, hotlines))
 
-    if (R.head(hotlines)!.pref_ja === '鳥取県') {
-      console.log("grouped:",
-        grouped.map(hs => hs.map(h => [h.phone, h.hours, h.lang])))
-    }
-
     const body: Array<JSX.Element> =
       grouped.map((hs: Array<Hotline>) => {
         const phones = hs.map(h => h.phone)
@@ -113,6 +131,7 @@ const Hotlines = (props: {lang: string}): JSX.Element => {
             {makeContactsLi(phones)}
             {makeHoursLi(head)}
             {makeLangLi(head)}
+            {makeTopicsLi(head)}
           </div>
         )
       })
