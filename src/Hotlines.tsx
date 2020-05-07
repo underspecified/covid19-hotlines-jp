@@ -17,9 +17,10 @@ const makeEnExplanation:
   () => { return (
     <div className="explanation">
       <p>
-        These hotlines are for getting consultation on testing if you are
-        worried that you have COVID-19. We recommend calling hotlines in the
-        following order of preference:
+        These hotlines are government and volunteer-run organizations that
+        provide medical consultation on testing if you are worried that you
+        have COVID-19. We recommend calling hotlines in the following order
+        of preference:
       </p>
 
         <ol>
