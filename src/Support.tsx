@@ -261,6 +261,27 @@ export const makeAccordion:
     )
   })
 
+const makeEnExplanation:
+  () => JSX.Element =
+  () => { return (
+    <div className="explanation">
+      <p>
+        Support centers are free services that are run by various
+        governmental and volunteer organizations and provide information
+        and other support for problems in daily life not directly related
+        to COVID-19. Some of them will offer interpretation services if
+        you need to call a Japanese-language COVID-19 hotline.
+      </p>
+    </div>
+  )
+}
+
+const makeExplanation:
+  Reader<TxProps, JSX.Element | undefined> =
+  Read.asks((props: TxProps) =>
+    props.lang === "en" ? makeEnExplanation() : undefined
+  )
+
 const Support: Reader<LangProps, JSX.Element> =
   Read.asks((props: LangProps) => {
     const txProps = {
@@ -276,9 +297,13 @@ const Support: Reader<LangProps, JSX.Element> =
         <div className="title">
           <h3>{txProps.tx("Support Centers")}</h3>
         </div>
+
+        {makeExplanation(txProps)}
+
         <div className="date-updated">
           <p>{txProps.tx("Last updated")}: 2020/5/7</p>
         </div>
+        
         {makeAccordion(prefs)(txProps)}
       </div>
     )

@@ -71,6 +71,12 @@ const Menu = (): JSX.Element => {
                 <Nav.Link active>INFO</Nav.Link>
               </LinkContainer>
             </Nav.Item>
+            <Nav.Item>
+              <LinkContainer
+                to={"/" + path2Lang(useLocation().pathname) + "/support"}>
+                <Nav.Link active>SUPPORT</Nav.Link>
+              </LinkContainer>
+            </Nav.Item>
           </Nav>
         </Navbar.Collapse>
       </Navbar>
