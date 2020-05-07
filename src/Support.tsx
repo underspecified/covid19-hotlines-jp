@@ -102,10 +102,30 @@ const makeTopicsLi:
     const elem = P.pipe(
       h.topics,
       O.fromNullable,
-      O.map(topics => {
+      O.map(ts => {
+        const allTopics =
+          P.pipe(
+            O.fromNullable(h.hotline),
+            O.map(_ =>
+              ts + "\n" +
+              "※Interpretation services for calling COVID-19 hotlines " +
+              "available."
+            ),
+            O.getOrElse(() => ts)
+          )
+
+        const topics = allTopics.split('\n').map(props.tx)
+        const topicsBody = topics.length > 1 ?
+          <ul>{topics.map(x => <li>{props.tx(x)}</li>)}</ul> :
+          topics
+
         return (
-          <div className='topics'>
-            {props.tx('Topics')}: {props.tx(topics)}
+          <div className='topic-list'>
+            <li>
+              <div className='topic'>
+                {props.tx('Topics')}: {topicsBody}
+              </div>
+            </li>
           </div>
         )
       })
