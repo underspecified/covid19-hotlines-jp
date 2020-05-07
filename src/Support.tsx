@@ -268,18 +268,28 @@ const makeEnExplanation:
       <p>
         Support centers are free services that are run by various
         governmental and volunteer organizations, and they provide information
-        and other support for problems in daily life not directly related
-        to COVID-19. Some of them will also offer interpretation services if
-        you need help calling a Japanese-language COVID-19 hotline.
+        and other support for problems in daily life that are related to
+        COVID-19 but not medical emergencies. Some of them will also offer
+        interpretation services if you need help calling a Japanese-language
+        COVID-19 hotline.
       </p>
     </div>
-  )
-}
+  ) }
+
+const makeJaExplanation:
+  () => JSX.Element =
+  () => { return (
+    <div className="explanation">
+      <p>
+        なんでも相談窓口は、各都道府県や団体が無料で行っているサービスです。新型コロナウイルス感染症に関する一般的な電話相談（生活・経済面・仕事など）を外国語で相談することができます。いくつかの窓口では、帰国者・接触者センターに通訳するサービスも行っています。
+      </p>
+    </div>
+  ) }
 
 const makeExplanation:
-  Reader<TxProps, JSX.Element | undefined> =
+  Reader<TxProps, JSX.Element> =
   Read.asks((props: TxProps) =>
-    props.lang === "en" ? makeEnExplanation() : undefined
+    props.lang === "en" ? makeEnExplanation() : makeJaExplanation()
   )
 
 const Support: Reader<LangProps, JSX.Element> =
