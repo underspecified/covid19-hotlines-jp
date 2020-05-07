@@ -12,6 +12,32 @@ import {Group} from "./types";
 import * as Rec from "fp-ts/lib/Record";
 import * as NEA from "fp-ts/lib/NonEmptyArray";
 
+const makeEnExplanation:
+  () => JSX.Element =
+  () => { return (
+    <div className="explanation">
+      <p>
+        These hotlines are for getting consultation on testing if you are
+        worried that you have COVID-19. We recommend calling hotlines in the
+        following order of preference:
+      </p>
+
+        <ol>
+          <li> any foreign language hotlines in your prefecture</li>
+          <li> the nation-wide foreign-language hotlines</li>
+          <li> if you cannot get help from foreign-language hotlines,
+            a Japanese-language hotline in your prefecture</li>
+        </ol>
+    </div>
+  )
+}
+
+const makeExplanation:
+  Reader<TxProps, JSX.Element | undefined> =
+  Read.asks((props: TxProps) =>
+    props.lang === "en" ? makeEnExplanation() : undefined
+  )
+
 const Hotlines: Reader<LangProps, JSX.Element> =
   Read.asks((props: LangProps) => {
     const txProps: TxProps = {
@@ -27,9 +53,13 @@ const Hotlines: Reader<LangProps, JSX.Element> =
         <div className="title">
           <h3>{txProps.tx("Hotlines")}</h3>
         </div>
+
+        {makeExplanation(txProps)}
+
         <div className="date-updated">
           <p>{txProps.tx("Last updated")}: 2020/5/3</p>
         </div>
+
         {makeAccordion(prefs)(txProps)}
       </div>
     )

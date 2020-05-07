@@ -81,6 +81,18 @@ const makeWhyEn = () => {
       <Link to="/en/hotlines">
         <h5>Find a hotline near you</h5>
       </Link>
+
+      <h3>What should I do if I have a non-medical problem?</h3>
+
+      <p>
+        If you need help with any non-medical problems, we recommend calling
+        one of the foreigner support centers, where you can talk to a
+        knowledgeable volunteer in your native language.
+      </p>
+
+        <h5>
+          <Link to="/en/support">Find a support center near you</Link>
+        </h5>
     </div>
   )
 }

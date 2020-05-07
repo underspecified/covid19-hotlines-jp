@@ -267,9 +267,9 @@ const makeEnExplanation:
     <div className="explanation">
       <p>
         Support centers are free services that are run by various
-        governmental and volunteer organizations and provide information
+        governmental and volunteer organizations, and they provide information
         and other support for problems in daily life not directly related
-        to COVID-19. Some of them will offer interpretation services if
+        to COVID-19. Some of them will also offer interpretation services if
         you need to call a Japanese-language COVID-19 hotline.
       </p>
     </div>
@@ -303,7 +303,7 @@ const Support: Reader<LangProps, JSX.Element> =
         <div className="date-updated">
           <p>{txProps.tx("Last updated")}: 2020/5/7</p>
         </div>
-        
+
         {makeAccordion(prefs)(txProps)}
       </div>
     )
