@@ -270,7 +270,7 @@ const makeEnExplanation:
         governmental and volunteer organizations, and they provide information
         and other support for problems in daily life not directly related
         to COVID-19. Some of them will also offer interpretation services if
-        you need to call a Japanese-language COVID-19 hotline.
+        you need help calling a Japanese-language COVID-19 hotline.
       </p>
     </div>
   )
