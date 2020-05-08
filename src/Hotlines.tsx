@@ -1,4 +1,6 @@
+import * as NEA from "fp-ts/lib/NonEmptyArray"
 import * as Read from "fp-ts/lib/Reader"
+import * as Rec from "fp-ts/lib/Record"
 import React from "react"
 import { Reader } from "fp-ts/lib/Reader"
 
@@ -6,11 +8,9 @@ import { makeAccordion } from "./Support"
 import hotlines from "./data/all.json"
 import { Hotline, LangProps, TxProps } from "./interfaces"
 import { tx as _tx } from "./translate"
+import { Group } from "./types"
 
 import "./Hotlines.css"
-import {Group} from "./types";
-import * as Rec from "fp-ts/lib/Record";
-import * as NEA from "fp-ts/lib/NonEmptyArray";
 
 const makeEnExplanation:
   () => JSX.Element =
@@ -27,10 +27,20 @@ const makeEnExplanation:
   )
 }
 
+const makeJaExplanation:
+  () => JSX.Element =
+  () => { return (
+    <div className="explanation">
+      <p>
+        新型コロナウイルス感染症の感染が疑われる方は、直接医療機関へ受診せず、事前に帰国者・接触者相談センターまでご相談ください。もし日本語が話せない場合、まずは多言語対応のコールセンターに連絡してください。もし電話がつながらない場合または日本語が話せる場合、日本語対応の直接帰国者・接触者相談センターに連絡してください。
+      </p>
+    </div>
+  )
+}
 const makeExplanation:
-  Reader<TxProps, JSX.Element | undefined> =
+  Reader<TxProps, JSX.Element> =
   Read.asks((props: TxProps) =>
-    props.lang === "en" ? makeEnExplanation() : undefined
+    props.lang === "en" ? makeEnExplanation() : makeJaExplanation()
   )
 
 const Hotlines: Reader<LangProps, JSX.Element> =
