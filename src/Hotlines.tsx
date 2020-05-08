@@ -19,16 +19,10 @@ const makeEnExplanation:
       <p>
         These hotlines are government and volunteer-run organizations that
         provide medical consultation on testing if you are worried that you
-        have COVID-19. We recommend calling hotlines in the following order
-        of preference:
+        have COVID-19. We recommend first calling the foreign-language hotlines
+        listed for your prefecture. If you cannot get help, then call one of
+        the Japanese-language hotlines.
       </p>
-
-        <ol>
-          <li> any foreign language hotlines in your prefecture</li>
-          <li> the nation-wide foreign-language hotlines</li>
-          <li> if you cannot get help from foreign-language hotlines,
-            a Japanese-language hotline in your prefecture</li>
-        </ol>
     </div>
   )
 }
