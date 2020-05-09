@@ -14,10 +14,13 @@ Japanese,English
 仕事,Jobs
 学校,School
 生活,Life
+※韓国語、ネパール語、インドネシア語など、その他の言語は通訳ソフトなどを使って毎日対応可能。,"※Korean, Nepali, Indonesian and other unlisted languages are supported every day by translation software."
 "第1水曜日, 第3水曜日を除く平日(月曜日-金曜日)",Weekdays except 1st and 3rd Wednesday
 第2・4土曜日,2nd and 4th Saturday of each month
 第4・5木曜日は要予約,appointment required on 4th and 5th Thursday
 (第2・4 月曜日 休),(Closed every second and fourth Monday)
+"(第2,4火除)",(except 2nd and 4th Tuesdays)
+(第2・4),(2nd and 4th of the month)
 通訳を介した対応,Provided by interpreter
 外部通訳サービスによる対応:,Provided by outside interpreters:
 外部通訳サービスによる対応,provided by outside interpreter
@@ -126,3 +129,4 @@ IP電話,Contact (VoIP)
 マレー語,Malaysian
 アラビア語,Arabic
 クメール語,Khmer
+シンハラ語,Siṁhala
