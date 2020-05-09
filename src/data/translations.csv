@@ -14,7 +14,18 @@ Japanese,English
 仕事,Jobs
 学校,School
 生活,Life
+"第1水曜日, 第3水曜日を除く平日(月曜日-金曜日)",Weekdays except 1st and 3rd Wednesday
+第2・4土曜日,2nd and 4th Saturday of each month
+第4・5木曜日は要予約,appointment required on 4th and 5th Thursday
+(第2・4 月曜日 休),(Closed every second and fourth Monday)
+通訳を介した対応,Provided by interpreter
+外部通訳サービスによる対応:,Provided by outside interpreters:
+外部通訳サービスによる対応,provided by outside interpreter
+水曜日を除く毎日,Every day except Wednesday
 5月の日曜日,Sundays in May
+(5月31日)まで,(Until May 31st)
+(通常),(Usually)
+等,and others
 月曜日,Monday
 火曜日,Tuesday
 水曜日,Wednesday
@@ -22,7 +33,11 @@ Japanese,English
 金曜日,Friday
 土曜日,Saturday
 日曜日,Sunday
-(第2・4 月曜日 休),(Closed every second and fourth Monday)
+第1,1st
+第2,2nd
+第3,3rd
+第4,4th
+第5,5th
 全国,All of Japan
 北海道,Hokkaido
 青森県,Aomori
@@ -81,7 +96,9 @@ IP電話,Contact (VoIP)
 祝日,Holidays
 毎日,Every day
 24時間,24 hours
+(緊急事態宣言期間中は土日祝日も対応: 現在のところ5月6日まで),(Emergencies also supported on weekends and holidays until 5/6)
 時間外の緊急対応あり,Emergencies only after hours
+18言語に対応可,18 languages
 対応言語,Supported languages
 中国語,Chinese
 ベトナム語,Vietnamese
@@ -106,5 +123,6 @@ IP電話,Contact (VoIP)
 ロシア語,Russian
 クメール語,Khmer
 モンゴル語,Mongolian
-マレー語,Malay
+マレー語,Malaysian
 アラビア語,Arabic
+クメール語,Khmer
