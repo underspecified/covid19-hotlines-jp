@@ -1,0 +1,37 @@
+.support .title, .support .date-updated, .support .explanation {
+  padding-left: 1.5rem;
+  padding-right: 1.0rem;
+}
+
+.card-header {
+  cursor: pointer;
+}
+
+.card-title {
+  color: #005caf;
+  margin-bottom: 0 !important;
+}
+
+.area, .hotline {
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.area li {
+  list-style-type: none;
+}
+
+.center, .hotline {
+  margin-bottom: 0.75rem;
+}
+
+.center {
+  margin-bottom: 1.5rem;
+}
+
+.hotline, .hours li, .lang li, .topic li {
+  padding-left: 1.5rem;
+  padding-right: 1.0rem;
+}

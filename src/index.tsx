@@ -1,23 +1,41 @@
 import 'react-app-polyfill/ie9'
 import 'react-app-polyfill/stable'
 
-import React from 'react';
-import ReactDOM from 'react-dom';
-import { BrowserRouter } from 'react-router-dom';
+import React from 'react'
+import ReactDOM from 'react-dom'
+import { AppContainer } from 'react-hot-loader'
 
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+// Your top level component
+import App from './App'
 
-import './index.css';
+// Export your top level component as JSX (for static rendering)
+export default App
 
-ReactDOM.render(
-  <BrowserRouter basename="/">
-    <App lang="en"/>
-  </BrowserRouter>,
-  document.getElementById('root')
-);
+// Render your app
+if (typeof document !== 'undefined') {
+  const target = document.getElementById('root')
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+  // @ts-ignore
+  const renderMethod = target.hasChildNodes()
+    ? ReactDOM.hydrate
+    : ReactDOM.render
+
+  const render = (Comp: Function) => {
+    renderMethod(
+      <AppContainer>
+        <Comp />
+      </AppContainer>,
+      target
+    )
+  }
+
+  // Render!
+  render(App)
+
+  // Hot Module Replacement
+  if (module && module.hot) {
+    module.hot.accept('./App', () => {
+      render(App)
+    })
+  }
+}
