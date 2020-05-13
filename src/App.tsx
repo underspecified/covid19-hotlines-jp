@@ -8,8 +8,6 @@ import "./Hotlines.css"
 import "./Menu.css"
 
 function App(props: {lang: string}): JSX.Element {
-  // const lang: string = 'en'
-
   return (
     <div className="App">
       <Menu />

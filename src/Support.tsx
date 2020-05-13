@@ -311,7 +311,7 @@ const Support: Reader<LangProps, JSX.Element> =
         {makeExplanation(txProps)}
 
         <div className="date-updated">
-          <p>{txProps.tx("Last updated")}: 2020/5/9</p>
+          <p>{txProps.tx("Last updated")}: 2020/5/13</p>
         </div>
 
         {makeAccordion(prefs)(txProps)}
