@@ -6723,7 +6723,7 @@ react-router-dom@^5.2.0:
     tiny-invariant "^1.0.2"
     tiny-warning "^1.0.0"
 
-react-router@5.2.0:
+react-router@5.2.0, react-router@^5.2.0:
   version "5.2.0"
   resolved "https://registry.yarnpkg.com/react-router/-/react-router-5.2.0.tgz#424e75641ca8747fbf76e5ecca69781aa37ea293"
   integrity sha512-smz1DUuFHRKdcJC0jobGo8cVbhO3x50tCL4icacOlcwDOEQPq4TMqwx3sY1TP+DvtTgz4nm3thuo7A+BK2U0Dw==
@@ -6750,6 +6750,11 @@ react-static-plugin-reach-router@^7.2.0:
   version "7.2.3"
   resolved "https://registry.yarnpkg.com/react-static-plugin-reach-router/-/react-static-plugin-reach-router-7.2.3.tgz#0b991e347a64ee462cfa7b2b08d34bec56620a5b"
   integrity sha512-OgOm7/3PjPCZD6/U++adNlzi8dJMn6Weig14l12w4TOWlWSI453Cv54bZH0N7ejUnFKwvrPS5mamP+FGCP6VUw==
+
+react-static-plugin-react-router@^7.2.3:
+  version "7.2.3"
+  resolved "https://registry.yarnpkg.com/react-static-plugin-react-router/-/react-static-plugin-react-router-7.2.3.tgz#9f12b10b245565f187b7e1795e14b9e982aa26ba"
+  integrity sha512-zJwwR6VXqRG1ijSw3VgroEwSNpJfUhdqnCwUM0VbA4p4N7XAazNl33oVA5qGAPGFZDyxZCdWCgLD4R6ElzfHpA==
 
 react-static-plugin-sitemap@^7.2.0:
   version "7.2.3"

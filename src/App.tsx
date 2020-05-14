@@ -1,25 +1,19 @@
 import React from "react"
-import { Root, Routes } from "react-static"
-import { Router } from "@reach/router"
+import { Switch, Route, Link } from "react-router-dom"
+import { Root } from "react-static"
+
+import Menu from "./components/Menu"
+import Routes from "./components/Routes"
 
 import "bootstrap/dist/css/bootstrap.min.css"
 import "./css/Menu.css"
 
+
 function App() {
   return (
     <Root>
-      {/*<Menu />*/}
-
-      <div className="content">
-        {/*<React.Suspense fallback={*/}
-        {/*  <div className="loading"><em>Loading...</em></div>*/}
-        {/*}>*/}
-        <React.Suspense fallback={ () => undefined }>
-          <Router>
-            <Routes path="*" />
-          </Router>
-        </React.Suspense>
-      </div>
+      <Menu />
+      <Routes />
     </Root>
   )
 }
