@@ -3,9 +3,9 @@ import * as Read from "fp-ts/lib/Reader"
 import * as Rec from "fp-ts/lib/Record"
 import React from "react"
 import { Reader } from "fp-ts/lib/Reader"
+import { useRouteData } from "react-static"
 
 import { makeAccordion } from "./Support"
-import hotlines from "../data/all.json"
 import { Hotline, LangProps, TxProps } from "../interfaces"
 import { tx as _tx } from "../translate"
 import { Group } from "../types"
@@ -45,6 +45,8 @@ const makeExplanation:
 
 const Hotlines: Reader<LangProps, JSX.Element> =
   Read.asks((props: LangProps) => {
+    const { hotlines } = useRouteData()
+
     const txProps: TxProps = {
       lang: props.lang,
       tx: _tx(props.lang)

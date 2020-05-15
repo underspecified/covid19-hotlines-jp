@@ -1,12 +1,14 @@
-import 'react-app-polyfill/ie9'
-import 'react-app-polyfill/stable'
+// import "core-js/stable"
+// import "regenerator-runtime/runtime"
+// import "react-app-polyfill/ie9"
+// import "react-app-polyfill/stable"
 
-import React from 'react'
-import ReactDOM from 'react-dom'
-import { AppContainer } from 'react-hot-loader'
+import React from "react"
+import ReactDOM from "react-dom"
+import { AppContainer } from "react-hot-loader"
 
 // Your top level component
-import App from './App'
+import App from "./App"
 
 // Export your top level component as JSX (for static rendering)
 export default App

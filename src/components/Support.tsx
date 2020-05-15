@@ -7,9 +7,9 @@ import * as Rec from "fp-ts/lib/Record"
 import React from "react"
 import { Reader } from "fp-ts/lib/Reader"
 import { Accordion, Card } from "react-bootstrap"
+import { useRouteData } from "react-static"
 import { StringUtils } from "turbocommons-ts"
 
-import hotlines from "../data/support.json"
 import { groupByCenter, updateCenterNames } from "../hotline"
 import { Hotline, LangProps, TxProps } from "../interfaces"
 import { tx as _tx } from "../translate"
@@ -154,7 +154,7 @@ const makeCenterLi:
         center
 
     const grouped: Array<Array<Hotline>> =
-      R.values(R.groupBy(h => `{h.hours}; {h.lang}`, hotlines))
+      R.values(R.groupBy(h => `${h.hours}; ${h.lang}`, hotlines))
 
     const body: Array<JSX.Element> =
       grouped.map((hs: Array<Hotline>) => {
@@ -228,6 +228,7 @@ const makePrefToggle:
       </Card>
     ))
 
+// noinspection JSUnusedLocalSymbols
 const sortByPrefId:
   (pref: string) => (area: Array<Hotline>) => string =
   (pref: string) => (area: Array<Hotline>) => makeId(pref)
@@ -294,13 +295,15 @@ const makeExplanation:
 
 const Support: Reader<LangProps, JSX.Element> =
   Read.asks((props: LangProps) => {
+    const { support } = useRouteData()
+
     const txProps = {
       lang: props.lang,
       tx: _tx(props.lang)
     }
 
     const prefs: Group<Hotline> =
-      Rec.filterMap(NEA.fromArray)(hotlines.area)
+      Rec.filterMap(NEA.fromArray)(support.area)
 
     return (
       <div className="support">
