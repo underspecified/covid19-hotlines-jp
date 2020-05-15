@@ -106,16 +106,18 @@ const formatCsv = (csv: CSV) => {
   return { 'area': records }
 }
 
-const csvToFormattedJson: (_: string) => string =
-  R.pipe(
-    util.convertCSVtoArray,
+const csvToFormattedJson:
+  (csvStr: string) => string =
+  (csvStr: string) => P.pipe(
+    util.convertCSVtoArray(csvStr),
     formatCsv,
     JSON.stringify
   )
 
-const csvToJson: (_: string) => string =
-  R.pipe(
-    util.convertCSVtoArray,
+const csvToJson:
+  (csvStr: string) => string =
+  (csvStr: string) => P.pipe(
+    util.convertCSVtoArray(csvStr),
     normalizeHeader,
     util.csv2json,
     JSON.stringify
