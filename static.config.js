@@ -4,6 +4,8 @@ import support from "./src/data/support.json"
 
 // noinspection JSUnusedGlobalSymbols,JSUnusedLocalSymbols
 export default {
+  babelExcludes: [/core-js/],
+
   entry: path.join(__dirname, 'src', 'index.tsx'),
 
   getRoutes: async ({ dev }) => [
