@@ -8,7 +8,6 @@
     "core-js": "^3.6.5",
     "cross-fetch": "^3.0.4",
     "fp-ts": "^2.6.0",
-    "gh-pages": "^2.2.0",
     "rambda": "^5.2.1",
     "react": "^16.9.0",
     "react-bootstrap": "^1.0.1",
@@ -25,7 +24,7 @@
     "turbocommons-ts": "^3.4.2"
   },
   "scripts": {
-    "deploy": "gh-pages -d build",
+    "deploy": "gh-pages =b react-static -d build",
     "start": "react-static start",
     "stage": "react-static build --staging",
     "build": "react-static build",
@@ -73,6 +72,7 @@
     "eslint-plugin-jsx-a11y": "^6.2.3",
     "eslint-plugin-react": "^7.20.0",
     "eslint-plugin-react-hooks": "2",
+    "gh-pages": "^2.2.0",
     "jquery": "^3.5.1",
     "popper.js": "^1.16.1",
     "react-app": "^1.1.2",
