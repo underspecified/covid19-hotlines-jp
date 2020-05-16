@@ -16,7 +16,7 @@ code {
     monospace;
 }
 
-a:not(.navbar) {
+a {
   color: #005caf;
   text-decoration: underline;
 }

@@ -1,10 +1,9 @@
 .menu .navbar {
-  background-color: #005caf;
-  color: white;
+  background-color: #005caf !important;
 }
 
 .menu .nav-link {
-  text-decoration: none;
+  text-decoration: none !important;
 }
 
 .menu a {
@@ -35,7 +34,7 @@
 @media (min-width: 1200px) {  }
 
 .menu .jumbotron {
-  background-color: #005caf;
+  background-color: #005caf !important;
   color: white;
   padding: 0 1.5rem 0.01rem;
   margin-bottom: 1.5rem;
