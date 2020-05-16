@@ -43,7 +43,7 @@ const makeOurGoalsEn = () => {
 const makeOurGoalsJa = () => {
   return (
     <div className="our-goal">
-      <h3>Our Goal</h3>
+      <h3>Our goal</h3>
 
       <p>
         新型コロナウイルス感染症 (COVID-19) の拡大に伴い、世界各地の人々が、不安な日々を送る状況に陥っています。このような状況の中多くの情報が錯綜しており、一般の方々から本当に重要な情報が把握しにくいといった声や、外国人の方々から多言語の情報が不足しており不安と共に過ごしているという声を聞きました。
