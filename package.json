@@ -24,7 +24,7 @@
     "turbocommons-ts": "^3.4.2"
   },
   "scripts": {
-    "deploy": "gh-pages =b react-static -d build",
+    "deploy": "gh-pages -d dist",
     "start": "react-static start",
     "stage": "react-static build --staging",
     "build": "react-static build",
