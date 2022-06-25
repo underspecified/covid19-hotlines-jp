@@ -60,7 +60,7 @@
     "html-webpack-plugin": "^4.2.0",
     "iconv-lite": "^0.5.1",
     "jquery": "^3.4.0",
-    "node-fetch": "^2.6.0",
+    "node-fetch": "^2.6.7",
     "popper.js": "^1.16.0",
     "rambda": "^5.1.0",
     "react-app-polyfill": "^1.0.6",
